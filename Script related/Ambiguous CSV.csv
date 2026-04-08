@@ -1,0 +1,841 @@
+﻿ASIN,One line description for ASIN,Final TRexID V3,Comments,Decision Pending?
+https://www.amazon.co.jp/dp/B01CIW54W6,Bandana,apparel_accessories,banadana is an apparel accessory,No
+https://www.amazon.co.jp/dp/B098397YVS,non electric cooler box,kitchen_utensils_servewear,non powered coolers will be mapped where kitchen storage is mapped.Pls refer to email attachment for more info.,No
+-, non electric cooler parts accessories,kitchen_utensils_servewear,adding for reference.,No
+,General Waste Sorter Sticker Garbage,,,No
+https://www.amazon.co.jp/dp/B07NRR5WDF,commercial churros maker,kitchen_appliances,,No
+https://www.amazon.co.jp/dp/B084RP3232,hobby badges,jewelry_cufflinks_brooches_pins,,No
+https://www.amazon.co.jp/dp/B0BFHKMB4M,pet towel for oral health,pets_toys_supplies_devices,,No
+https://www.amazon.in/s?k=sports+memoribillia&crid=M984L73CICXX&sprefix=sports+memoribillia%2Caps%2C237&ref=nb_sb_noss_2,sports collectibles,"if the item is
+jersey - map to apparel
+trading cards - map to toys_other
+helmet- map to sports_equipment 
+frame- map to home_decor",classify based on what the item is,No
+https://www.amazon.co.jp/dp/B0C3CWNPBT,Type writer ribbon,electronics_parts_accessories,,No
+https://www.amazon.co.jp/dp/B011TZ1JHM,"Kenneth Practices for on plate Libra PM (1 – 018) Elementary School in the show the weight than ""Study Room Into Dishes Large Scales.",toys_other,,No
+https://www.amazon.co.jp/dp/B01BNHIBF4,Underarm pads/Armpit sweat pads,beauty_personalcare_tools_appliances_supplies,,No
+https://www.amazon.co.jp/dp/B083RZ7R12,Smile Kids Phone Loudspeaker III AYD-104 x Set of 2,electronics_parts_accessories,It's a telephone accessory,No
+https://www.amazon.de/gp/product/B09GX6WHGY,Sound way - 2 DIN Radio Faceplate Mounting Frame Adapter Installation Kit Compatible with Fiat Stilo - 2DP Style,automotive_av_parts_accessories,"Nazma : Why not electronic_mount: this is not an external accessory to car dashbaord
+Why automotive_av_parts_accessories and NOT automotive_parts_accessories: since this a part of vehicle/car stereo  which is automotive audio-video device{automotive_dvd_security_video_devices}, we shall keep in av parts accessories trex of automotive
+NOTE: v2 automotive_secuirty_accessories is merged in V3 as automotive_av_parts_accessories",No
+,"gold,silver, copper, precious metal coins, gold, silver bars, hobby coin collections",valuable_coins,,No
+https://www.amazon.de/gp/product/B07QJYC8FC,SD CARD with pre loaded maps,electronics_parts_accessories,,No
+https://www.amazon.de/gp/product/B0BTPMPQ2C,"corsages, wedding corsages, wedding bracelet
+Afrsmw Flower Wrist Wedding Bracelet Flower Bride Pink Bridesmaid Pearl Stem White Corset Wedding Banquet Dance Blue",apparel_accessories,,No
+https://www.amazon.co.jp/gp/product/B0C1BL7XB1,Engine Exhaust Muffler Air Guide Cover Kit,outdoor_appliances_equipment,string-trimmer-replacement-parts,No
+https://www.amazon.de/gp/product/B08YY2CX6S ,mounted/fixture mirror cabinet,furniture_dressers_chests_cabinets,,No
+https://www.amazon.co.jp/dp/B09J58BLJ2,parchment-paper,kitchen_utensils_servewear,ITK parchment paper moved to kitchen_utensils_servewear,No
+https://www.amazon.co.jp/dp/B08KZS5D1X,Dressers,fixtures_vanities,,No
+,mechanical car lock,automotive_parts_accessories,keep mechanical  car locks in automtive_parts_accessories and electronic car  locks in automotive_dvd_security_video_devices. Three is no ITK to represent car electrical locks but it is mentioned in trexv3 definiton,No
+"https://www.amazon.co.jp/dp/B019RM58J4
+https://www.amazon.co.jp/dp/B01N9VXYHZ",Car Key,automotive_parts_accessories,blank key will fall under automotive_parts_accessories(www.amazon.co.jp/dp/B01N9VXYHZ) where as a combination of blank key with keyless entry feature will be automotive_av_parts_accessories(www.amazon.co.jp/dp/B019RM58J4),No
+https://www.amazon.com/s?k=tiara&crid=12ZLZU6W1D86D&sprefix=tiara%2Caps%2C298&ref=nb_sb_noss_1,tiara (headband keyword is also used),apparel_accessory,cotume accessory if marketed as costume,No
+https://www.amazon.com/s?k=sash&crid=1UYN9ADFADF94&sprefix=sash%2Caps%2C316&ref=nb_sb_noss_1,sash ( bridal accessory or party supply?),apparel_accessory,costume accessory if marketed as costume,No
+https://www.amazon.com/s?k=crown+and+sash&crid=16GM4U5386AB7&sprefix=crown+and+sash%2Caps%2C320&ref=nb_sb_noss_1,sash with crown (tiara),apparel_accessory,costume accessory if marketed as costume,No
+https://www.amazon.co.jp/dp/B0B5KSQCYF,air curtain blower used in home/commercial use,home_fans,in description it is mentioned as high speed fan,No
+https://www.amazon.co.jp/dp/B09FFVVFNZ,"iren Horn Speaker for Police Car, Ambulance, Fire, Engineer Vehicles",automotive_parts_accessories,,No
+https://www.amazon.co.jp/dp/B089GLS98P,"used to open and close the door, operate buttons, open and close the keys",hardware_tools_supplies_other,,No
+"https://www.amazon.co.jp/dp/B098QB1JDV
+https://www.amazon.co.jp/dp/B00YTV5KT2
+https://www.amazon.co.jp/dp/B07WPTHPYY
+https://www.amazon.co.jp/dp/B0092B4TUK",Oven,,yet to be decided with science team,No
+https://www.amazon.co.jp/dp/B09NHQTVR3,electric-countertop-burners/electric-stoves,"1. if stove used near fireplace map it to fixtures_bathroom_fireplace_incl_accessories
+2. if it is used in kitchen map it to kitchen_appliances
+note: do not  confuse stove as a final  keyword consider uses",NS: Fireplace electric stoves look like these (https://www.google.com/search?sca_esv=12ccb0fb0fe1b570&rlz=1C1GCEA_enIN1090IN1090&q=electric+stove+fireplace&uds=AMwkrPvzpJI9rbgukgnX7GaRFEHbE7a-8SQk-GInp3xiRgJOs1997fw-OdCMEyhR2lLPKmQakVIZmNcHsSkMwfDejQAQCG6iOoxU4JoXT9e8BGkZFgUcJzLbX3WQWbMLv14qVOTRia_CskNqtW-h1upFhjTveoSOc7EME4XBO5DTQ64tZ8ZzGhxaE6k1LqH02nWAWjWPK-_KAU1wTAPTmwRa-DCkntINFb8c71wdF06rZ9A7qMRew4GetUB80fDTK1vP9lOvdNqSn2iRQNCf82F2PDlH2LOOxxi1fZWBq83tYCM6yFNb9Zbh08zp4VsbfDuw3H5LuXi8&udm=2&prmd=sivnbmtz&sa=X&ved=2ahUKEwjY96Lf46KFAxX3T2wGHWneBHMQtKgLegQIEBAB&biw=1920&bih=919&dpr=1).,No
+https://www.amazon.com/dp/B07XNYN44D,Christmas Toilet Seat Cover Decorations,fixtures_bathroom_fireplace_incl_accessories,,No
+"https://www.amazon.co.jp/dp/B07JJH31DY
+https://www.amazon.co.jp/dp/B07JLSRRFM
+https://www.amazon.co.jp/dp/B07JLQPBX6",Picture book projector,,yet to be decided with science team,Yes
+https://www.amazon.de/gp/product/B09GPR9RGD,solar liquid concentrate,mechanical_lubricants,industrial-fluids,No
+"https://www.amazon.de/dp/B07PF1H8XV
+https://www.amazon.de/dp/B09HXJMPHP","Shoe Cupboard
+Shoe Cabinet",furniture_dressers_chests_cabinets,"We only have Shoe rack/organizer ITKs, don't have cabinet related ITK for shoe cabinet.  If we think this should go under cabinets then we need to add an ITK in the file.
+NS: When you get products where seller says ""shor rack cabinet"", pls map to furniture_dressers_chests_cabinets.",No
+https://www.amazon.de/dp/B07XB4LGY3,Multi functional tactical pen,hardware_tools_supplies_other,multitools,No
+https://www.amazon.de/dp/B09MTC6692,Alcohol Detector /breathalyzers,beauty_personalcare_tools_appliances_supplies,,No
+https://www.amazon.de/dp/B0C2YC3NW3,"Tap Extender, for Toddler Children Hand Washing",fixtures_bathroom_fireplace_incl_accessories,,No
+"https://www.amazon.co.jp/dp/B0B62ZBF4T
+https://www.amazon.co.jp/dp/B09SFYX4L6",safety sign sticker,commercial_safety_equipment,ITK:safety-signs,No
+https://www.amazon.com/dp/B0CW2HQHTS,Karaoke Microphone,,Bad Record ASIN,No
+https://www.amazon.de/dp/B0BVM9RXK8,mounting bracket/ rail for solar panels,outdoors_power_generators,"solar panels parts/accesspries will go into outdoors_power_generators
+7/18/2024",No
+https://www.amazon.de/dp/B0BHSS1F18,mounting bracket/ rail for solar panels,outdoors_power_generators,solar panels parts/accessories will go into outdoors_power_generators,No
+https://www.amazon.co.uk/dp/B0CGQZJ8ZZ,GDYS Bicycle foot brake spark grinding ground outdoor flint motorbike sole spark skateboard wind turbine flint set,footwear_accesories,More likely looks like footwear accessories,No
+https://www.amazon.co.uk/dp/B0BWDTBCCX,"WeiMax Sugar Control Wristband,2023 New WeiMax™ Sugar Control Wristband,Blood Glucose Control Wristband,Sugar Control Therapeutic Wristband",beauty_personalcare_tools_appliances_supplies,,No
+https://www.amazon.co.uk/dp/B0CHHX5KBQ,"Wrapping Paper Cutter,2PCS Replaceable Sliding Gift Wrap Cutter with 4 Blades, Christmas Wrapping Paper Roll Cutting Trimmer, Easy Slide Wrapping Paper Cutter, DIY Handmade Gift (A-Black)",arts_crafts_hobbies,This is a paper cutter used for cutting wrapping paper or any other paper not a commercial specifical product,No
+https://www.amazon.co.uk/dp/B015N4PT80,Typewriter part/ accessory,electronics_parts_accessories,,No
+https://www.amazon.com/dp/B08BP6R9R4,rear facing baby view mirrors with camera,cameras_devices,rear facing baby view mirrors w/o cameras will be under baby_products_other,No
+https://www.amazon.co.jp/s?k=distilled+water&rh=n%3A71443051&dc&language=en&ds=v1%3Amq82kTixS01GHOb7NQUKeqBnghESvSBKyDsWID8J74g&crid=INJDIO0TFCCC&qid=1712045647&rnid=2321267051&sprefix=distilled+water%2Caps%2C345&ref=sr_nr_n_2,multi use distilled water,groceries_food_beverages,Nazma: confirmed by Product  Bhaskaran and Archana,No
+https://www.amazon.de/dp/B09NHV8L8V,Used for Video game consoles. Should we be considering as video game accessories or electronic screen protectors.,electronics_screen_protectors,Added to discrepancy sheet for science team review.,No
+https://www.amazon.com/dp/B0B4DMSPBY,Wearable Blanket for Toddler,apparel_wearable_blankets,childrens-wearable-blankets,No
+https://www.amazon.com/dp/B0BV1BYW8G,Goggle,electronics_parts_accessories,,No
+https://www.amazon.co.uk/dp/B07FPL6R6F,Plotter/Hand Robot kit Plotter,electronics_devices_other,,No
+https://www.amazon.com/dp/B0CCK84TSX,Manual type writers,electronics_devices_other,,No
+https://www.amazon.com/dp/B0C9KZDP5F,Mechanical Keyboard Keycap,electronics_computers_external_peripherals_and_accessories,,No
+https://www.amazon.com/dp/B09TDH88XS,Mechanical Keyboard Switch Springs,electronics_computers_external_peripherals_and_accessories,,No
+https://www.amazon.co.uk/dp/B09HC5GRKY,"WiiM Mini Streamer Audio AirPlay 2 Receiver HiFi Wireless, Multiroom Stereo, Preamplifier, Works with Alexa and Siri Voice Assistants, Streaming Hi-Res Audio from Spotify, Amazon Music and more",av_receivers_transmitters_amplifiers,"not a speaker, will only enable wireless audio streaming from devices like iPhones, iMac etc. to speaker.",No
+https://www.amazon.fr/dp/B07KC5GS5J,"chromecast for casting or mirroring
+*Note:* dont get confused with term ""stream"" and map to streaming device. This is NOT a streaming device. This ""enables"" casting from your mobile /laptops to TV etc.",av_receivers_transmitters_amplifiers,"Used to cast video content to your TV from your mobile, tablet, or computer. Acts as a bridge between your mobile device or computer and your television, enabling you to stream content from online sources to your TV screen Please note, this product doesn't support streaming directly on the device to which it is connected (TV). Not similar to Fire tv stick. Fire Stick is a standalone streaming device that plugs into your TV's HDMI port. It comes with a remote control and has its own user interface, allowing you to browse and access various streaming apps directly on the device.",No
+https://www.amazon.co.uk/dp/B0B92SFYVG,"chromecast with Google TV
+*Note :* enables streaming apps and services directly on the device-along with casting functionality.",av_media_players_recorders,"The Chromecast with Google TV has its own user interface and operating system, which allows you to access various streaming apps and services directly on the device. You can browse through content, search for movies and TV shows, and select what you want to watch using the included remote control or voice commands. Similar to Fire TV stick.",No
+https://www.amazon.fr/dp/B0BWF4BP29,miracast for screen mirroring and casting,av_receivers_transmitters_amplifiers,similar to 'chromecast for casting' example,No
+"https://www.amazon.co.uk/dp/B0CLLNXN9Y
+https://www.amazon.com/dp/B0D2264HVP",carplay adapter,batteries_chargers_adapters_cables_docks,Electronic Accessories,No
+https://www.amazon.com/dp/B077VYSXB3,Doodle Board  Drawing Tablet,toys_other,adding for refernce,No
+https://www.amazon.fr/dp/B0B5952Z71,"Lot 2 Children's Drawing Tablet, 8.5 Inch Magic LCD Drawing Tablet, Doodle Pad with Erase Button, Toys for Girls Boys Blue + Pink",toys_other,This do not have any OS or any other specifications that usually a tablet has. Hence goes to Toys feecat,No
+https://www.amazon.co.uk/dp/B0CH4L9B59,Kids Tablet,electronics_computers_laptops_tablets_servers,This is a tablet which has RAM/ ROM and OS as well. Hence should be considered as Tablet and goes to Computers feecat,No
+"https://www.amazon.com.mx/dp/B09GV7D531
+https://www.amazon.com.mx/dp/B0CXWDT8VD",Prime Subscriptions,,,Yes
+https://www.amazon.com.au/dp/B0BN9Z2B4B,Blacksmithing Farrier Forges/burner,power_tools_incl_accessories,,No
+https://www.amazon.com.au/dp/B07T6FNLQV,sleeping mask with bluetooth headphone,beauty_personalcare_tools_appliances_supplies,"Based on the ITK sleep mask and also, that's the primary features while headphones being the secondary reason.",No
+https://www.amazon.com.au/dp/B0CY1XW1RZ,Speaker for Shoes,av_speakers_amplifiers,,No
+https://www.amazon.com/dp/B0CJ6JWJ3J,baby/pet door/gate,baby_child_proofing_safety_equipment,pet-doors look like this (https://www.amazon.com/s?k=pet+door&crid=12FMCO0M2PUDG&sprefix=pet+doo%2Caps%2C563&ref=nb_sb_noss_2),No
+https://www.amazon.ae/gp/product/B08BS2Y5SF,Home Theatre Setup/ Service related/ Installation,home_and_kitchen_essentials_accessories,As services such as cabinet installation and any other services meant for home appear to be correctly mapped under home_and_kitchen_essentials_accessories as these ITKs are closely matching that certain trex.,Re-check
+https://www.amazon.ae/gp/product/B09S9TP68T,Pilates at your Location/ Service related,,,Yes
+https://www.amazon.ae/dp/B07MJGNGLR,COFFEE TABLE WITH REFRIGERATOR AND BLUETOOTH SPEAKER,furniture_desks_tables_nightstands,"Nazma: smart tables with charging, bluetooth, speaker feature will be mapped to Furniture only.",No
+https://www.amazon.sa/dp/B0CKWC8DDG,Cashier machine card payments machine but it also says smart mobile,office_equipment_devices,,No
+https://www.amazon.nl/dp/B0CV5BWBSS,Air water bottle with Flavor pods ,kitchen_utensils_servewear,Bottle accessories,No
+https://www.amazon.nl/dp/B08WWY68P9,Web Presenter HD,av_receivers_transmitters_amplifiers,It's a mediator,No
+https://www.amazon.nl/dp/B09RDXKDCZ,Smartphone Tablet LCD Display Separator Machine Repair Tool Heating Plate,,Proposed as ITK-Trex discrepancy,No
+"https://www.amazon.eg/dp/B0BNK6SPLW
+https://www.amazon.eg/dp/B0CPY71YPT",cell phone scren protector + lens protector,cell_phones_parts_accessories,,No
+https://www.amazon.com/dp/B0CG991QHB,Nail painting machine which prints designs on our nails.,beauty_personalcare_tools_appliances_supplies,,No
+https://www.amazon.co.jp/dp/B07ZSHKML2,cooler bag,bags_cases_other,"Adding this for reference. Let's map these bags with word ""cooler"" into bags_caes_other",No
+https://www.amazon.com/dp/B08PF51X88,appliance mover,tools_materials_handling_lifts_dollies_trucks_cranes,Added for reference,No
+https://www.amazon.eg/dp/B091J5YJZQ,finger sleeves for gaming on phone,,,No
+"https://www.amazon.com/dp/B01MT1C80C
+https://www.amazon.com/dp/B0CRDJZ266
+https://www.amazon.com/dp/B08NY6QLF4
+https://www.amazon.com/dp/B08D6BWTX3","Conveyor table widely used in food, beverage, pharmaceutical, electronic parts, tobacco, and cosmetics",commercial_furniture,,No
+,camera for drone exclusively ,electronics_parts_accessories,,No
+https://www.amazon.com.tr/dp/B0B8JNB174,POS machine ,office_equipment_devices,magnetic-stripe-readers,No
+"https://www.amazon.com.tr/dp/B0CTFB8TFK
+https://www.amazon.com.tr/dp/B0CW68BDQP",smart rings,,"It's not a smart ring, rather it is a normal ring used for specific occasions.",Yes
+https://selection.amazon.com/items-search-results/2e6e1a81e656820a82b3c63aed860211,safety ear muff / safety earmuff,work_protective_gear ,"NOTE :  two-way-radio-headsets [ B0CJFDJF3L (https://selection.amazon.com/item/1/B0CJFDJF3L/)] - primarily designed for communication over radio channel. Usually includes a microphone for transmitting voice messages, an earpiece, or headphone for receiving audio, and sometimes a push-to-talk button for activating transmission. Used in professional setup like construction, security, manufacturing etc.
+2) safety-earmuffs : . These can be electronic or non-electronic. These are used primarily for ear protection. Do not get confused with keywords like ""Radio headphones, radio headset, radio FM, headphones"" from the title/description. Radio FM is only a feature allowing the audio playback feature during work. This is different from ""two-way-radio-headsets"" in electronics_av_radios and standard headsets in headphones_incl_accessories.",No
+https://selection.amazon.com/items-search-results/1bc0af3fadfabd0d01e8d0a34e6c4652,two-way-radio-headset,electronics_av_radios,"Designed specifically for communication over two-way radio systems. Has push to talk button. Enable users to transmit and receive messages over two-way radio frequencies, allowing for coordination in professional environments.
+These are different from standard headsets [B0B2DK63BQ (https://selection.amazon.com/item/1/B0B2DK63BQ/)] used for activities such as listening to music, making phone calls, gaming, or participating in virtual meetings Terminology 'radio headset' in this case refers to headsets that provide audio playback from radio stations. These do not enable communication through Radio channel. The headsets that enable communication to and fro over a two way radio systems are called as ""two way radio headsets"" under electronics_av_radios.",No
+https://www.amazon.co.jp/dp/B09XQQ3CGN,Microwave portable car boxes/microwave bento boxes,compact_appliances_microwave,this is a portable microwave in the form of box/bags,No
+https://www.amazon.com/dp/B0D41JSN9X,Camera Sunglasses,eyewear_other,,No
+https://www.amazon.co.jp/dp/B0C9LJKQMY,Hydrogen water generator with an inhaler,home_water_filters_softeners,,No
+https://www.amazon.com/dp/B000SM3H6E,blomus 65032 Garden Torch For Burning Gel,fixtures_lighting_incl_parts_accessories,,No
+https://www.amazon.co.uk/dp/B0B2JS9T45,Harf worldwide travel plug adapter for multiple devices | universal travel adapter with 3 usb 2.4a charging ports + 1 type-c with 3.0a fast charging for US UK AU EU up to 150+ countries worldwide,,This product is a combination of plug adapter + wall charger. ,Yes
+https://www.amazon.co.uk/dp/B0C8Z8R3TJ,deleyCON 24 Port CAT7 Patch Panel Set Patch Panel Distribution Panel Modular 1 U 19 Inch Rack Mounting + 24x CAT 7 Keystone Module RJ45 LAN Network 10 Gbit/s 600 MHz Installation Cable Black,electronics_parts_accessories,Considering this network cable rack as networking device part/accessory,No
+https://www.amazon.com/dp/B07V2R6YNF,Sound Machine with Night Light Projector,,,Yes
+https://www.amazon.com/dp/B0CYGL1TVM,charging cart statin/cabinet for tablets and laptops,batteries_chargers_adapters_cables_docks,,No
+Example 1 (https://browse-query-editor-eu.aka.amazon.com/?browseNodeFilter=category-node-merchant-facing&catalogAttributes=item_name%2Cspecific%2Cproduct_type%2Citem_type_keyword&marketplaceId=3&pageSize=2000&protocolVersion=imsv2&retailAsins=N&showImages=Y&useSuggestedBrowseNode=N&userQuery=B01MQE5VJ1%0AB09K4811C1%0AB06Y1B59V5%0A%0A&variationParentOnly=N&websiteSearchable=N),plug adapter without charging feature except for fixed wall socket,hardware_electrical_electronics_components,"Despite featuring a USB port for charging, ASIN B01MQE5VJ1 will be labelled under hardware_electrical_electronics_components due to its primary function as a fixed wall socket. The inclusion of USB ports serves as an additional feature for device charging",No
+Examples 2 (https://browse-query-editor-eu.aka.amazon.com/?browseNodeFilter=category-node-merchant-facing&catalogAttributes=item_name%2Cspecific%2Cproduct_type%2Citem_type_keyword&marketplaceId=3&pageSize=2000&protocolVersion=imsv2&retailAsins=N&showImages=Y&useSuggestedBrowseNode=N&userQuery=B08YRC3KHW%0AB088FB9RBV&variationParentOnly=N&websiteSearchable=N),plug adapter with charging ,batteries_chargers_adapters_cables_docks,"this product functions as both a plug adapter and charger, equipped with a USB port for charging. Such plug adapter-charger hybrids are typically designed for portability and convenience.",No
+https://www.amazon.com/dp/B00UY74S0W,"ArtMuseKits Kids, Child Size, Toddler, Portable, Travel Sleeping Cot (Blue)",baby_bassinets_cribs,"based on the keyword 
+infant-and-toddler-travel-beds",No
+https://www.amazon.com/dp/B00BIETAJ4,"Regalo My Cot Extra Long Portable Bed, Includes Fitted Sheet, Gray 54x28x12 Inch (Pack of 1)",camping_equipment,"It is also both indoors & outdoors use, considering usage of Outdoor it is kept under Camping",No
+https://www.amazon.com/dp/B09CCVFSDF,"REDCAMP Extra Long Kids Cot for Camping, Sturdy Steel Folding Toddler Cot Bed for Travel Sleeping, Portable with Carry Bag, Wine Red New",camping_equipment,"It is also both indoors & outdoors use, considering usage of Outdoor it is kept under Camping",No
+https://www.amazon.com/dp/B00TKXLB1K,"under floor heating mesh,mat for tiles",hardware_tools_supplies_other,,No
+"https://www.amazon.com/dp/B07HNQLM1F
+https://www.amazon.com/dp/B075LQYV1Z",Sandbags for floods.,home_and_kitchen_essentials_accessories,considering waste bags as closest itk,No
+https://www.amazon.com/dp/B07FKGQBRZ,2-in-1 Beach Folding Lounge Chair+Cargo Cart for Tanning Outdoors,camping_equipment,cat + camping is considered as keyword,No
+"https://www.amazon.ca/dp/B08R3MPY8X
+https://www.amazon.ca/dp/B01IFJ73X4
+https://www.amazon.ca/dp/B071FZJGB8
+https://www.amazon.ca/dp/B098DLP8T6
+https://www.amazon.ca/dp/B082W5HVGV
+https://www.amazon.ca/dp/B00JML98BK
+https://www.amazon.ca/dp/B01NA7R4BJ
+https://www.amazon.ca/dp/B08YDMTL39
+https://www.amazon.ca/dp/B088GPJL8Y
+https://www.amazon.ca/dp/B07BNKDMXK
+https://www.amazon.ca/dp/B00HKK5VXY
+https://www.amazon.ca/dp/B079DNGBQN
+https://www.amazon.ca/dp/B086M9J94W","outdoor_power_generators This class includes solar charge controllers for solar power generators (e.g., solar charge controllers, etc.,). This class includes solar power generators that include solar panels and other equipments (e.g., batteries, power inverters, etc.,)
+but exclusion says Solar panels that are not stand-alone power generators are not part of this class
+and also in solar_panels trex exclusion says Solar power generators that include solar panels and other equipment (e.g., batteries, inverters, etc.,) to generate and store power are excluded from this class
+then where should solar panels which has micro controllers which can be used as stand alone or to charge various rvs/camp/home should go?",,Check with the science team.,Yes
+"https://www.amazon.com/dp/B0093LUBWO
+https://www.amazon.com/dp/B077VT56ND
+https://www.amazon.com/dp/B0117KQH80",These are silicone bracelets for awareness like cancer/disease/condition etc.,,,Yes
+"https://www.amazon.com/dp/B0D8KDX3P9
+https://www.amazon.com/dp/B0D8KNSXNG",Smart Air Wallet Tracker Credit Card Holder ,wallets_other_organizers,It should be considered as a wallet with an in built feature of tracking.,No
+https://www.amazon.com/dp/B0BHTKTWPZ,"Over-The-Door Wireless Security Camera System with No Subscription 3-Day Rolling Video Storage, 1080p HD Video",cameras_devices,based on the keyword security camera,No
+https://www.amazon.com/dp/B0D8VF42MH,Chicken Automatic Coop Camera Door,,,Yes
+https://www.amazon.com/dp/B0D1TPN24D,"Portable 9in Wireless Apple Carplay and Android Auto Touch Screen with 4K Dash Cam, Car Play Screen & Stereo, Hands Free Bluetooth, GPS Navigation, Mirror Link, Loop Recording, Voice Control",automotive_dvd_security_video_devices,this is a complete carplay device used with phone,No
+https://www.amazon.com/dp/B07LG9D799,Serving Tray Foldable TV Table Laptop Computer Desk Snack Tray,furniture_desks_tables_nightstands,,No
+"https://www.amazon.com/dp/B07CSL96VM
+https://www.amazon.com/dp/B07BGYDSYM
+https://www.amazon.com/dp/B08KYJZWLF",Shoe cover for commercial puroposes or general purposes,footwear_accessories,,No
+https://www.amazon.com/dp/B09K71B2BK,1st Album Countdown Version CD+1p Poster+128p PhotoBook+1p PhotoCard+1p Photoprint+Message PhotoCard Set+Tracking Kpop Sealed,"media_audio_music_video (cd+bundle)
+media_books (album+bundle)",,No
+https://www.amazon.com/dp/B0CPPTHF84,"Garage Door Banner Cover, Hanging Garage Door Decorations, Garage Door Covers Backdrop for Party Indoor Outdoor Wall Decor 7x8Ft",hardware_doors_windows_gates_incl_accessories,"There is an ITK “garage-door-decorations""",No
+"https://www.amazon.com/dp/B09Q8X7HR6
+https://www.amazon.com/dp/B0992TW1J9",Waterproof Ballistic FDE Laser Rangefinder Binoculars,sports_guns_equipment,,No
+"https://www.amazon.com/dp/B09T87TV5B
+https://www.amazon.com/dp/B07T4KB7BB","Foldable Reacher Grabber Pickup Tool, Reaching Tool Trash Picker Grabber","mobility_parts_accessories_including_wheelchairs (if eledery/grab keywords are present)
+home_cleaning_tools_supplies if exclusively says trash pick","Confused with itk ""trash-pickers""",No
+"https://www.amazon.com/dp/B08LNH26ZV
+https://www.amazon.com/dp/B08LMP6VJN
+https://www.amazon.com/dp/B08LN2LLD5","Alarm Disc Brake Lock for Motorcycle, scooters. ",automotive_dvd_security_video_devices,"120dB alarm sound can transmit up to 300 meters. It is certified with an IP67 waterproof rating, which means it is protected from dust and can function in 3.3 feet of water for 30 minutes.",No
+https://www.amazon.com/dp/B0876FKWDV,"Dry Shield Rapture Faraday Bag, Durable Waterproof Cover Shields Generators & Extra-Large Electronics",outdoors_covers_screens,"The Mission Darkness Dry Shield Rapture Faraday Bag 1,060L is the largest Faraday bag on the market designed to shield generators.
+Additional applications include using the bag to prevent electronic device hacking, tracking, spying, chain of custody corruption, drug interdiction, and shielding seized evidence that may have embedded trackers.",No
+https://www.amazon.com/dp/B0CYGL1TVM,Computer Tablets Charging Station Cabinet,,iPads Chromebooks and Laptop Computers Charging Cabinet Carts for School Office Healthcare,No
+https://www.amazon.com/dp/B0CKVV5Y5W,Cell Phone Stand with Wireless Bluetooth Speaker ,av_speakers_amplifiers,"its confirmed by science team in V2 quip that its bluetooth speaker, line no.734 for reference",No
+https://www.amazon.com.tr/dp/B0D5MH1R8G,This is an electronic Cigar Cabinet which is similar to compact appliance refrigerator,personal_care_tobacco_products,"ITK cigar-humidor-humidifiers is in personal-care_tobacco-products. When searched on Amazon and BQE, some of the electrical cigar humidor appliances also came under cigar humidor keyword. Definition of personal_care_tobacco prod also states this class includes cigar storage device such as cigar humidors,",No
+https://www.amazon.de/dp/B0BQML28T9,"Coin Operated Timer Control Power Box for Electronic Device Vending Machines, Gaming Machines, Massage Chairs, Washing Machines, Chargers, Dryers, Car Wash Systems",,"It has CPU model specific uses in the product page like RAM, graphic card etc",Yes
+https://www.amazon.com/dp/B0CGWG4N3J,"Telephone Intercom, Intercoms Wireless for Home, Two Way Communication Home Intercom System, Calling Intercom Secure Interphone Handsets Over 3280FT Range for Warehouse Office Villa Home",electronics_av_radios,,No
+https://www.amazon.com/dp/B0CDHLJ4L8,Wild bird seeds,pet-food,"In definitions “wild-bird-birdseed” ITK is in ""pet_food” trex. But in the definition in exclusion it is mentioned “this class does not include products for other animals like birds, such as wild bird birdseed.” For now, Louise confirmed to keep it under pet-food",No
+https://www.amazon.com/dp/B07KHXD58X,solarpanel gutter mount for blink and other security cameras,,,Yes
+https://www.amazon.com/dp/B0C7QTRJ7S,Lead Paint Test Kit,personal_care_equipment_diagnostics,"based on the keyword 
+home-multidrug-tests",No
+https://www.amazon.com/dp/B0BHSR37ZT,solar panel clamps/bracket hardware,,,Yes
+https://www.amazon.com/dp/B09KBQJSZH,glucose monitor case,,,Yes
+https://www.amazon.com/dp/B087Z53B3M,solar panel bags,,,Yes
+https://www.amazon.com/dp/B09YXL1PMR,Glove Box Holder Dispenser,home_and_kitchen_essentials_accessories,Based on the itk dispensers,No
+https://www.amazon.com/dp/B0B29626KC,Drum heating cable,plumbing_pumps_water_heaters_incl_accessories,Based on the itk water-heaters,No
+https://www.amazon.com/dp/B0C9JLLC9C,crypto wallet,,,Yes
+https://www.amazon.com/dp/B0D6YKLY6J,"Charms for Bogg Bag, Handbag Beach Tote Bag, Rubber Beach Bag Accessories",arts_crafts_hobbies,considering purse making supplies as closest itk,No
+https://www.amazon.com/dp/B00F2ZOGRQ,Ergonomic Writing Aid / grip,,,Yes
+https://www.amazon.com/dp/B099BX8M1N,"Child Safety ID Card for Minors, Emergency Wallet Card for Protection of Children",office_stationery,,No
+https://www.amazon.com/dp/B0D1KFLN51,Automatic Shoe Covers Dispenser  Machine,footwear_accessories,Footwear accessories considering the usage,No
+https://www.amazon.com/dp/B09YRPBF8W,Tooth Gem Kit,jewelry_medical_dental,,No
+"https://www.amazon.ca/dp/B0BSGGKNMP
+https://www.amazon.ca/dp/B0BV2Z7JWK",Electronic greeting card,electronics_devices_other,It cannot be a picture frame (as per definition Video monitors and displays are excluded),No
+https://www.amazon.com/dp/B08G1QJM21,"Scale used for baby, pets",baby_personal_care_equipment_tools,"1) Only Baby Scales put it under ""baby_personal_care_equipment_tools"".
+2) Baby+Pet Scales still put it under ""baby_personal_care_equipment_tools"".
+3) Only Pets Scales put it under ""pets_toys_supplies_devices""",No
+https://www.amazon.ca/dp/B0C3335FMM,Kids footrest used in airplanes,baby_bassinets_cribs,This is a more like a travel bed not any footrest/linen,No
+https://www.amazon.com/dp/B008S47I8M,solar microwave for camping,outdoors_grills_ovens_smokers,"Based on the keyword 
+outdoor-cooking-products",No
+https://www.amazon.com/dp/B0DC4MNH6V,Moving Pet Camera Robot  + Pet Camera Treat Dispenser + interactive pet chasing toy,cameras_devices,"Based on the keyword 
+pet-cameras-and-monitors",No
+https://www.amazon.com/dp/B0D5M586PJ,Wireless HDMI Transmitter and Receiver(1 Transmitter and 2 receivers),av_receivers_transmitters_amplifiers,"Based on the keyword
+mp3-bluetooth-transmitters",No
+https://www.amazon.com/dp/B0CKTDZ2NH,"Portable Bluetooth Speaker with Wireless Microphone,60W Party Microphone and Speaker Set for Outdoor",av_production_equipment_devices,Based on the keyword pa-systems,No
+https://www.amazon.com/dp/B0DC3VGFQB,"Night Vision Goggles Head Mounted, Night Vision Binoculars for Adults, digital Night Vision for Hunting with 32 GB SD Card",optical_devices_incl_accessories,"Based on the keyword
+night-vision-binoculars",No
+https://www.amazon.ca/dp/B0CBWGWZ4W,Smart Board for education,fixtures_wall_boards,Based on ITK electronic-white-boards,Re-check
+https://www.amazon.com/dp/B00B4W7GNW,chiro practice massage table,furniture_seating,"Based on the purpose closely similar to 
+salon-and-spa-chairs",No
+https://www.amazon.de/dp/B09Q57832C,Salon chair with sink attached,furniture_seating,,No
+https://www.amazon.ca/dp/B081DJPYM8,Digital Powder Measure and Dispenser,scales,,No
+https://www.amazon.ca/dp/B0BY8RRTNY,Paper Towel dispenser Key,commercial_restroom_equipment,,No
+https://www.amazon.ca/dp/B0B6NZ44D6,Battery Safety Box or LiPo Safe Box,home_organizers,,No
+https://www.amazon.com/dp/B00AT2S6E6,router tables or MFT (Multifunction Table),furniture_tables_desks_nightstands,if it comes attached with router or any type of powertools then roter table or esle furniture tables,No
+https://www.amazon.com/dp/B07NYYP1RC,wearable vest fitness tracker,apparel_tops_bottoms_dresses_formals_winterwear,weighted vests itk,No
+https://www.amazon.com/dp/B01BVW3OPS,Glove Deodorizers for Boxing,home_cleaning_tools_supplies,fabric deodrizer,No
+https://www.amazon.com/dp/B07FZ1L3BY,Inflatable money blower machine for event attraction,,,Yes
+https://www.amazon.com/dp/B0CHVSP84D,Vending machine,,,Yes
+https://www.amazon.com/dp/B0C82LKJHY,Calibrite Display Plus HL (CCDIS3PLHL),electronics_computers_external_peripherals_and_accessories,peripherals for pc,No
+https://www.amazon.com/dp/B0CGV4S41X,"COLSUR Bluetooth Speaker, Magnetic Wireless Charger, Bluetooth Speakers with Night Light, 2 in 1 Wireless Charging Station for iPhone 15/14/13/12 Series, AirPods Pro/3/2（Gift Ideal）",av_speakers_amplifiers,according to science team,No
+"https://www.amazon.com/dp/B0CLGMPMFN
+https://www.amazon.com/dp/B0CGCLXH4H","Multiroom Streaming Amplifier | Compatible with Chromecast, Alexa",av_receivers_transmitters_amplifiers,products which can mirror/cast are amplifiers and products which can stream inbuilt apps are media players,No
+"https://www.amazon.in/dp/B095X3Y6TJ
+https://www.amazon.in/dp/B09CH7XYCW",3D Hologram Fan 4K Hologram Advertising Display Led Fan,electronics_devices_other,"digital-signage-systems considering this as closest ITK as these products are generally marketed for office/store advertisements, marketing",No
+https://www.amazon.com/dp/B09GLY9BRS,Nail Art Hand Pillow stand,beauty_personalcare_tools_appliances_supplies,,No
+"https://www.amazon.com/dp/B09J57JHFL
+https://www.amazon.com/dp/B08ZD5Y629","Umbrella/umbrella stand for multiple use like stroller, bike, wheelchair",,,Yes
+https://www.amazon.com/dp/B0D1LDKGZF,"Seventeen Official Lightstick Version 3, White",,,Yes
+https://www.amazon.com/dp/B0CRD385HL,Headband Examination Headlight Headlamp with Filter Head Light Lamp,,,Yes
+https://www.amazon.com/dp/B0CY2L2DM3,Emergency Stop Switch for Ellectric Truck/Pallet Jack,,,Yes
+https://www.amazon.com/dp/B0B6VH6JWV,Shapewear Dress Womens Summer Long Dresses,,,Yes
+https://www.amazon.com/dp/B001QGIYS2,LCD Digital Photo Key Chain Black ,,,Yes
+https://www.amazon.com/dp/B0CF5CZDLN,Neoprene Rubber Sheet Rolls with Adhesive Backing,,,Yes
+https://www.amazon.fr/dp/B0BMTQSX27,this is a playmat. We have two keywords with name playmat. Tiled puzzle play mats and early development playmat,toys_other,Based on the itk early-development-playmats,No
+https://www.amazon.fr/dp/B09MYK64ZL,"Mandolin Chords, Practical Coated Mandolin Chord Notes Long Tube Packaging Mandolin Fret Board Chart for Beginners",,,Yes
+https://www.amazon.fr/dp/B00ULR5CNM,"CLASSICAL SHEET MUSIC - Romance - excerpt from The Pearl Fishers - G. BIZET - Cello Solo Sheet Music – February 27, 2015",,,Yes
+https://www.amazon.com/dp/B0D6QWF9DS,Kindle edition ebook,media_books,books in any format except audio format is media books,No
+https://browse-query-editor-na.aka.amazon.com/?browseNodeFilter=category-node-merchant-facing&catalogAttributes=item_name%2Citem_type_keyword%2Cproduct_type%2Cbrowse_nodes%2Crecommended_browse_nodes%2Cgl_product_group_type&marketplaceId=1&pageSize=250&protocolVersion=imsv2&retailAsins=N&showImages=Y&useSuggestedBrowseNode=N&userQuery=B07L313QKW%0AB07L31C2X8%0AB078LKBNVP%0AB07PDTBN57%0AB00Q17QU46&variationParentOnly=N&websiteSearchable=N,Maps,"media_books/ home_decor, read comments","maps is wall-mounted/framed and mentions as home decor is mapped to home_decor, all other maps used for camping, hiking, paper/booklet form is media_books",No
+https://www.amazon.com/dp/B09R93SJFJ,Hat cases,,,Yes
+https://www.amazon.com/dp/B07VTTYM6D,Album CD+Booklet+Photocard+Boom Card+Circle Card+Gift,,,Yes
+https://www.amazon.com/dp/B0DDQ4FNJL,Accupressure Massage Slippers,,,Yes
+https://www.amazon.com/dp/B0D8BMZYN6,Portable Nebulizer,,,Yes
+https://www.amazon.es/dp/B0C5448XCQ,Camera for simulating animations for child,Camera for simulating animations for child,,Yes
+https://www.amazon.es/dp/B0BNXH2PXB,Bluetooth Page Turner Pedal Smartphones and Tablets,,,Yes
+https://www.amazon.es/dp/B0D1CN959L,"Wireless Door Peephole Camera, 2.4G WiFi Visual Video Doorbell,",,,Yes
+https://www.amazon.es/dp/B0B3JM2DWT,Portable Massage Table Bag,,,Yes
+"https://www.amazon.es/dp/B0BYHQLBTF
+https://www.amazon.es/dp/B0CHM5KDB8
+https://www.amazon.es/dp/B0CYC5QTHM",Dowsing Rods 99.9% Copper Probe Rod for Flexible Hunting,,,Yes
+https://www.amazon.es/dp/B0CM3Q1582,"Highchair Cover, Baby Dining Chair Cover",,,Yes
+https://www.amazon.es/dp/B0BNXH2PXB,"Bluetooth Page Turner Pedal Smartphones and Tablets, This Page Turner frees your hands when you are reading on IOS, Android or Windows devices",,,Yes
+https://www.amazon.es/dp/B08KG12QSF,"Lung Exerciser, Expiratory Flow Meter Respiratory Measurement System Lung Function Monitor ",,,Yes
+https://www.amazon.es/dp/B0DG5XNYB7,Stethoscope Carry Case,,,Yes
+https://www.amazon.es/dp/B0DB84HDGZ,NFC cards,,,Yes
+https://www.amazon.es/dp/B08JGJMX1L,"Gold Pan, Gold Pan Sorter Metal Detector ",,,Yes
+https://www.amazon.com/gp/product/B0BF51GX5F,Air Fry Microwave,,,Yes
+https://www.amazon.com/dp/B0CX4PC1J2,Hidden camera detector,electronics_security_systems,,No
+https://www.amazon.com.mx/dp/B0CGRQCPS8,locker with charging station,,,Yes
+"https://www.amazon.com.mx/dp/B08FYD5DS3
+https://www.amazon.com.mx/dp/B0C7KFTSHB
+https://www.amazon.com.mx/dp/B0BSG76VZ9
+https://www.amazon.com.mx/dp/B0BMGCHW9L",massage/therapy tables and beds,commercial_furniture,"All these tables/beds are therapy tables which are going to commercial_furniture according to definition.
+All convertible chairs and stools used for therapy or medical purpose are included in this trex. Only chairs must be excluded from this class.",Re-check
+https://www.amazon.se/dp/B07SBKN9YX,Handbag organizers,wallets_other_organizers,"Based on the ITK handbag-organizers.
+Straps which are meant for purse or for handle purpose must be mapped to arts_crafts_hobbies.
+Straps which are meant for either luggage or duffel bags, these should be mapped to bags_cases_other.",No
+https://www.amazon.it/dp/B0B658DZ9Z,Radio module for arduino,electronics_av_radios,"Since it's saying that it's a radio module, it should be mapped to hardware_electrical_electronics_components only if it's meant for developing a particular module or a device, if it's a finished device it can be mapped to computers trex",No
+https://www.amazon.com/dp/B0DJ714MD6,"2 in 1 Monocular Camera Camcorder, Photo Timelapse Recording Telescope Camera",,,Yes
+https://www.amazon.com/dp/B0018SHMEK,"EL34 Power Vacuum Tube, power tube for Dynaco ST-70 or vintage Marshalls, Hiwatt or other British Amps",,,Yes
+https://www.amazon.ca/dp/B099KBNSPG,Men Flashlight Gloves,,,Yes
+https://www.amazon.nl/dp/B0C4YLMG2Z,"Clip-On Recipe Clip for Oakley Sutro Sunglasses, It can prevent internal sunglasses from scratching",,,Yes
+https://www.amazon.nl/dp/B0D845642C,"Automatic large incubator, rotates the eggs automatically",,,Yes
+https://www.amazon.pl/dp/B0CGQ6ZD1L,"Android Smart Ring, Wearable Device Universal for Mobile Phone ",,,Yes
+https://www.amazon.eg/dp/B0BQ648WBW,GPS Based Power Meter,,,Yes
+https://www.amazon.eg/dp/B09KX349NW,Happy Birthday Awards,,,Yes
+https://www.amazon.eg/dp/B07BZQF9W7,Stainless Steel Car Heating Mug 450ml Capacity for Heating Coffee and Tea While Traveling by Car,,,Yes
+https://www.amazon.eg/dp/B0CVLGG8PF,"Rosary 33 made of agate gemstone, designed, executed",,,Re-check
+https://www.amazon.eg/dp/B098PLLJ94,Black Box DVR Car Dash Camera Video Recorder ,,,Yes
+https://www.amazon.de/dp/B08J8BMKBY,"Torch Lamp for Fake Banknotes, Urine of Dogs, Cats",fixtures_lighting_incl_accessories,based on the keyword bak light flashlights,No
+https://www.amazon.com/dp/B08HG2YC65,PartyBox On-The-Go Powerful Portable Bluetooth Party Speaker with Dynamic Light Show,,The description about this ASIN merely mentions that this product comes with a microphone. That's evident only in an image rather than in product description.,Yes
+https://www.amazon.com/gp/product/B0BZVFLKBB,Dental Full Chair Covers,home_linens,based on the keyword massage table pads,No
+https://www.amazon.com/gp/product/B0CP2BK67J,Dental tray for sterilizing dental instruments,beauty_personalcare_tools_appliances_supplies,based on the keyword professional dental instrument sets and also as most of the dental related keywords are in this trex only.,No
+https://www.amazon.nl/dp/B0BG2DXMGG,Extruded Aluminum 20mm x 20mm 20 Series T Type Profiles Anodized European Standard Linear Rail Frame 2 Pcs ,raw_materials_wood_metal_other,As these sheets are metals and are used for DIY,Re-check
+https://www.amazon.nl/dp/B0CTW4JLQJ,Features large side gussets that provide extra volume for wrapping larger gifts.,packing_materials,As it's usage and keywords closlely belong to merchandizing bags,Re-check
+https://www.amazon.nl/dp/B0CH76PVCS,"Electric Cordless Scissors with Rechargeable Lithium Battery, Suitable for Fabric, Carpet, Leather and more. Strong, Sturdy and Smooth Working with (light green) ",power_tools_incl_accessories,As it's usage is wide and it's like a battery operated cutter,No
+https://www.amazon.com.be/dp/B07T85VNVT,"Reusable Glass Abrasive for Pressure Sandblasting, High Compatibility for Sandblasting and Shot Blasting Systems",hardware_tools_supplies_other,"Based on the usage and it's purpose, i.e., abrasive.",Re-check
+https://www.amazon.pl/dp/B0B5XVQDTD,"Solar shower 38 L, garden shower with swivel shower head and foot shower | garden hose connection included",fixtures_bathroom_fireplace_incl_accessories,"Based on the usage, shower",Re-check
+https://www.amazon.pl/dp/B0C3CWWX9H,Inflatable Footrest Travel Cushion Foldable With Aircraft Cushion Foot Rest Foot Rest Desk For Airplane Driving Home Office Gray Color ,office_equipment_devices,Based on the keyword and usage which is footrest.,Re-check
+https://www.amazon.sa/dp/B0CM3144MN,Talking voice greeting card,,,Yes
+https://www.amazon.com/gp/product/B09W9YZDJF,"High Accuracy Black Cycling PowerPod Power Meter (for Road, Mountain, Time Trial, Gravel, Cross Bikes)",,,Yes
+https://www.amazon.com/dp/B0C9V811L6,Digital Calendars,electronics_picture_frames,"A taxonomy update is currently in progress, and the ITK will be updated accordingly.",No
+https://www.amazon.com/gp/product/B0DHHGD2C4,"Steam Deck with 3 Knobs for PC Mac, Wired Live Streaming Controller for Content Creators Gamers, Programmable Macro Keyboard, Gaming Setup Accessories",,,Yes
+https://www.amazon.com/dp/B0D1TRPKBT,"Safety fire blanket for home, outdoors,bbq and camping.",home_linens,Based on the definitions of home_linens trex id,No
+https://www.amazon.com/gp/product/B09K4WDHLK,"Bluetooth Power Amplifier Board with Subwoofer 2.1 Channel 160W×2+220W, 15V-36V Audio Power Amplifier Module with Treble and Bass Control",av_speakers_amplifiers,Based on the keyword power-amplifiers,No
+"https://www.amazon.com/gp/product/B0DRCRXWYZ
+https://www.amazon.com/gp/product/B0DRCRV9G4","Self Service Kiosk, Floor Standing Self Ordering Kiosk",,,Yes
+https://www.amazon.ae/dp/B0CM6JLLJT,"pen with Emergency Self Defense, survival ",,,Yes
+https://www.amazon.ae/dp/B0CPDXPR12,message board which also acts as night light,,,Yes
+https://www.amazon.sa/dp/B0CCNKXBK3,Postpartum Care Bottle or Travel Bidet Bottle,camping_equipment,,No
+https://www.amazon.sa/dp/B0C597Y2DW,Calf Stretching Board or Incline Stretch Board,,,Yes
+https://www.amazon.it/dp/B0CRLG39X7,3d printer screen protector,electronics_screen_protectors,,No
+https://www.amazon.it/dp/B07XZ8KR8F,product says its a Hanging Shelf(Home and kitchen fee cat) and also it is a bookcase(furniture fee cat),furniture_bookcases_media_consoles,taking bookcases as keyword,No
+https://www.amazon.com/dp/B0D5V69TFC,"Hion Vomit Bags Disposable – 16 Pack 1000ml Emesis Bags – Leak Resistant, Medical Grade, Portable – Perfect for Motion, Car & Aircraft Sickness, Pregnant Women",home_and_kitchen_essentials_accessories,considering it as trash bag/paper disposable bags used for both home and personal use,No
+https://www.amazon.com/dp/B0D7QL41HP,birthday gifts for women,any gifts containing food products are mapped under groceries_food_beverages any bundle gifts is mapped under home_decor,,No
+https://www.amazon.com/dp/B0DKP4PXSS,Speed Bumps for Road,,,No
+https://www.amazon.co.jp/dp/B0DM5SLFKS,Security Buzzer,tactical_defense_gear,,No
+https://www.amazon.it/dp/B0CKWN9JVH,Portable Mini Kitchen Hood or Desktop Cooking Extractor,,,Yes
+https://www.amazon.com.tr/dp/B07GXS35PG,"Bissell SpotClean Proheat, Carpet - Sofa Washing and Stain Removal Machine, Special Stain Removal for Home and In -Car Upholstery",,vacuums_blowers,Re-check
+https://www.amazon.it/dp/B0BY77MPN8,loyalty cards for businesses,office_stationery,based on the keyword business cards,No
+https://www.amazon.it/dp/B0DSGDJZRX,Costume tshirt,apparel_costumes_incl_props_accessories,"Costume + regular = costume.
+If an ASIN title or any of its contents contain a costume keyword, then it has to be considered as a costume.",No
+https://www.amazon.com.au/dp/B0B19LRLQQ,Touch Screen Camera Field Monitor 6 inch 800nits High Brightness Full HD 1920×1080 IPS 4K HDMI Field Monitor ,,,No
+https://www.amazon.sg/dp/B0CRHJDN5F,Fingerprint Safe Box with Spare Keys Portable Steel Quick Access Car Security Box with Safety Rope for Valuable Items,automotive_parts_accessories,,Re-check
+https://www.amazon.sg/dp/B001RNP7D4,Are we mapping this dresser cabinet in fixtures_vanities,fixture_vanities,Based on the keyword vanity,No
+https://www.amazon.com.mx/dp/B0CBP39FVK,"Erasable Whiteboard Reading Rack for Drawing, Taking Notes, etc. Storage Box, Computer Stand, Suitable for Office, Study, etc",office_equipment_devices,Based on the keyword office-desk-organizers and the purpose,No
+https://www.amazon.com.br/dp/B0CG6FZJRR,This is a keyboard which has 31 keys but in the PD toys is mentioned ,,,Yes
+https://www.amazon.co.uk/dp/B00XYV1W0Y,Audio only clock for impaired people mainly,,,Yes
+https://www.amazon.com/dp/B0DLTG8ZGZ,"LivePen Digital Smart Pen | Capture Notes on Paper, Store on Device | Bluetooth | Wireless | Mobile Phone Compatible",electronics_devices_other,,No
+https://www.amazon.co.uk/dp/B015T8E30K,Edible cake toppers for decorating/ garnishing the cake,party_supplies,"Irrespective of being edible or inedible, cake toppers will be mapped to party_supplies trex until further notice or any update",No
+https://www.amazon.fr/dp/B0C59GHPTY,Portable voice changer card,av_production_equipment_devices,Portable voice changer sound card.,No
+https://www.amazon.co.uk/dp/B0DJQBQ3RG,Magnetic Radiator Dust Cover,hardware_tools_supplies_other,,No
+https://www.amazon.co.uk/dp/B0C7RGCRRH,Pendulum Butterfly Wooden Divination Altar Witchcraft Wooden Kit,home_decor,,No
+https://www.amazon.co.uk/dp/B09NH4DN8R,Mast Ladder for climbing on a sailing yacht,automotive_boats_parts_equipment,As it's for inside boat purpose,No
+https://www.amazon.de/dp/B0D9P3VMDL,microphone speaker for outdoor surveillance camera waterproof for IP camera audio recording ways radio interphone,av_microphones,,No
+https://www.amazon.de/dp/B0DFMMHJ78,"Urine Solidifier, Absorbent Gel for Toilet, Emergency Urine Bag Coagulator, Portable and Safe Toilet Gel for Baby Diapers ",,,Yes
+https://www.amazon.co.uk/gp/product/B0CCHF4GWN,AV Access KVM Switch Dock For Computers,electronics_computers_external_peripherals_and_accessories,"If ASIN speaks about ""KVM"" it should be mapped to peripherals or else batteries trex.",No
+https://www.amazon.es/dp/B0DBYZH6LC,Copper Rod Kit for Divination Tool,,,Yes
+https://www.amazon.es/dp/B08HM1P5SP,USB Camera Module,,,Yes
+https://www.amazon.es/dp/B0BZ3J167G,Audio Glasses,,,Yes
+https://www.amazon.es/dp/B0DBPD5DPC,coffee weighing scale,,,Yes
+"https://www.amazon.se/dp/B08B6598WH
+https://www.amazon.es/dp/B08HM1P5SP",Camera Webcam module,,,Yes
+https://www.amazon.pl/dp/B07474MMB5,"Smart Car Robot Kit V4.0 Compatible with Arduino IDE, Electronics Building Kit with Camera, UNO R3, Bluetooth Module, Toy Car Robots for Kids",,,Yes
+https://www.amazon.pl/dp/B0DMKB133B,Eyewear inclinometer — optical ruler for glasses,,,Yes
+https://www.amazon.pl/dp/B0BZJR5SD9,Canal + Online prepaid service for 12 m RELAX PL/EU,,No sufficient supporting data to finalize the trex.,No
+https://www.amazon.com.be/dp/B089MBKQCB,"Construction Dehumidifier, Industrial dehumidifier",home_humidifiers_dehumidifiers,Based on the keyword humidifiers irrespective of home or commercial use,No
+https://www.amazon.com/dp/B0DKWJ14WW,Robot Arm for Arduino,toys_other,,No
+https://www.amazon.com/gp/product/B0DRCT9TVM,Eye Test Chart,commercial_medical_devices_incl_accessories,Basically used in the clinics/hospital for testing the eyesight,No
+https://www.amazon.com/dp/B0D9QFF364,"Transceiver Multi-Radiofrequency Security, Evil Crow RF V2 is a basic device for professionals and cybersecurity enthusiasts",av_receivers_transmitters_amplifiers,This is a receiver device not just a chip or module ,No
+https://www.amazon.it/dp/B0CKXK82C4,"Mobile Phone Cabinet with Keys, Acrylic Mobile Phone Cabinet with Lock",commercial_fixtures,Based on the definitions,No
+https://www.amazon.com/gp/product/B0DQL82W3Q,Wristband/Rubber band used for multipurpose,toys_costume_jewelry_props,"Any bracelets which are rubber material which contains medical content in it then they are medical, if they contain identification keyword then in office_stationery, otherwise these should be mapped in toys costume trex",No
+"https://www.amazon.co.jp/dp/B0DQQ8PN6S
+https://www.amazon.co.jp/dp/B0DQQF192H",Snake shell gold foil,,,Yes
+https://www.amazon.in/dp/B0BZY2C85M,It's a paper bracelet used for identification at an amusement park,office_stationery,"As the ASIN is not a rubber material, not medical purpose and is used for identification purpose, hence these should be in office_stationery.",No
+https://www.amazon.co.uk/gp/product/B09FT94FMC,Women's Lingerie Necklace Set Cross Seductive Tassel Body Link Harness Sexy Metal Chain Set,,It is a body chain,Yes
+https://www.amazon.co.uk/dp/B0BZS6PQ2Y,Heavy Duty Swing Hangers 360°Rotate Heavy Duty Hooks for Hanging 304 Stainless Steel Swivel Hammock Hooks Swing Hook for Ceiling Wooden Porch,,,Yes
+https://www.amazon.co.uk/dp/B0888SK211,Gas Strut Hydraulic Gas Spring Strut Lid Universal Lift Supports ,,"used for both automotives, furniture boxes and cupboards ",Yes
+https://www.amazon.it/dp/B0CBMTKZRF,"adhesive pvc repair patches, for swimming pool, vinyl tires, for the repair of kayak boats and inflatable boat, rectangular and circle",adhesive_tapes_gums_sealants,"self adhesive patches or repair patches used for kayaks, mattress can be mapped under adhesive_tapes_gums_sealants",No
+https://www.amazon.nl/dp/B07RZLBQFT,"Flexyfoot Hiking Stick Replacement Feet Shock Absorption, suitable for most types of walking poles, hiking aids, stools and stick chairs",,Unclear as the product says it can be used in hiking and mobility,Re-check
+https://www.amazon.nl/dp/B0C7V5MWYG,"ankle cooling pads for sprained ankles, ankle bandage for swollen and broken ankles",,Definitions of both the confused trex to be rechecked but for now these kind of products which has hot and cold therpies mentioned in it then that can be mapped under beauty_personalcare_tools_appliances_supplies,Re-check
+"https://www.amazon.nl/dp/B0B154QNQ9
+https://www.amazon.nl/dp/B0CP7K38WG","Micro Firewall Appliance, Mini PC, Router PC, Intel Quad Core J1900, HUNSN RC01",electronics_computers_laptops_tablets_servers,This is a mini PC but an actual router,No
+https://www.amazon.nl/dp/B09GM5TLR3,"Jack Rising Pad Lift Rubber Black Vehicle, The jack lifting cushion is made of high quality rubber material",automotive_lifts_jacks,All parts or accessories related to automotive lifts & jacks needs to be mapped under automotive_lifts_jacks,No
+https://www.amazon.com.be/dp/B0922B7KTS,"newspaper briquettes is used to press old brick paper, which are used to heat the stove",fixtures_bathroom_fireplace_incl_accessories,Based on the keyword,No
+https://www.amazon.com.be/dp/B0D59XK6BR,portable washing bag for camping,,,Re-check
+https://www.amazon.co.uk/dp/B0BZNQL481,Portable television,,,Yes
+https://www.amazon.co.uk/dp/B09Q69JDSV,Heat Exchanger for Fresh Filtered Air Decentralised System,,,Yes
+https://www.amazon.es/dp/B0DQC3CBBM,"It's a compact and portable hood, which works exactly like an exhaust.",compact_appliances_other,As it's function and usage are close to an extractor or an hood but it's compact in nature,No
+https://www.amazon.co.uk/dp/B0DF2YNV89,It's an organizer used for storing files,,,Yes
+https://www.amazon.com/dp/B0DYJ2V7PH,Target,,,Yes
+https://www.amazon.co.uk/dp/B01H3ZHRKK,Double-Sided Board,,,Yes
+https://www.amazon.com/dp/B0CCK9J2BQ,Box for storing hats,bags_cases_other,Hats related boxes and bags are being mapped to bags cases trex ,No
+https://www.amazon.com/dp/B0CB5PNWFC,Bed railing used for both adults and babies,mobility_parts_accessories_including_wheelchairs,"As per the thumb rule, a product used for both baby and adult, must be mapped in generic trex",No
+https://www.amazon.nl/dp/B08DH6D76R,Automatic Chicken Egg Incubator ,agricultural_equipment_and_heavy_machinery_incl_accessories,"As per the item's usage is for incubating purpose, it should be mapped in agriculture trex.",No
+https://www.amazon.se/dp/B0BX33VY79,VR Hard Carrying Case,av_video_virtual_reality_glasses,As per the definitions it should be mapped under virtual reality trex,No
+https://www.amazon.se/dp/B0CLL7KBNR,Drone Remote Control Signal Booster,,,Yes
+https://www.amazon.es/dp/B0190Q12CY,Running belt,,,Yes
+https://www.amazon.fr/dp/B0CX91QC3P,"Scale used for both jewelry, kitchen",,,Yes
+https://www.amazon.co.uk/dp/B0C81BQ4T6,"2 Pieces Credit Card Puller, Debit Bank Card Grabber for Long Nails ATM Keychain Card Clip Card Puller for Men and Women Black",,,Yes
+https://www.amazon.co.uk/dp/B0D4V2LX3G,Stunning Disco Ball Helmets for DJ Club Stage Bar Party Dance,,,Yes
+https://www.amazon.co.uk/dp/B0CS6NF6LQ,Anti Static Foot Heel Straps Anti Static Wrist Strap Band Adjustable Buckle,,,Yes
+https://www.amazon.co.uk/dp/B0CWRJ3N29,"Foot Measure Sizer Device,Foot Gauge Shoe Sizes Measure Sizes with Tape Measure",,,Yes
+https://www.amazon.co.uk/dp/B0DHZ72WSN,Waste/trash Compactor Manual Rubbish Press for 60L to 100L,,,Yes
+https://www.amazon.de/dp/B0BZP3D255,pray Scooter Car Cleaner Engine Catalyst Cleaner Petrol and Flex Fuel Vehicle Carbon Remover 120 ml Fitting Car Cleaning,,,Yes
+https://www.amazon.nl/dp/B094R8217X,"smart wall switch through which can be used to turn on light ,fan, doors etc. In Hardware electrical definitions its mentioned smart home controllers are excluded from this class ",,,Yes
+https://www.amazon.pl/dp/B0D1Y9JWKC,DJI Goggles Lens Pad or FPV Goggle Eye Cushion,,,Yes
+https://www.amazon.pl/dp/B0BNJLTHSS,Crypto Wallet,wallets_other_organizers,,No
+https://www.amazon.fr/dp/B01JM519TE,TENS EMS Superior Electrodes 4cm x 4cm Pack of 4 Stickers for Electrostimulation Device by Healthcare World,personal_care_massagers,,No
+"https://www.amazon.co.uk/dp/B0DGXMX9DB
+https://www.amazon.co.uk/dp/B0CKDXZN9G",Edible icing sheet printer,kitchen_appliances,,No
+https://www.amazon.co.uk/dp/B0CNTPLZYK,Compact/ portable travel toilet,camping_equipment,,No
+https://www.amazon.fr/dp/B0CK2T7RLZ,Jewel Candle Cotton Fragrance | 18K Gold Plated White Pearl Bracelet,,,Yes
+https://www.amazon.nl/dp/B0CCK4RKY1,Spectrophotometer and densitometer,,,Yes
+https://www.amazon.it/dp/B0CPV5CTBP,Industrial Water Chiller,,,Yes
+https://www.amazon.it/dp/B0CGR32P9K,Shrinking Water Bucket,,,Yes
+https://www.amazon.com/dp/B0DKDZ2JYN,Slush making machine,commercial_food_service_equipment_and_supplies,,Re-check
+https://www.amazon.co.uk/dp/B0DP2FM6YR,Inspection Record Tags,commercial_safety_equipment,,No
+https://www.amazon.com/dp/B0C4T65B9M,Siren for a vehicle,automotive_parts_accessories,,No
+https://www.amazon.fr/dp/B0CRYV6XDG,Bitcoin Lottery Solo Miner,electronics_devices_other,"All miners irrespective of compatibility are being mapped to ""electronics_devices_other""",No
+https://www.amazon.de/dp/B07R7H1H43,pet scales used by vet,,,Yes
+https://www.amazon.fr/dp/B0CYY98V6L,usb webcam,,,Yes
+https://www.amazon.com/dp/B0CTWPJ47S,Plane business sign boards,office_equipment_devices,business and store signs keyword,No
+https://www.amazon.co.uk/dp/B0CF4ZWJR4,Reusable cloth period pants,apparel_innerwear_sleepwear_robes,,No
+https://www.amazon.es/dp/B08246G6JQ,Red worms for vermicomposting and fishing bait,,,Re-check
+,"Anti-mosquito Protection, Face Mesh Head Hat, for camping, hiking, fishing, insect and mosquito protection",apparel_accessories,"If ASIN contains only either a cap or a glove, then it is ""apparel_accessories"" or else map it in ""apparel_tops_bottoms_dresses_formals_winterwear"".",No
+,Infrared Hunting Tactical Night Vision Optical Sight with Camera and 5 Inch Portable Screen for Complete Darkness,sports_guns_equipment,,No
+,Portable Electric Clothes Dryer Wardrobe ,portable_washer_dryers,,No
+https://www.amazon.se/dp/B0C3H6JDBH,Gold Paydirt,raw_materials_wood_metal_other,,No
+https://www.amazon.co.jp/dp/B0DPMMKCS4,wood scratchers,hardware_tools_supplies_other,,No
+https://www.amazon.pl/dp/B0DN9CVG4N,Instant Hot Water Heating Dispenser Portable Folding Travel Desktop Heater Pump Gallon Drinking Bottle Boiler Electric Kettle,electric_water_dispenser_coolers,,No
+https://www.amazon.com/dp/B001N7TH44,Radio Microphone,av_microphones,,No
+https://www.amazon.de/dp/B0D11HMDV9,Work Glove Clip,,,Yes
+"https://www.amazon.co.uk/dp/B0DPMXLZ5T
+https://www.amazon.co.uk/dp/B0DKTX8Y5M","Fm Transmitter - Car Fm Transmitter, Fm Receiver Radio ",av_receivers_transmitters_amplifiers,mp3-player-radio-transmitters,No
+https://www.amazon.fr/dp/B0DM4QR6G2,"Pro-lift Mechanic Creeper in Plastic, Ergonomic body in blow molded high density polyethylene with padded headrest",tools_carts,Based on the keyword creeper tools,No
+https://www.amazon.fr/dp/B09NRXHK6G,"Nail Pliers, Long - Fantastic Credit Extractor, Acrylic Long Nail at for Debt Grabber Keychains for Gifts Girls and Women",mobility_parts_accessories_including_wheelchairs,Based on the keyword reaching aids,No
+https://www.amazon.fr/dp/B0CVTRHRVW,Electric Scalp Massage Comb | Head Massager With Red And Blue Led Light | 3 Vibration Modes | Rechargeable Hair Comb | Massage Tool,personal_care_massagers,Based on the ITK: scalp-massagers,No
+https://www.amazon.com/dp/B0DHVXFPTF,"Ferrofluid Speaker Music Mate - Dancing Sound Visualizer With Music Rhythm, Display Lamp, Venom Magnet Liquid Toy, Desktop Decor, Festival and Birthday Gifts (Black)",home_decor,,No
+https://www.amazon.com/dp/B00IMH2N9Y,New V8 PCIe USB Post Test Card Motherboard Diagnostic Tester Kit Unique USB Diagnosis for PC Laptop Server All in One Mini PC Mac Android Phone Tablet Computer Analyzer Multi Ports Support,,,Yes
+https://www.amazon.com/dp/B0DWMGVZPX,"Digital Binoculars with 40MP Camera | 10x Optical Zoom | 8X Digital Zoom | 2.5K Videos | HD Quality | Ideal for Concerts, Bird Watching, and Outdoor Adventures",,,Yes
+https://www.amazon.com.be/dp/B0C1NNZRVK,DARLUX Loft S Wooden Insect Hotel Wild Bee Nesting Aid Insect House Garden Balcony Natural ,,,Yes
+https://www.amazon.it/dp/B0BY45K2PP,Portable Pocket Double-Sided Makeup Mirror with LED Lights Rechargeable Hand Warmer 5000mAh Power Bank Travel Mirror,,,Yes
+https://www.amazon.pl/dp/B0CQ58C4JZ,Moisture absorber for refrigerator,,,Yes
+https://www.amazon.com/dp/B0DCBMP6TL,phone booth,Furniture,,No
+https://www.amazon.se/dp/B0DKTXRKHM,"Radio with a built-in power bank, flashlight",,,Yes
+https://www.amazon.com/dp/B0BKL81VGG,iPad Case + Screen protecctor ,bags_cases_electronics,Screen protector with tablet case should go under bags_cases_electronics,No
+https://www.amazon.com/dp/B0BWYXCPJS,Apollo Wearable Vagus Nerve Stimulator for Stress Relief & Sleep Aid ,personal_care_massagers,,No
+https://www.amazon.de/dp/B0DC4613MZ,*Carabiner Watch* Flipper Zero Basic Kit - Flipper Zero | Silicone Case | 32GB Micro SD Card | MicroSD to SD Adapter,electronics_computers_laptops_tablets_servers,This product comes under Computers fee category,No
+https://www.amazon.se/dp/B0CL7L13NP,Carabiner Watch,,,Yes
+https://www.amazon.se/dp/B0BZPKNN4S,Cable organizer box on desk,,,Yes
+https://www.amazon.pl/dp/B0B1357NYF,Paint Color Matching Tool,,,Yes
+https://www.amazon.se/dp/B09F2NWF9L,"Mini Cleaning Machine that can be used to wash underwear, fruits, vegetables, and glasses",,,Yes
+https://www.amazon.nl/dp/B07FF4FL99,Healing Crystal Statue,,,Yes
+https://www.amazon.co.uk/dp/B0CY4PCT5Y,"latex rubber tube used for medical tubing, slingshots, and laboratory equipment",,,Yes
+https://www.amazon.co.uk/dp/B0CLYTMFMW,RC quadcopter repair plier set,hardware_tools_supplies_other,,No
+https://www.amazon.co.uk/dp/B08DRH2JRG,"Umbrella Stand designed to hold umbrellas on strollers, bicycles, electric vehicles, carts, and wheelchairs.",baby_strollers,,No
+https://www.amazon.co.uk/dp/B0DB5DM1M7,"Kitchen set that includes an electric kettle, slice toaster, and digital microwave",HTI,,No
+https://www.amazon.com/dp/B0DJVPT7QL,"Telescope Monocular Spotting Scope Camera, Spot Shot Shooting Universal with Adjustable Wireless Live 4K HD Video, Smart Scope Camera for Target Shooting, Hunting and Camping Hiking Travling Wildlife",cameras_devices,,No
+https://www.amazon.de/dp/B0BL7SQRHL,"Pigeon Repellent Bird Spikes Stainless Steel Bird Repellent 2.08 m Bird Repellent Skewers Bird Deterrent and Bird Protection for Balconies, Roof Gardens or Privacy Screens",home_pest_control,,No
+https://www.amazon.com/dp/B0DPQ6JHY9,Alarm clock + Power bank,electronics_clocks,Any product combined with alarm clock will finally be mapped to electronics_clocks,No
+https://www.amazon.com/dp/B0F4NGR9SF,Refrigerated Beverage Snack Combo Vending Machine for Business,fullsize_appliances_commercial_refrigerators_freezers,,No
+https://www.amazon.co.jp/dp/B099JRRP59,"Cassette Gas Furnace, Broiled and Grilled fireplace grill",outdoors_grills_ovens_smokers,,No
+https://www.amazon.es/dp/B0BG4GJW1Q,WiFi Test Tool Deauther Watch SE ESP8266 ESP-12F Programmable Development Board with Buzzer OLED Screen Built in 500mAh Battery,hardware_electrical_electronics_components,,No
+https://www.amazon.com.be/dp/B0CRD34JQC,"Binocular Loupes Surgical Loupes, 2.5X Dental Surgery Headband Binocular Magnifier Used in Dentistry, Surgery, Jewelry or Hobby",optical_devices_incl_accessories,,No
+https://www.amazon.com.be/dp/B0C4GP64Z3,Pocket Dehumidifier,,,Yes
+https://www.amazon.com.be/dp/B0C8TFYZ5W,small portable wooden cross/crucifix designed to be carried in a pocket,,,Yes
+https://www.amazon.com.be/dp/B0BNVMZL99,charging bracelet that doubles as both a fashion accessory and a functional charging cable,batteries_chargers_adapters_cables_docks,,No
+https://www.amazon.it/dp/B08P7HPR4H,Anthillshop.es Educational anthill 20 x 20 Acrylic foam with free ants.,,,Yes
+https://www.amazon.co.jp/dp/B09SH36WZP,"Buddhist tools including a water jug, incense burner, and scatter cane, designed for use in home Buddhist practices.",home_fragrances,Based on the keyword incense holders,No
+https://www.amazon.co.jp/dp/B09PLBW443,Portable toilet that can also be used as a stool or storage in the home,camping_equipment,,No
+https://www.amazon.co.jp/dp/B0CY8JDPXR,Magnetic steel sheets with strong adhesive,raw_materials_wood_metal_other,,No
+https://www.amazon.co.jp/dp/B0DJVJXVKW,Clothes drying bag,,,Re-check
+https://www.amazon.com.be/dp/B085ZYSVR3,artificial grass,home_mats_rugs,,No
+https://www.amazon.com/dp/B0D81DQ1HN,Baby head protector backpack,baby_child_proofing_safety_equipment,,No
+https://www.amazon.co.jp/dp/B0F4KJTLXP,Ice Cap,beauty_personalcare_tools_appliances_supplies,Closest ITK cold-packs ,No
+https://www.amazon.co.jp/dp/B0D1V4FVMK,Ring Neck Cooler,beauty_personalcare_tools_appliances_supplies,If product has Fan then map it to home_fans,No
+https://www.amazon.co.uk/dp/B0937B8Q17,Walky Talky Microphone,av_microphones,,No
+https://www.amazon.co.uk/dp/B0DH8K1DWM,Scents Hanging Dehumidifier Scented,home_fragrance,If the product doesn't come with scent then it would be considered desiccants and trex raw_materials_wood_metal_other,No
+https://www.amazon.pl/dp/B0BBGGCT82,Safety Barrier for Families with Children,mobility_parts_accessories_including_wheelchairs,If this product is for elderly and children then comes under mobility_parts_accessories_including_wheelchairs,No
+https://www.amazon.de/dp/B0DR2PZ5LC,smart notebook,,,No
+https://www.amazon.com.au/dp/B07T6FNLQV,Sleeping mask with bluetooth headphones,beauty_personalcare_tools_appliances_supplies,"Based on the ITK sleep mask and also, that's the primary features while headphones being the secondary reason.",No
+https://www.amazon.com.au/dp/B0CDM57CGZ,The 3D hologram projector is a portable device that creates realistic 3D images,electronics_devices_other,,No
+https://www.amazon.it/dp/B0BNQ8N8J7,"A no-drill mounting bracket for video doorbells (like Ring and Blink) that provides anti-theft protection, compatible with doors 1.5-6 cm thick, ideal for homes, apartments, and offices.",amazon_device_accessories,"When an accessory is compatible with two or more different amazon devices, those should be mapped to this trex.",No
+https://www.amazon.com.au/dp/B0CV6ZBLG6,"SPACIOUS BED: Transform your sofa into a cosy bed effortlessly, perfect for guests or late-night lounging",,,Yes
+https://www.amazon.co.jp/dp/B0DZSSCDPB,Speed Coagulation: Quickly hardens vomit and makes handling easier,,,Yes
+https://www.amazon.co.jp/dp/B081CY6YKV,Home delivery cleaning service for clothes and accessories provided by the brand LACURI,,,Re-check
+https://www.amazon.co.jp/dp/B0DB1F8XZF,Fish Measure Ruler Sticker,,,Yes
+https://www.amazon.co.jp/dp/B0CM8KRW4R,Charm Junction Produce,automotive_parts_accessories,Based on the primary usage,No
+https://www.amazon.co.jp/dp/B0DQJ8Q1FD,Multipurpose moisturizing cream that can be used for both human skin and pet hair/paws.,beauty_personalcare_tools_appliances_supplies,,No
+https://www.amazon.co.jp/dp/B07K72V1FP,Prayer beads,,,Yes
+https://www.amazon.co.jp/dp/B0DT1LFY7Z,"Koenn Home Incinerator, Incinerator, Drum Incinerator, Leaf Incinerator, Bonfire Stand, Home Use, Corrosion Resistant, Heat Resistant Paint Coat,",,,Yes
+https://www.amazon.co.jp/dp/B0CTMKPT6P,Balloon Helium Refill Can,,,Yes
+https://www.amazon.co.jp/dp/B004UUS6SO,foldable coffin suitable for direct funerals and family funerals.,,,Re-check
+https://www.amazon.co.jp/dp/B0C4KK738Y,"Set of 6 kg washing machine, 106L refrigerator, microwave, rice cooker, and stick cleaner",,,Re-check
+https://www.amazon.co.jp/dp/B08V8CWYJ3,Refrigerator recycling reservation ticket that can only be used at the Yunido Kozuchi store in Japan,,,Re-check
+https://www.amazon.co.jp/dp/B0CD5P6481,"QANYEGN 30 Note Music Box, Hand Crank Tape Music Box Kit, Music Box Mechanism with Movement Parts Puncher for Home DIY Project",,,Yes
+https://www.amazon.co.jp/dp/B09KNMJK6H,"Wristwatch-style camera with 1080p video recording, infrared night vision, and motion detection, suitable for discreet surveillance and security purposes",,,Yes
+https://www.amazon.co.jp/dp/B0DP578DG6,"S-Shaped Hook that can be used in a variety of places such as on strollers, bicycles, motorcycle, suitcase, pipes, and other furniturei-Box Oxygen Concentration Meter for Rooms Indoor Air Oxygen Concentration Measuring Instrument for Dogs Cats Pets Oxygen Chamber Oxygen Cage / House Air Oxygen Concentration Acid Deficiency High",home_organizers,,No
+,"Rolling Toothpaste Squeezer, Rolling Tube Toothpaste Squeezer",,,Yes
+https://www.amazon.co.jp/dp/B09BCCRLPV,elezon Replacement Parts Shipping Cost Adjustment,,,Yes
+https://www.amazon.co.jp/dp/B0CH3GP4VX,Sweat Maru] Electronic Chalk Sweat Circular for Hand Sweat and Foot Sweat (Conductive Silicone Electrode Plate) Made in Japan,,,Yes
+https://www.amazon.co.jp/dp/B08H1NXW77,"Kids Kick Scooter which has 5 modes as kickboard, children's tricycle, stroller, scooter, and running bike",,,Re-check
+https://www.amazon.co.jp/dp/B0DSWD1CFK,Ancient Memory Oil,home_fragrances,,Re-check
+https://www.amazon.co.jp/dp/B085LBK9TF,"Case or pouch used to store pens, pencils, makeup, and other small items.",bags_cases_other,,No
+https://www.amazon.co.jp/dp/B0B2W21B36,Casio XD-SX4810WE (White) EX-word High School Model,electronics_devices_other,,No
+https://www.amazon.co.jp/dp/B0090Q3444,"Tactical Series Ballistic Sunglasses for Military, Legal and Law Enforcement The lenses with high precision 100% UV protection are made of durable polycarbonate, which is anti-fog. Bulletproof sunglasses have passed the ANSI Z87.1-2010 ballistic impact test. ",eyewear_sunglasses,,No
+https://www.amazon.co.jp/dp/B0D41G2T9V,"set of shower curtain, bath mat, and toilet seat cover",Pending,based on high GMS,Re-check
+https://www.amazon.co.jp/dp/B0CN4JJS5L,Kotatsu Heating Fixtures Kotatsu Table + Kotatsu Futon Carbon Heater with Hand Switch Rectangular ,home_space_heaters,,No
+https://www.amazon.co.jp/dp/B08CRCKLMD,Freezer for both Commercial and Home use,fullsize_appliances_commercial_refrigerators_freezers,"For refrigerators/freezers, commercial and home usage keep in commercial usage ",No
+https://www.amazon.co.jp/dp/B0D2KH7L17,"PET Bottle Crusher, Empty Can Crusher, Can Crusher, Space Saving, Can Crusher, Compression, Plastic Bottles",kitchen_utensils_servewear,,No
+https://www.amazon.sg/dp/B0C6S4YGFC,Display Calibration Tool,electronics_computers_external_peripherals_and_accessories,,No
+https://www.amazon.com.au/dp/B07SM61FCT,"Eye Massager with Heat, Eye Massage Mask with Bluetooth",personal_care_massagers,As this product's purpose is to give a soothing massage along with a peaceful sleep,No
+https://www.amazon.com.au/dp/B07PS1BF6Z,"Grounding Mat, Universal Earthing Pad for Computer, Foot and Bed, Grounded Foot Therapy, Reduce EMF Radiation, Relieve Pain, Inflammation, Negative Ions, Carpel Tunnel",home_mats_rugs,,Re-check
+https://www.amazon.com.au/dp/B0BZR2YBNR, Steam Generator,,,Re-check
+https://www.amazon.com.au/dp/B003A97024,Gold Panning Machine,hardware_tools_supplies_other,,No
+https://www.amazon.sg/dp/B09SG46RWP,TV Stand,furniture_bookcases_media_consoles,Based on the keyword televsion-stand,No
+https://www.amazon.co.jp/dp/B0CXMGGQBK,Shiva Lingham stone from the Narmada River in India,jewelry_charms,Based on the keyword stones,No
+https://www.amazon.co.jp/dp/B0D5BDYYYH,Head treatment water circulation rack,,,Yes
+https://www.amazon.sg/dp/B0D46Y1V65,Microwavable plush toy with heating pads,beauty_personalcare_tools_appliances_supplies,Based on the keyword hot and cold therapies,No
+https://www.amazon.com.au/dp/B0CQYNT3S3,"Weather station with thermometer and rain gauge, in which everything is analogue.",home_appliances,Based on the keyword weather stations,No
+https://www.amazon.sg/dp/B0DFVVM6FL,"Knobs or handles used for doors, cabinets, drawers",hardware_doors_windows_gates_incl_accessories,,No
+https://www.amazon.sg/dp/B08P3N1738,Snake handling tool for safely catch and move reptiles,pets_toys_supplies_devices,Based on it's primary usage,No
+https://www.amazon.sg/dp/B00VM8TZG4,"Anointing oil with frankincense, myrrh, and spikenard, primarily used for religious and spiritual purposes like prayer, home blessing, and personal anointing rituals",beauty_personalcare_tools_appliances_supplies,Based on the keyword essential oil sets,No
+https://www.amazon.com.au/dp/B0F4DQZQQW,Trainer PC+Vband Morse Code Trainer Type-C/USB Code Trainer Telegraph Trainer Key Connection Type-C,,,Re-check
+https://www.amazon.com.au/dp/B07V7DGZ5V,"Viaky 12 Pack RFI EMI Noise Filter Suppressor Cable Clip,",,,Yes
+https://www.amazon.com.au/dp/B0BCPTWGTP,Countertop ice maker and cold water dispenser,,,Yes
+https://www.amazon.com.au/dp/B0DGXN4L1W,"Ladder designed for swimming pools, docks, and pontoon boats",,,Yes
+https://www.amazon.com.au/dp/B0D11524LS,Key for towel dispenser,,,Yes
+https://www.amazon.sg/dp/B0B21H1V77,DJI Goggles 2 lightweight FPV drone goggles,,,Yes
+https://www.amazon.sg/dp/B07WC9MSW8,Part of a digital picture frame,,,Yes
+https://www.amazon.sg/dp/B08GNV95LC,Mask case,,,Yes
+https://www.amazon.sg/dp/B07VDCTRK7,4 Pack Red Microwave Potato Bag Reusable Potato Pouch Cooker Perfect Bake Potatoes Just in 4 Minutes,,,Yes
+https://www.amazon.co.jp/dp/B091Y9YW29,Commercial hot showcase,,,Yes
+https://www.amazon.sg/dp/B08KTHVSXR,"Pioneer ETC1.0 Carrozzeria ND-ETC40 Separate Antenna Type, New Security Support, Voice Guide Type",,,Yes
+https://www.amazon.sg/dp/B0C1ZMWY28,Tag remover magnet,,,Yes
+https://www.amazon.sg/dp/B071VGXLLT,"Car refrigerator/warmer that can cool or heat drinks and food, designed for use in vehicles",compact_appliances_refrigerator,,No
+https://www.amazon.sg/dp/B09VXD33DC,Altar cloth,,,Re-check
+https://www.amazon.sg/dp/B0CX62NQD8,"Raclette Cheese Melter, Electric Commercial Cheese Melting Machine, Foldable Countertop Cheese Grill Warmer Heater, Rapid Heating, 90°Angle Adjustable for Western Restaurant",commercial_food_service_equipment_supplies,,No
+"https://www.amazon.co.jp/dp/B09ZQM9R9Y
+https://www.amazon.co.jp/dp/B08XQL1NQB","Baby Monitor 3, Baby Sensor, Monitors Baby Movement, Sleeping Posture",cameras_devices,,No
+"https://www.amazon.co.jp/dp/B0BN7WQJXS
+https://www.amazon.co.jp/dp/B0C5JHGSV3","Car Navigation System Equipped with HD LCD, Compatible withCity Maps, Bluetooth Connection, Golf Watch GPS Watch","automotive_dvd_security_video_devices for ASIN B0BN7WQJXS (https://www.amazon.co.jp/dp/B0BN7WQJXS)
+electronics_navigation_devices_trackers for ASIN B0C5JHGSV3 (https://www.amazon.co.jp/dp/B0C5JHGSV3)",,No
+https://www.amazon.co.jp/dp/B0DGG3YDW3,survival kit Disaster Prevention Emergency Carrying Out Bag ,home_safety_smarthome_devices,"Based on keyword
+home emergency survival kits",No
+https://www.amazon.co.jp/dp/B01ABNC6DO,"Ultrasonic Heart Monitor, Angel Sounds, With Ultrasonic Gel, For Hearing Baby Heart Sounds",health_monitors_thermometers,Keyword: prenatal monitoring devices,No
+https://www.amazon.sg/dp/B0928H5LTB,Fireproof and waterproof document pouch,home_safety_smarthome_devices,,No
+https://www.amazon.sg/dp/B0BHHJ68HC,"Full N06025 Sumikko Gurashi Pencil Holder, How to Hold Pencils, Shirokuma ",office_stationery,,No
+https://www.amazon.sg/dp/B0D23TYGR7, Goniometer Protractor for Joint Motion Measurement ,,,Re-check
+https://www.amazon.ca/dp/B09K8SQ7QZ,Magnetic field therapy bracelet,beauty_personalcare_tools_appliances_supplies,magnetic-field-therapy-products,No
+https://www.amazon.sg/dp/B0D99NF4RM,COLLBATH 2-piece Stainless Steel Bread Scraper - Table Crumb Cleaner for Restaurant Bartender Tool Easy to Carry with Clip,,,Yes
+https://www.amazon.sg/dp/B0B1JMHBPJ,"LEYH TV Remote Air Mouse, 2.4GHz Wireless, Multifunction PC Remote Control for TV/Tablet PC/Game Console, Plug and Play",,,Yes
+https://www.amazon.com.au/dp/B07CV9CCHD,"Non-sterile wooden tongue depressors, used by medical practitioners to examine patients throats",,,Yes
+https://www.amazon.com.au/dp/B0CNW8JN8F,"UV test cards for measuring ultraviolet sterilization effectiveness, used to check UV light intensity in various settings like disinfection, sanitization, and equipment testing.",,,Yes
+https://www.amazon.com.au/dp/B0DB58KHVS,stainless steel bed canopy net holder bracket,,,Yes
+https://www.amazon.se/dp/B07TRG5JSP,"Wheat straw balls used as bedding/litter/food for small animals like rabbits, guinea pigs, and horses",,,Yes
+https://www.amazon.com.au/dp/B09B16LP1C,"ORBIT x Glasses - Find Your Glasses and Apple Find My (iOS only), Glasses Tracker - Android not Supported",,,Yes
+https://www.amazon.com.au/dp/B0F8NRDQSZ,Ghost hunting & Water divination tool,,,Yes
+https://www.amazon.com.au/dp/B0DC14DF8T,"Waterproof Wet Dirty Laundry Bag - Nappy Pouch Wet Clothes Organizer, Washable Cloth Diaper Bag for Gym, Beach, Pool, Travel",,,Yes
+https://www.amazon.sg/dp/B0DK5C1K4S,Wet Wipes Lid or Reusable Wipes Cover,,,Yes
+https://www.amazon.com.br/dp/B0BLRWQMT2,Wltoys Coffee Printer Automatic 3d Latte Machine One-Touch Operation DIY Printing Photo printer On Food like Cake Bread Coffee with 1*colorful Cartridges,,,Yes
+https://www.amazon.com.br/dp/B0D2HG4BQB,"FELLAT Ozone generator, multipurpose ozonator with negative ions and timer for cleaning fruits, vegetables, toys, clothes",,,Yes
+https://www.amazon.com.br/dp/B0947C1S32,"Pavlok 3 - Silent alarm and wearable mindfulness trainer for good habits - Elevate mindfulness, create good habits - track steps, activities, and sleep patterns",,,Yes
+https://www.amazon.com.br/dp/B079126WBJ,RAW 175 cm inflatable giant cone,,,Yes
+https://www.amazon.com.au/dp/B0F181T1F1,Magnetic Fuel Glove,,,Yes
+https://www.amazon.com.au/dp/B0CX1KBSTR,Ultrasonic Fog Generator or Mist Maker Fogger,,,Yes
+https://www.amazon.com.au/dp/B0BHRBPMZV,EMS Fitness Yoga Pants or Muscle Stimulation Workout Leggings,,,Yes
+https://www.amazon.com.au/dp/B0D2DLLXJ6,dishpan for washing dishes,,,Yes
+https://www.amazon.sg/dp/B0F1M6B178,ORFOFE Elegant - Compact Size Outdoor for Yard Lawn Driveway Garden Pathway Decorative Lighting,,,Yes
+https://www.amazon.sg/dp/B0C8M86HRB,RSGM Hindu Religious Divya Mantra Bell 35 in 1 Chanting Machine Box (Pack of 1),,,Yes
+https://www.amazon.sg/dp/B0D8RWFL86,POPETPOP 2pcs Mini Alcohol Burner Lamp for Outdoor Laboratory Camping Wick Aluminum Alloy Material Portable Alcohol Heater Lamp,,,Yes
+https://www.amazon.com.au/dp/B08CF38NDM,"CD player, radio with dual alarm function",,,Yes
+https://www.amazon.com.au/dp/B0BG5GT31C,"Pocket radio, MP3 Player with real-time auto clock display",,,Yes
+https://www.amazon.com.au/dp/B0BDLRF2LY,Bluetooth speaker with FM radio,,,Yes
+https://www.amazon.com.au/dp/B0C9QTWCYZ,Smart Ring Remote Control,,,Yes
+https://www.amazon.com.au/dp/B0D132YHPT,"Smart Ring with remote control, Fitness Tracker",,,Yes
+https://www.amazon.com.au/dp/B0B3F6KJJ2,Kodak Slide and Scan Digital Film Scanner,,,Yes
+https://www.amazon.com.au/dp/B0D2LW6321,"Desktop stationery organizer ideal for storing pens, pencils, scissors, and other office/school supplies",,,Yes
+https://www.amazon.com.au/dp/B0F1F5DBL3,"Anti-Fog Glass cleaning wipes for eyeglasses, sunglasses, camera lenses, phone screens, tablets, and computer screens",,,Yes
+https://www.amazon.com.au/dp/B00IQ4W8OS,Kathak Dancing Bells for dancers to create rhythmic sounds during traditional performances,,,Yes
+https://www.amazon.com.mx/dp/B07WVD8FMG,Diabetic Supplies Medical Alert Equipment Luggage Tag,,,Yes
+https://www.amazon.com.mx/dp/B0F2M25TM8,Pull chains for ceiling fans and lamps or home lighting,,,Yes
+https://www.amazon.com.mx/dp/B0063K4UTS,Lubricant for sailboats and sailing equipment,automotive_oils_fluids,,No
+https://www.amazon.com.mx/dp/B0CHJTRYC6,"Wireless Charging Station Photo Frame with 2-in-1 Functionality, Size of 4 x 6 Inches, 10 W Fast Charging, Induction Distance of 8 Mm, Easy to Use",,,Yes
+https://www.amazon.com.mx/dp/B0DFPNSFM7,"Portable Sink, Dishwasher, Efficient Fruit Cleaning Machine for Home, Kitchen",,,Yes
+https://www.amazon.com/dp/B0FG2S21Y7,"Plastic Bag Clip, Kitchen Sealing Clips",home_and_kitchen_essentials_accessories,,No
+https://tiny.amazon.com/38pzksat/browakaamaz,Starter Kit for Raspberry Pi,,,Re-check
+https://www.amazon.es/dp/B0DVHXNPVD,Mattress + bed pack combination,furniture_beds,,No
+https://www.amazon.com.mx/dp/B09Q91L9FN,Steam generator,,,Re-check
+https://www.amazon.com.br/dp/B0D85WGV81,mount/holder for baby monitor camera,electronics_mounts_racks_stands,As it is a mount or a stand for a baby monitor.,No
+https://www.amazon.com/dp/B07Q3WYWHS,Ultrasonic Jewelry + Glasses Cleaning Solution,,,Re-check
+https://www.amazon.com.au/dp/B0BZ6VCF82,Milk jug frother with thermometer for serving coffee,kitchen_appliances_parts_accessories,"Whenever an ASIN contains a jug or pitcher meant for milk frothing along with serving, it should be mapped to “kitchen_appliances_parts_accessories"", rest all generic pitchers can be mapped to ""kitchen_utensils_servewear""",No
+https://www.amazon.com.mx/dp/B0DP4ZDD7F,Portable Power Inverter,,,Yes
+https://www.amazon.com.mx/dp/B0000AX0YV,Fill-Rite FR610H - 115V 15 GPM Fuel Transfer Pump with Discharge Hose and Manual Nozzle,,,Yes
+https://www.amazon.com.mx/dp/B08FSTDKHQ,Face Mask Set with 12 Replaceable Anti-Fog Protectors and 6 Reusable Colored Glasses for Men and Women to Protect Face and Eyes,,,Yes
+https://www.amazon.com.mx/dp/B09RBB186T,"UV Glue Curing Lamp, 5V 10W UV LED Lamp USB Powered Ultraviolet Light for Resin Cured Phone PCB Repair, Agent Detection",,,Yes
+https://www.amazon.com.br/dp/B0F3JVFWGK,"Audio Interface for Guitar, Bass, Guitar P10 for Cell Phone and PC UBS-C Live Professional Studio Recordings",,,Yes
+https://www.amazon.com.mx/dp/B0DDXSFDYS,"MAUJOY Wristwatch for men speaking in German, with LCD screen, large numbers, easy to read, date and time display, for the blind, the elderly and people with dementia",,,Yes
+https://www.amazon.sg/dp/B0DMSJ3G7H,"T Tersely Double Sided Carpet Tape, 5cm x 10m, Strong Adhesive and Removable Rug Binding Tape for Area Rugs, Tile Hardwood Floors, Over Carpet",,,Yes
+https://www.amazon.sg/dp/B08D92GMVVcom.br/Girat%C3%B3ria-Adaptador-Compat%C3%ADvel-Lavajato-K3-100/dp/B0CYH9ZHQV,Surfer T-Racer Escova Giratória com Adaptador Compatível com Lavajato Karcher K3.100,outdoor_appliances_parts_accessories,,No
+https://www.amazon.sg/dp/B08D92GMVV,"Anti-Static Wristband, White EB-13-7",apparel_accessories,,No
+https://www.amazon.sg/dp/B0DS1YGGQX,QUARKZMAN Smoker Sealing Rings 10 ft 1 Inch x 1/8 Inch High Temperature Grill Seal Replacement High Temperature BBQ Sealing Tape BBQ Smoker Seal Self-Adhesive Felt for Smoker BBQ Lid,adhesive_tapes_gums_sealants,,No
+https://www.amazon.com.au/Airwheel-SE3S-Electric-Scooter-Suitcase/dp/B0D9RXJLJC,"Airwheel SE3S Electric Scooter Suitcase - Pink | 20L Innovative Travel Luggage, Motorized Electric Luggage Scooter for Effortless Travel with Removable Battery (Official Dealer in Australia)",luggage_briefcases_suitcases_totes_duffel,,No
+https://www.amazon.com.au/Swpeet-Magnetic-Wristband-Drilling-Telescoping/dp/B0BVQJN46H,"Swpeet 2Pcs Magnetic Wristband Set, A Nylon Magnetic Wristband for Holding Screws, Nails and Drilling Bits, with a Telescoping Magnetic Grabber, Wrist Magnet Tool Holder, Gadgets for Men Tool Gift",tools_carriers,,No
+https://www.amazon.com.au/BEANPRECOY-Stainless-Shopping-Supermarket-Convenience/dp/B0D1Q6ZL49,BEANPRECOY 6Pcs Stainless Steel Shopping Trolley Remover - Portable Token With Aluminum Alloy Key Ring for Supermarket and Convenience Store Unlock,hardware_tools_supplies_other,,No
+https://www.amazon.com.au/Ta-Chair-2-87cm-height/dp/B09TDB1VPG?th=1,Ta-Da Chair Series 2 87cm height,camping_equipment,,No
+https://www.amazon.com.mx/Peppa-Pig-pl%C3%A1stico-peque%C3%B1os-barandas/dp/B08461C7G8,Plastic toddler bed designed for children 15 months and older,furniture_beds,,No
+https://www.amazon.com.mx/Rosario-Talking-digital-electr%C3%B3nico-rosary/dp/B0046LV490,Digital Voice Talking Electronic Rosary (E-Rosary),av_media_players_recorders,"Since it has a feature of recording, otherwise it should be in 'electronics_devices_other'",No
+https://www.amazon.com.mx/MYXSRI-Matrimonial-Escritorio-Corriente-Dormitorio/dp/B0F38F89DD,"MYXSRI Double Bunk Bed with L-shaped Desk and Power Socket, High Bed with 3 Shelves and 3 Fabric Drawers, Metal Bunk Bed with LED Lights for Bedroom, Bedroom (Double/Full)",furniture_beds,,No
+https://www.amazon.com.mx/C%C3%A1mara-proyector-para-ni%C3%B1os-Proyector/dp/B0D56HZCMK?th=1,"Projector camera, Projector camera for children - Small animal image projector | Fun toy projector, portable projector, night light projector for cognitive education before bed ",toys_other,,No
+https://www.amazon.com.mx/Bolso-muleta-estilo-mochila-gris/dp/B0882GFJH5,*Crutch bag (backpack style) (gray)*,mobility_parts_accessories_including_wheelchairs,,No
+https://www.amazon.com.mx/el%C3%A1sticas-embarcaciones-el%C3%A1stica-accesorios-acu%C3%A1ticas/dp/B0CPQ9NHH9?th=1,"*Pack of 2 black elastic spring lines with clip, marine grade boat rope, jet skis or PWC mooring, sailing accessories for boats*",,,Re-check
+https://www.amazon.com.mx/electr%C3%B3nico-Paperwhite-Pasap%C3%A1ginas-Recargable-Disparador/dp/B0DDKLD7WK,"*Turn pages for the Kindle Paperwhite e-Reader, Rechargeable Remote Page Passage for Reading Novels/Comics on Kindle, Mobile Phone Camera Shutter (Pink)*",av_remote_controls,page turner,No
+https://www.amazon.com.mx/electr%C3%B3nico-Paperwhite-Pasap%C3%A1ginas-Recargable-Disparador/dp/B0DDKLD7WK,*KS Medivision Industries Oftalmo BIO Indirect Rechargeable Binocular*,av_remote_controls,page turner,No
+https://www.amazon.com.mx/VIISAN-S21-Documentos-autom%C3%A1tico-Reconocimiento/dp/B09DD6G1MB,"*VIISAN S21 A2 - Scanner for Large Format Documents and Books up to A2 size. Up to 23 MP resolution. Smooth and Split Double Book Pages, automatic scanning. Text Recognition*",electronics_printers_scanners,flatbed scanners,No
+https://www.amazon.com.au/6Pcs-Cuttable-Rubber-Grip-Tape/dp/B0F3X4WF7K,Non-Slip Grip Tape for Handles and Surfaces,adhesive_tapes_gums_sealants,,No
+https://www.amazon.com.au/Humkopnl-Sticky-Adhesive-Pads-Dashboard/dp/B0DMNCSXHP,Dashboard Cam Mounting Pads,adhesive_tapes_gums_sealants,,No
+https://www.amazon.com/gp/product/B0DHXL3ZTY?th=1,"Insulin Cooler Travel Case,Insulin Cool Box,LED Display Insulin Cooler Travel Case,Handy Medication Insulated Diabetic Carrying Cooling Bag for Insulin Pen, for Travel Car Medicine",compact_appliances_refrigerator,,No
+https://www.amazon.com.br/dp/B06XQ49NN2,Cart for selling any roadside things or street foods,tools_carts,Based on the definitions,No
+https://www.amazon.fr/dp/B0D1N7TJ4M,Generic TNTSAT Card Official New Decoder Satellite Receiver Decoder Receiver Duration 4 Years Astra 19.2,electronics_parts_accessories,,No
+https://www.amazon.com.mx/WantJoin-el%C3%A9ctrica-comercial-lavadoras-cafeter%C3%ADas/dp/B0CW15S4LQ,"WantJoin - Commercial electric glass washing machine, wine glass cleaning machine for cellar, 5 brush washers for cleaning dust, perfect for bars and coffee shops",compact_appliances_other,Irrespective of commercial and home purpose,No
+https://www.amazon.co.jp/gp/product/B0F1TT35GG?th=1,Timer Study Children Learning Educational Reality Time Fruit Pomodoro,kitchen_utensils_servewear,,No
+https://browse-query-editor-na.aka.amazon.com/?browseNodeFilter=category-node-merchant-facing&catalogAttributes=item_name%2Citem_type_keyword&marketplaceId=1&pageSize=2000&protocolVersion=imsv2&retailAsins=N&showImages=Y&useSuggestedBrowseNode=N&userQuery=B0CG5RZRZV%0AB0DBZJRLHL%0AB0CKP9X4DG%0AB0D5YNJ44Q%0AB0D8KMN39W%0AB0D4LZFXRX%0AB0CD7HV19B%0AB0CD7B6379%0AB0CDXBDBZ7&variationParentOnly=N&websiteSearchable=N,Head Chain Jewelry headband Hair Accessories for Women used as costume,,,Re-check
+https://www.amazon.co.uk/dp/B09FXRTC1G,Bed Mosquito Net Canopy,home_linens,,Yes
+https://www.amazon.com/gp/product/B0FHJQQSCL,"AI translation smart glasses with chat GPT Bluetooth male and female 164 language color changing lenses,",eyewear_other,,No
+https://www.amazon.com.br/dp/B09TT997KG,"Sensitive Thermal Paper Spray, Data protection spray can prevent important data from disappearing.",office_stationery,,No
+https://www.amazon.com/gp/product/B0DV3MDPX5?th=1,"Massage Table Professional with Face Cradle, 3 Motor Customized Angle Folding Tattoo Chair, Spa table and chair convertible",commercial_furniture,,No
+https://www.amazon.ca/gp/product/B0FK652RG5,"Emergency Information (2pk) for Helmets/Hard Hats/Backpacks/car Seats, medical identification data, identify medical information ",,,Re-check
+https://www.amazon.com.mx/gp/product/B0789KPFXS,Coin Acceptor Selector Slot Multi Coin Receiver for Coin Operated Phone Coin Operated Washing Machines and Coin Operated Toy Cars,,,Re-check
+https://www.amazon.sg/dp/B0DKMWS9PV,"LYAILOOGXL Card Scrapbook for Pokemon - 4 Compartments Trading Cards Album Folder - 400 Compartments for Pokemon Cards to Collect and Exchange, PU Material with Waterproof Surface",office_equipment_devices,,No
+https://www.amazon.com.br/digital-port%C3%A1til-aux%C3%ADlio-eletr%C3%B4nica-alimentada/dp/B0CMVD2GRC,"Portable digital video magnifier, portable electronic reading aid with 2-32X magnification with 26 modes, battery-powered digital magnifier for low vision, reading and writing",optical_devices_incl_accessories,,No
+https://www.amazon.com.br/Cadeira-Hidr%C3%A1ulica-Lavat%C3%B3rio-Reclin%C3%A1vel-Dompel/dp/B0D4SD2SRW,Hydraulic Salon Chair with Reclining Washbasin and Porcelain Tub,commercial_furniture,If the product is spa or salon chair then it should be under Furniture-seating if it includes washbasin then commercial furniture  ,No
+https://www.amazon.ie/KIWIFOTOS-Headphone-Rotating-Adjustable-Headphones/dp/B09CKT7N38,Headphone Stand with USB Hub,electronics_mounts_racks_stands,Even if headphone stand includes charging function or not it must be classified to _electronics_mounts_racks_stands_,No
+https://www.amazon.co.uk/dp/B07ZW8NWFD,Citric Acid powder which can be used as a food preservative flavour enhancer as well as de scaling,groceries_food_beverages,,No
+https://www.amazon.com.au/dp/B07DYC1PGR?th=1,"Spot X with Bluetooth 2-Way Satellite Messenger | SOS Protection | Handheld Portable 2-Way GPS Messenger for Hiking, Camping, Cars| Globalstar Satellite Network Coverage | Subscription Applicable…",electronics_navigation_devices_trackers,,No
+https://www.amazon.nl/dp/B0DFMD19HW,"Laboratory Wash Cutting Knife,Dental Technician Tools, EU Plug, Durable",,,Yes
+https://www.amazon.co.uk/gp/product/B00P6MOQSY,The Odeo Mk3 Flare is the new alternative to the traditional red pyrotechnic hand-held distress flare,,,Yes
+https://www.amazon.fr/gp/product/B0F74SYL2S,iQibla Zikr Ring Smart Ring Tasbih Multifunction Prayer Counter with Muslim Life Lifestyle App,,,Yes
+https://www.amazon.co.jp/gp/product/B0B7RY2NR4,"PUERI Portable Bathtub, Folding Bathtub, Inflatable Bathtub, For Children, For Toddlers, Bathtub, Kids, Bathtub, Small Bathtub, Inflatable Type, PVC Material, Transparent, Easy Assembly & Disassembly",,,Yes
+https://www.amazon.pl/gp/product/B0CT8KTRQB,"hansgo Artistic Guitar Pattern Kidney Backpacks with Adjustable Strap Crossbody Bag Fashion Waist Bags for Hiking Running Kidney Trip, Black, One Size",,,Yes
+https://www.amazon.com.au/dp/B0F3V8TYFF,Universal Drink Stabilizer or Portable Cup Holder Mount,,,Yes
+https://www.amazon.com.be/gp/product/B0CWLDY5M7,OnIUeZky 4 Bouquets Artificial Rose Flower Grave Flower 30cm 12 Heads Flowers Silk Memorial Flowers for Grave Vase Grave Vase Graveyard Decoration Orange,,,Yes
+https://www.amazon.se/dp/B0CHBB7J61,Morse Telegraph Key,,,Yes
+https://www.amazon.se/dp/B0DPWY7TP8,ECG Pocket Guide,,,Yes
+https://www.amazon.se/dp/B0DPKHGQNX,Kerosene Stove/Heater,home_space_heaters,,No
+https://www.amazon.se/dp/B0CBX9DR95,Solid Density Meter or Precision Density Analyzer,,,Yes
+https://www.amazon.com.au/dp/B0F5BTW5ZD,Trading Card Scanner Stand,,,Yes
+https://www.amazon.eg/dp/B0DPPWJ51G,Kids Multi-Function Trike or Stroller Turns into Trike,,,Yes
+https://www.amazon.eg/dp/B0F232VT8F,Electric Cigarette Case Lighter,,,Yes
+https://www.amazon.eg/dp/B0CWVCW3S1,Charm Pendant,,,Yes
+https://www.amazon.eg/dp/B097CZDZD7,Makeup Brush and Pen Holder,home_organizers,,No
+https://www.amazon.eg/dp/B0F7H6BQ1G,Walking stick cum a seating chair,,,Re-check
+https://www.amazon.com/dp/B0D9Q787GN,laser engraver,arts_crafts_hobbies,,No
+"https://www.amazon.com/dp/B0F1CL7Z19
+https://www.amazon.com/dp/B0F1CQQWDC","BBC Micro:bit V2 Newbit Arcade Shield Expansion Board, Supports MakeCode Javascript Python Programming for Game Creation, IoT, Interactive Project, STEM Education",hardware_electrical_electronics_components,Arduino prototyping board without programming,No
+https://www.amazon.fr/gp/product/B0FLJF25DX?th=1,"128 GB (2400) Digital Dictaphone, Smart Dictaphone, Smart Dictaphone, Noise-Reducing Recorder, Voice Controlled Audio Recorder with Lectu",,,Yes
+https://www.amazon.com.tr/dp/B0F8TH3623,Precision Jewelry Grabber or Micro Claw Tweezers,,,Yes
+https://www.amazon.com.tr/dp/B0CH95CKVT,Wagon Rain Shield or Stroller Rain Cover,,,Yes
+https://www.amazon.com.tr/dp/B0C6YFS9DD,sofa side pocket organizer,,,Yes
+https://www.amazon.com.tr/Profesyonel-Kordonu-Ba%C4%9Flant%C4%B1-Ta%C5%9F%C4%B1ma-%C3%87antal%C4%B1/dp/B09ZQLL2FJ,Clock Watch Repair Kit,,,Yes
+"https://www.amazon.co.uk/gp/product/B086JYHY6M?th=1
+https://www.amazon.co.uk/gp/product/B0FGPP5WYL","Wireless HDMI Adapter for TV, 4K Wireless Display Dongle 2.4/5 GHz, WiFi Display Adapter Compatible with iPhone/iPad/Android/Windows/Laptop/Projector/Monitor/iOS OS, Supports Miracast/DLNA/Airplay",,,Yes
+https://www.amazon.com/gp/product/B0FGNGPG18,"Smart Gym Mirror for Home Workout | 32"" HD Touch-Screen Andriod 12 OS | 63"" Reflective Surface | No VIP Fees Support Various APP, Voice Control, Music Sync LED Strip Lights, for Home Gym/ Yoga/ Dance",,,Yes
+https://www.amazon.ae/Eacam-General-Plastic-Toolbox-Storage/dp/B0C9GTJ6J6,Home & Car Repair Tool Kit,,,Yes
+https://www.amazon.ae/DICOSMETIC-Amethyst-Purple-Natural-Crystals/dp/B0F3JFQSFG,Amethyst Heart Stones used as decor and jewelry,,,Yes
+https://www.amazon.de/dp/B0F6G2TW7N?th=1,Coin & Mobile Payment   ,,,Yes
+https://www.amazon.com/dp/B0F9NQRRD3,"High-Speed Cable-Free Streaming: Equipped with Wi-Fi 6 dual-band wireless, the cost-effective Puppis S1, Compatible with Meta Quest 3S/3/2/Pro, PC-VR Streaming Air Link AX1500 WiFi6, Wireless Stable and Fast",electronics_networking_devices,,No
+https://www.amazon.sa/dp/B0D8VW4Y34,"Knife sharpener tool for kitchen, hunting",,knife sharpners used for multipurpose use cases will be under hardware_tools_supplies_other,No
+https://www.amazon.sa/dp/B09Q52F8V3,Floor Lamp with Shelves,fixtures_lighting_incl_parts_accessories,,No
+https://www.amazon.ae/dp/B0C53NPTDX,"Vintage Calligraphy Writing Set with Notebook, Spoon, Pen, and Pen Holder",office_stationery,,No
+https://www.amazon.ae/dp/B0BWT6D1WR,Digital Price Computing Scale with Label Printer and Barcode Scanner,HTI,,No
+https://www.amazon.sa/dp/B08Y74B3TZ,airFiber 60 LR Wireless Point-to-Point Radio,electronics_networking_devices,More similar to 'network-antennas',No
+https://www.amazon.ae/Samsung-Washing-Machine-Installation/dp/B08FYRC1K4,Appliance Installation / Setup Service,warranties,all installation related services can be mapped under 'warranties' as of now. If these are in a form of gift cards in then can be map to 'gift_cards',No
+https://www.amazon.co.za/Large-Heavy-Moving-Packing-Blanket/dp/B0F8VPCJMZ,Moving and packing blanket,furniture_accessories,ITK 'furniture-moving-blankets',No
+https://www.amazon.co.za/Fidget-Spinner-Pen-LED-light/dp/B0D7MMH2T6,Ball point pen fidget spinner with LED ,HTI,insufficient data,No
+https://www.amazon.eg/dp/B0DWV35B4M,Bearish/Sebha digital counter ,sports_equipment,Normal counter or any score board counter please it under sports_equipment,No
+https://www.amazon.co.uk/Hair-Elastic-Reusable-Invisible-Women/dp/B09VXTDTX4,Hair net/ Hair Bun,work_protective_gear,"Such products related protection during cooking or working etc then map it under work_protective_gear. 
+If any such product has a contradiction saying hair bonnet + cap in the same product then map it to HTI as of now",No
+https://www.amazon.eg/dp/B0D9YJ6NTY,tripods for phone and camera,electronics_parts_accessories,Camera + Cell phones tripods then map it under ‘_electronics_parts_accessories’_,No
+https://www.amazon.eg/dp/B0DZXKPPCP,mosquito repellant incense,home_pest_control,,No
+https://www.amazon.de/gp/product/B07KCXS9YZ,"Exposure Olas 2019 Float-On Compact Mob Alarm, Strobe & Torch, It is a waterproof, floating flashlight that combines MOB technology and OLAS functionality. It serves as a safety device primarily for boating, featuring water-activated strobe lights, mobile app integration, and USB rechargeable capabilities",fixtures_lighting_incl_parts_accessories,More related to a flashlight,No
+https://www.amazon.com.tr/Y%C3%BCr%C3%BCtme-Y%C3%BCr%C3%BCmeye-Ba%C5%9Flayan-Y%C3%BCr%C3%BCte%C3%A7-Yard%C4%B1mc%C4%B1/dp/B0CG21FNVM,Baby Walking Belt,baby_child_proofing_safety_equipment,Baby fall protection walking belt,No
+https://www.amazon.co.za/Anti-Fog-Goggles-Motorcycle-Snowboard-Glasses/dp/B0F741RVHP?th=1,It's a swimming goggle,eyewear_protection,Following the ITK map it to ‘eyewear_protection' only but not in sports_equipment,No
+https://www.amazon.eg/dp/B0DZXKPPCP,Mosquito Repellent Incense,home_pest_control,kind of mosquito repellent,No
+https://www.amazon.it/gp/product/B098XS122D,Ristoequipment Hot Showcase - Countertop - Straight Glass - 4-sided Glass - +30/+90 °C - 160 Liters - 85.6x56.8x67h cm,kitchen_appliances,"If it has just has only warming feature then 'kitchen_appliances', if it has only cooling feature then 'fullsize_appliances_refrigerators_freezers_wine_cellars'. And if both the feature of heating and cooling present in such appliances then map it under HTI for now",No
+https://www.amazon.com.be/gp/product/B0CWLDY5M7,OnIUeZky 4 Bouquets Artificial Rose Flower Grave Flower 30cm 12 Heads Flowers Silk Memorial Flowers for Grave Vase Grave Vase Graveyard Decoration Orange,home_decor,Based on the definition for articial flowers,No
+https://www.amazon.es/gp/product/B07Q2T27JK,"Film Clapper - Acrylic Film Clapper Board Hollywood, 30 x 24.5 cm Professional Film Clapper for Film Filming, Video Filming",electronics_parts_accessories,"Considering it as an filming accessories, used for the editors to sink audio and video",No
+https://www.amazon.co.jp/gp/product/B0F634R3K2,"IC Card Reader, My Number Card / Basic Resident Register Card Compatible, Tax Return, No Setting Required, Small and Lightweight, Contact Type, IC Card Reader, USB, High Speed Transfer, Compatible",office_equipment_devices,magnetic stripe readers and business card scanners,No
+https://www.amazon.com/dp/B0FFM9YHDW?th=1,AI Translation Glasses,eyewear_other,,No
+https://www.amazon.com/gp/product/B0FPDZP634,"iAuto Auto Pen Plotter Handwriting Robot Machine with auto Feeder, Automatic Signature Writing Machine for Letter",,,Yes
+https://www.amazon.com.tr/dp/B0D1VGSXWG,"Test strips for testing alcohol in the beverage poured into the glass, not meant for testing the level of alcohol in the body",personal_care_equipment_diagnostics,,No
+https://www.amazon.sg/gp/product/B0B2K1Q4R6,"Inflatables Glowing Hanging Flags Decor, Outdoor Ghost Windsocks With LED Light, Yard Decorations for Party Indoor Outdoor ",,,Re-check
+https://www.amazon.co.jp/dp/B0C86HSNLC,"Inflatable Sofa, Inflatable Air Sofa Chair, Flocked Inflatable Chair, Portable Outdoor Inflatable Lazy Sofa for Hiking, Camping, Picnic, Travel, Backyard, Music Festival, Room (Red)",furniture_seating,Based on the logic used for self inflating mattresses,No
+https://www.amazon.co.jp/gp/product/B0CKRV8RQ6,WAHOO KICKR MOVE Direct Drive Smart Trainer WFBKTR123 (Compatible with ZWIFT),sports_equipment,,No
+https://www.amazon.co.jp/gp/product/B0CQR2VP5V,"NEEWER MS-240AC Air Cushion Boom Pole, 94.5 inches (240 cm), 4 Levels of Extending, Folding, Birds-eye Photography, Portable Boom, 1/4"", 3/8"", 5/8"" Spigot, 3-Way Interface, For LED Lights, Softbox,",electronics_parts_accessories,,No
+https://www.amazon.pl/gp/product/B0CT8KTRQB,"hansgo Artistic Guitar Pattern Kidney Backpacks with Adjustable Strap Crossbody Bag Fashion Waist Bags for Hiking Running Kidney Trip, Black, One Size",bags_fashion,,No
+https://www.amazon.com.be/gp/product/B0CWLDY5M7,OnIUeZky 4 Bouquets Artificial Rose Flower Grave Flower 30cm 12 Heads Flowers Silk Memorial Flowers for Grave Vase Grave Vase Graveyard Decoration Orange,home_decor,,No
+https://www.amazon.sg/gp/product/B07M8RXBWX,CASA-NEST PVC Thick Transparent 6-8 Seater Table Cover (60x90inch) Rectangular trans003 (Gold lace),furniture_accessories,,No
+https://www.amazon.com.au/RENPHO-Massager-Bluetooth-Rechargeable-Sleeping/dp/B0DWJ2YHZW?th=1,Bathroom Vanity Cabinet or Under-Sink Storage Unit (This comes with cabinet only),fixtures_vanities,,No
+https://www.amazon.ae/Defsedar-Universal-Inflatable-Compatible-Compressors/dp/B0F5X3CWWQ,"Air pump adapter for Inflatable Boat, Air Mattress",power_tools_incl_accessories,,No
+https://www.amazon.ae/Oasisgalore-Cleaning-Professional-Dust-Free-Printer/dp/B0DLP2WNRP,"Cleaning Swab Sticks for Lab, Printer Heads, Scanners, Camera Lenses, Chip Hard Disk Industries, Optical Lenses and Optical Equipment",electronics_cleaning_tools_supplies,,No
+https://www.amazon.ae/generic-Chemistry-Equipment-Experiments-Household/dp/B09PNR1HXM,"Burner Lamp for Lab, Dental Science Experiments, Household and Camping",,,Re-check
+https://www.amazon.com.tr/Dijital-Hassas-Hesap-Makinal%C4%B1-Terazisi/dp/B0BVMGB26X,Pocket Digital Scale with calculator,,,Re-check
+https://www.amazon.com.au/gp/product/B0CDSCYLN2,"Smart Golf Ball Printer, Digital UV Inkjet Printer, H5 Mobile App,",electronics_printers_scanners,,No
+https://www.amazon.com/gp/product/B07Q523NZ9,"MCR Medical PRESTAN CPR Adult Manikin 4-Pack w. Feedback, Infant Manikin 4-Pack w. Feedback, AED UltraTrainers, Wheeled Carryall, & MCR Accessories",education_supplies,,No
+https://www.amazon.com/gp/product/B0843HFPLC,"Ontel Mighty Sight LED Magnifying Eyewear, Black, Pack of 2",eyewear_other,,No
+https://www.amazon.com.au/gp/product/B09J7TP28D,"Rust-Stop Fish Oil Spray for Automotive, Industrial And Home Applications",automotive_oils_fluids,,No
+https://www.amazon.co.uk/gp/product/B0F18FV46T,"6M Long Extension Lead with Switches, Mscien 5 Way Extension Socket Surge Protected Overload Extension Cable, UK Power Strip Mountable with 6 Metre Extension Cord, 5 Gang Multi Plug",batteries_chargers_adapters_cables_docks,,No
+https://www.amazon.sa/dp/B0CFVJWCX7,Clothes Folder or Laundry Folding Board,home_and_kitchen_essentials_accessories,"Decided this based on its similarity to ""ironing boards""",No
+https://www.amazon.sa/dp/B0CHYMCRSC,Touchless Hand Sanitizer Dispenser,home_and_kitchen_essentials_accessories,,No
+https://www.amazon.fr/gp/product/B088BMD1BM,3.7m Red Flag + Matt + Foot for Car Dealer flag for automotive,outdoor_decor,,No
+https://www.amazon.it/gp/product/B0B4RYCPSX?th=1,Bike Hydraulic Brake Line and Pipe Cutting Tool,sports_bicycles_parts_accessories,,No
+https://www.amazon.co.za/Portable-Rechargeable-Adjustable-Brightness-Emergency/dp/B0DNQ3FF1W,Solar Camping Lamp-Fan,fixtures_lighting_incl_parts_accessories,,No
+https://www.amazon.co.za/Generic-TO-13-Retractable-Baton/dp/B0DN1SXP7D, Retractable Baton ,hardware_tools_supplies_other,,No
+https://www.amazon.co.za/MeacoDry-Arete-HEPA-Filter-three/dp/B095J19GXR,HEPA Air Purifier & Dehumidifier Filter Set,home_air_filters_purifiers,"based on the product keyword ""hepa-filter-air-purifiers""",No
+https://www.amazon.co.za/Breakfast-Electric-Toaster-Multi-Function-electric/dp/B0FB5K74QL,Multi-Function Breakfast Maker Toaster Oven,kitchen_appliances,"based on the product keyword ""toaster-ovens""",No
+https://www.amazon.co.za/Cigarette-Pack-Case-Rechargeable-Lighter/dp/B0DCZRNRJR,Rechargeable Cigarette Case lighter,personal_care_tobacco_products ,"Product combining cigarette case and lighter functionality should be mapped to ""personal_care_tobacco_products"" category",No
+https://www.amazon.co.za/Stylish-White-Bracelet-Necklace-Earring/dp/B0F1DT3D2X,Watch and Jewelry Set,,,Re-check
+https://www.amazon.co.za/Keychain-Unisex-Wristlet-Silicone-Bracelet/dp/B0F749G52M?th=1,Silicone Key Wristlet Key Chain,,,Re-check
+"https://www.amazon.co.za/dp/B0F7Y74QWM
+https://www.amazon.co.za/dp/B0F7M684WT",plastic boiler bucket,bad_record,,No
+https://www.amazon.sa/dp/B0DXJVT63B,"Microfiber cleaning cloth for cleaning glass, mirrors, car windows, and kitchen surfaces",home_cleaning_tools_supplies,"Product assigned to ""home_cleaning_tools_supplies"" TRexID as it's a multi-purpose cleaning cloth. Products exclusively for automotive use will go under ""automotive_parts_accessories"".",No
+https://www.amazon.sa/dp/B0DHVCRWM1,"push mower, hand lawn mowers, generators, pressure washers, Generators and Lawn Mower Spring Kit",,,Re-check
+https://www.amazon.sa/dp/B09YSQYFQY,"Pipette Syringes for Pet Feeding, Industrial and Laboratory Use",commercial_lab_devices_supplies,,No
+https://www.amazon.sa/dp/B0FBMF9ZJM,"Fiber Optic Cleaning Wipes designed for industrial instruments, electrical equipment, and laboratory tools",,,Re-check
+https://www.amazon.sa/dp/B08FMGFKRL,Breastfeeding Cover | nursery swaddling blankets | Breastfeeding Apron Shawl Baby Car Seat Cover,,,Re-check
+https://www.amazon.sa/dp/B005JRF43M?th=1,Steam Generator for Wood Bending,power_tools_incl_accessories,,No
+https://www.amazon.sa/dp/B09CGCKCKJ,"Hand Belt or Strap Belt for Skateboard, Electric Scooter",sports_scooters,,No
+https://www.amazon.sa/dp/B0DJ7RQQTH,"Pull Starter or Recoil Starter for cart, dirt bike, pit bike, generator, lawnmower, power equipment",,,Re-check
+https://www.amazon.sa/dp/B00KAHI1YA,"Blue Bowl Gold Separator Kit with Pump, Leg Levelers",,,Re-check
+https://www.amazon.ae/INTIMIFY-Beetroot-Powder-Drinking-Women/dp/B0DM9NSRLS?th=1,"Beetroot Powder For Drinking, for Face Pack, for Hair",groceries_food_beverages,,No
+https://www.amazon.ca/gp/product/B0BX4SQHW5,Date Night Scratch Cards or Mini Date Challenge,toys_other,,No
+https://www.amazon.de/gp/product/B0F8Q3SW7D,"Adjustable Switching Power Supply (ASPS) for LED Strips, CCTV, 3D Printer, Radio, Camera",batteries_chargers_adapters_cables_docks,,No
+https://www.amazon.ae/VOUNOT-Canopy-Outdoor-Awning-Shelter/dp/B09PBG4YYM?th=1&psc=1,patio and window awning,,,Re-check
+https://www.amazon.eg/dp/B0F7FSRRW7,Portable Foot Air Pump,hardware_tools_supplies_other,,No
+https://www.amazon.ae/Megacom-Compatible-Vibration-Notifications-Connection/dp/B09XXF739R?th=1,Pokemon Go Auto Catcher or DuoMon Auto Catcher,cell_phones_parts_accessories,,No
+https://www.amazon.ae/Langthering-Handheld-Safety-Camping-Universal/dp/B0D81FJMJH?th=1,Portable Air Horn for Car Marine Boats Sports Events Camping,toys_other,Decided as noisemakers,No
+https://www.amazon.ie/Napkins-Handkerchiefs-Washable-Birthday-Decoration/dp/B0F8P4F5XD,"Cloth Napkins, Handkerchiefs or placemats",home_linens,,No
+https://www.amazon.fr/autocollant-per%C3%A7age-diviser-facilement-chambre/dp/B0FK5JH13X?th=1,"Self-adhesive curtain rail for living room, bedroom, shower",hardware_doors_windows_gates_incl_accessories,,No
+https://www.amazon.eg/dp/B0D2V6SGBC?th=1,"Kids tricycle, Ride on",sports_bicycles,,No
+https://www.amazon.eg/-/en/reminder-Wearable-Technology-Waterproof-ZIKR1-22F/dp/B0F4Q35GWY/ref=pd_sbs_d_sccl_2_2/260-2639874-7780537?pd_rd_w=07unL&content-id=amzn1.sym.bf956f8a-ecbe-4423-9e72-600eacec9330&pf_rd_p=bf956f8a-ecbe-4423-9e72-600eacec9330&pf_rd_r=5WV8KGJ5W2AE6AXEW9Z4&pd_rd_wg=W3orE&pd_rd_r=572112a5-4593-49f6-b502-24b77cdfb32e&pd_rd_i=B0F4Q35GWY&psc=1,  Smart prayer Ring  ,electronics_navigation_devices_trackers,As the product has wear OS. Hence decided based on wearable technology.,No
+https://www.amazon.eg/dp/B0DPBJ14N1,Adjustable Shower and Bedroom Curtain Rod,hardware_doors_windows_gates_incl_accessories,,No
+"https://www.amazon.eg/dp/B07NVSZ7MB
+https://www.amazon.eg/dp/B0B46J6RSJ
+https://www.amazon.eg/dp/B0CW6CBM4D","Salt Lamp Humidifier, Aroma Diffuser, Air Cooler, Air Purifier with humidifier",home_fragrances,Anything with the word fragrance will go to home_fragrance let it be humidifier or purifier.,No
+https://www.amazon.eg/dp/B0DH2LQB7S,Memory foam neck support pillow designed for car seats and office chairs,home_linens,,No
+https://www.amazon.eg/dp/B091J5Y9LZ,Retro Radio Cassette Player and recorder,electronics_av_radios,,No
+https://www.amazon.ae/dp/B0C77JWR6C,Electric Carpet Drying Blower with Pull Rod Dehumidifier,vacuums_blowers,,No
+https://www.amazon.co.jp/gp/product/B0FHJMRX1S,AI Phone Recorder case,cell_phone_parts_accessories,,No
+https://www.amazon.co.uk/dp/B09NBT9484,"Security Alarm or Motion Alarm designed for bikes, e-scooters, trailer",,,Re-check
+https://www.amazon.com/dp/B0CN8TJVBS,Property Boundary Marking Flags or Utility and Property Marker Flags,outdoor_decor,"Product assigned to ""outdoor_decor"" category as flags are specifically defined under this category in our taxonomy definitions.",No
+https://www.amazon.de/dp/B0FN7GKFTR,E-Scooter and Bicycle Security Chain Lock,sports_scooters,"Locks designed for both e-scooters and bicycles are categorized under ""sports_scooters"", as they are primarily associated with scooter accessories.",No
+https://www.amazon.com.au/dp/B0FQ3F55FS,"Food Cover Set, Microwave Splash Guard Lids or Splatter Cover",kitchen_utensils_servewear,"All microwave splash guards/covers should be mapped to ""kitchen_utensils_servewear"" category, regardless of being generic or designed for specific microwave models.",No
+https://www.amazon.com.au/dp/B07GZQRQWG,Healing Moss Agate Crystal Beads Mala,jewelry_necklaces_pendants_rings_earrings,"when a product can be used as both a necklace and a bracelet, we prioritize the ""necklace"" category.",No
+https://www.amazon.com/dp/B09NN4VY56,DC Motor Speed Controller or PWM Motor Speed Regulator,hardware_electrical_electronics_components,,No
+https://www.amazon.ca/dp/B0DZ1ZWLBL,Tattoo Transfer Paper,office_stationery,,No
+https://www.amazon.co.jp/dp/B0FRRSD1F5,"Bag Hanger, Table Hook , smartphone stand",,,Yes
+https://www.amazon.com/dp/B07G6VBZ2V,"Jesus Name Stones or Biblical Pocket Rocks perfect for gifts, souvenirs, and decorations",home_decor,"For this product, we have mapped it to ""home_decor"" category since it's primarily used for decorative and gift purposes.
+As per our team's guidelines, we categorize such multipurpose decorative items under ""decoration"", while jewelry items specifically go under ""jewelry_charms"".
+The product in question is more of a decorative/souvenir item rather than jewelry, hence the ""home_decor"" categorization is appropriate.",No
+https://www.amazon.com/dp/B0BRMJ2MYW,Thermal tattoo printer for tattoo printing or tattoo stencil printing,beauty_personalcare_tools_appliances_supplies,"As per Sagar instruction, printers exclusively used for tattoo printing or tattoo stencil printing should be mapped to ""beauty_personalcare_tools_appliances_supplies"" category",No
+https://www.amazon.sa/dp/B0D2PVQFVL,stainless steel breathing necklace,,,Yes
+https://www.amazon.com/dp/B0FN42B5SB?th=1,"Toe Separators, Ball of Foot Cushion",personal_care_rehabilitation_gear,,No
+https://www.amazon.com/gp/product/B0CRVHL41V?th=1,Parts Washer 20 Gallon Tank Cabinet Portable Automotive Parts Cleaner with 110V Electric Pump,automotive_parts_accessories,Since it says for automotive,No
+https://www.amazon.co.uk/dp/B0FMFN8PV2,Flavoured Air Inhaler,,smokeless inhalers,Re-check
+https://www.amazon.es/gp/product/B07VYML7KG?th=1,E-Bike Ceramic Lube 120ml | Bicycle Chain Grease E Bike and Electric Components,automotive_oils_fluids,,No
+https://www.amazon.sa/dp/B0FD8Z3YSL,Digital LCD Counter Ring for Islamic Prayer and Zikr – Ergonomic Tasbih Ring with Adjustable Fit,,,Yes
+"https://www.amazon.sa/dp/B0F8P12RC3
+https://www.amazon.sa/dp/B0FD3RF7XH","Small Air Conditioner Heater Machine, for Home Bedroom ",,,Yes
+https://www.amazon.sa/dp/B0CC61QH1S,Water Leak Detection Kit used for detecting water leaks in homes and construction sites,,,Yes
+https://www.amazon.com/Comfy-Cubs-Baby-Changing-Table/dp/B0DX2HGKJ8?th=1,Baby Changing Table,,,Yes
+https://www.amazon.com/dp/B0CN3SQVP5,frame & a collectible,,,Yes
+https://www.amazon.com/Bridesmaid-Proposal-Elegant-Floral-Bridal/dp/B0CZJ9PGBS,Personalized Bridesmaid Proposal Gift Box,,,Re-check
+https://www.amazon.com/dp/B0DMF4DSTP,"Snow Globe Tumbler DIY Supply Kit with Squeeze Bottle, Funnels, Tweezers, and Syringe",,,Re-check
+"https://www.amazon.com/dp/B0DS6N18VK
+https://www.amazon.com/dp/B0BN338J9X",backpack Soft Sided Coolers ,kitchen_utensils_servewear,,No
+https://www.amazon.com/dp/B0FN3ZC82Y,"All-in-one monitor for work and entertainment,Large tablets for adults,Portable TV on Wheels ",,,Re-check
+https://www.amazon.com/dp/B0FBJPQLZD,"Jean Pocket Chain for Women Men Cute Bag Purse Charms Jewelry, wallet chain ",,,Re-check
+https://www.amazon.co.jp/dp/B01JIVVMTE,Panasonic FD-F06S2-T Futon Warmer Dryer (Mattress Type) Light Brown,home_appliances,,No
+"https://www.amazon.co.jp/dp/B0DHS2SSRC
+https://www.amazon.co.jp/dp/B0DHS2F8KH
+https://www.amazon.co.jp/dp/B0DHS1W2GH","Chair Leg Covers, Chair Socks, Silicone Anti-Slip, Double Layer Knitting, Various Shapes, Chair Leg Cover, Chair Leg Cap, Chair Leg Cap, Chair Socks, Foot Cover Cap, Anti-Scratch, Chair Leg Protection",furniture_accessories,,No
+https://www.amazon.de/dp/B0F5W6FBGZ,"BORISCA 11 Pairs of Cotton Gloves, Black, Fabric Gloves, Breathable, Reusable, Thin Black Gloves, Fabric Gloves for Hand Care and Jewellery Inspection",apparel_work_gloves,,No
+"https://www.amazon.com/dp/B0CNCM8QKT
+https://www.amazon.com/dp/B0CNCWWY7V",Simulation Sunroof Sticker Vinyl Sunroof Window Protector Film Panoramic Fake Sunroof Exterior Decorative Decal Car Decoration Styling Universal for SUV(15.7”x31.5”),arts_crafts_hobbies,"This product is like ""automotive decals""",No
+https://www.amazon.sa/dp/B07PSNSFLW,Candle holder and essential oil diffuser,home_decor,,No
+https://www.amazon.eg/dp/B09234BYZC,Quran reading pen,electronics_devices_other,,No
+https://www.amazon.co.za/dp/B0CTMRX7NQ,"Wifi Elderly Panic Call Button Alarm, Smart SOS Wireless Caregiver Life Alert, APP Monitoring",,health-alert-and-monitoring-systems. It can be palced in health alert systems but all other switches are in HEEC(conflict). Check with science.,Re-check
+https://www.amazon.ae/dp/B0F1TW9HD8,USB Fingerprint Reader,electronics_computers_external_peripherals_and_accessories,,No
+https://www.amazon.es/dp/B0FKMWMKQH,Henkion X9MOVTADHS PRO CCTV Tester 8K 32MP 12MP IP POE++ 90W Camera - 4K 8MP TVI/CVI/AHD/SDI/CVBS Camera Tester with DMM OPM VFL TDR WiFi Network HD I/O Tools,hardware_tools_supplies_other,identified by cable-tester,No
+https://www.amazon.com/dp/B0BGHV5NSF,"Stainless Steel Stove Gap Covers,Stove Gap Filler, Range Trim Kit, Stove Gap Guards",fullsize_appliances_parts_accessories,,No
+https://www.amazon.com/dp/B08CXQN86W,Anti-static wrist strap that helps prevent static electricity buildup and damage to electronic devices.,apparel_accessories,,No
+https://www.amazon.com/dp/B0F8BPSXJ2,Remote Control Holder with Spring Coil Cable,electronics_mounts_racks_stands,remote holders based on table/sofa can be home organizers but remote holders on walls should be electronics_mount racks_stand,No
+"https://www.amazon.it/dp/B0CK4Z27HC
+https://www.amazon.it/dp/B0DHLGQPG4",Baby Hospital Sachets with Adhesive Labels – 100% Made in Italy – Reusable Baby Hospital Changing Bags for Nursery and Travel (Pink),bags_baby,,No
+https://www.amazon.com/dp/B0BY4HLSFT,"EFX Performance Surgical-Grade Silicone Balance Bracelet with Programmed Holograms for Balance, Strength, Flexibility, Energy | Waterproof & Sweatproof Bracelet for Men and Women | Great for Seniors",,There is no definition update but internally we are keeping silicone bracelets in toys_costumes_prop_jewelry,Re-check
+https://www.amazon.com/dp/B09DJVT3W3,"Beanie with Flashlight, Cordless Headphones",apparel_accessories,,No
+https://www.amazon.ae/dp/B0FB3R2Q12,Keychain clock,,,Yes
+https://www.amazon.com/dp/B0FMY6HQ2T,Smart Body Measuring Tape,,,Yes
+https://www.amazon.ae/dp/B0DLRZNBJX,Phone Swing Step Counter,,,Yes
+https://www.amazon.co.za/dp/B0F13CH38X,10pcs Adhesive Patches ,,,Yes
+https://www.amazon.co.za/dp/B0DK1KNZZ3,Rose Thorn Remover Kit with gloves and scissors which can cut paper and ribbon,,"Apparel and workwear (e.g., gardening gloves) are excluded from this class, hence it cannot be outdoor_appliances_equipment",Re-check
+https://www.amazon.fr/dp/B09MNZ3LFW?th=1,Bluetooth Bone Conduction Stereo Speaker,av_speakers_amplifiers,since it is a Hesond Pillow Bone Conduction Stereo Speaker Bluetooth Bluetooth Music,No
+https://www.amazon.com/dp/B0FPFDDXZ5,"Winch Cover, Newly Upgraded Heavy-Duty Waterproof 1200D Oxford Fabric Cover for 8500-12500 lbs Electric Winches",tools_materials_handling_lifts_dollies_trucks_cranes,"since winches marketed for use in automotive and their accessories (e.g., remote control, cable, strap, etc.,) ",No
+"https://www.amazon.ca/dp/B0FGX8TWWM
+https://www.amazon.ca/dp/B0DQTZWQTK",Brass Coin Blanks for Laser Engraving Blank Challenge Coins Threaded Edged 40mm with Protection Box for DIY (3mm),toys_other,Since it is just a brass coin,No
+"https://www.amazon.co.jp/dp/B0BKKL6MZF
+https://www.amazon.co.jp/dp/B0BKKL9Y6L
+https://www.amazon.co.jp/dp/B0BKKT42D6","INAZUMA Leather Magnetic Clip 2 Pack Light Ivory LMC-2-103, uses include memo clips, cable clips, money clips, and more",wallets_other_organizers,"Based on the ITK money-clips decided to map under wallets_other_organizers, but it is yet to be decided",Re-check
+https://www.amazon.com/dp/B0FMXVYG5L?th=1,"Charm Chains for E-Reader, books, phone, and bags",,,Re-check
+https://www.amazon.ae/dp/B0C1HMFLHM,,,,Yes
+https://www.amazon.es/dp/B0DQ955Z95,Voice Training | Kit Used in Speech Therapy and Voice Therapy with Aseptic Talc + Graduated Bottle + Brush + Bag + Digital eBook + Regulator Cap (Vivid Red),,,Yes
+https://www.amazon.co.jp/dp/B0FDB7C1HK,Radio+power bank+ light,electronics_av_radios,,No
+https://www.amazon.co.uk/dp/B0FCLXYP76,"1 Set Foodmap Chart, Low-Foodmap Food List, Healthy Foods Nutrition Chart, Foodmap Meal Plan Brochure for Beginners, Diabeter, Glycemic Index Food Guide Chart with Carbs, Calorie (Red)",sports_equipment,,No
+https://www.amazon.com/dp/B0FCRYQNRY,Work Gloves+Ski Snowboard Cold Weather Gloves,apparel_accessories,,No
+https://www.amazon.com.tr/dp/B0DW1DRDWL,"FOLDING CAMPER , wagon car",tools_cart,,No
+https://www.amazon.co.jp/gp/product/B0G2WY5FDC,Keyboard Stand and Keyboard / Piano Chair,instruments_incl_accessories,As per seller experience,No
+https://www.amazon.de/gp/product/B0BNNRX22D?th=1,"Universal Travel Adapter, GaN III 45W International Charger with 3 USB & 2 USB -C",batteries_chargers_adapters_cables_docks,plug-adapters with USB ports will be in batteries_adapters. Only pulg adapters will be HEEC,No
+https://www.amazon.de/gp/product/B09S5WTXS5?th=1,E-bike Battery Protective Case Waterproof Bicycle Battery Covers,sports_bicycles_parts_accessories,sports_bicycles_parts_accessories,No
+https://www.amazon.co.jp/gp/product/B01N8QB3B8?th=1,Futon Dryer Compatible with Vertical and Horizontal Footwear Drying,,for portable washer dryer the word dryer is indicating the product in portablw washer dryer but then linen warming and refreshing products are goint to home appliances hence re-check,Re-check
+https://www.amazon.de/gp/product/B0CW3B9NM8?th=1,"Tensioning Straps with Ball, Pack of 50 10 cm Tarpaulin Tensioners with Plastic Ball, Tarpaulin Tensioner Set",camping_equipment,Tent-accessories,No
+https://www.amazon.de/dp/B0DQ8W4LGT,Bluetooth Car Radio Supports 2USB/AUX/SD/TF/EQ/DSP/MP3 Player,automotive_dvd_security_video_devices,,No
+https://www.amazon.es/gp/product/B0FP14Z43V,"Yuan Smart Writing Set, Digital Notepad, Smart Notebook & Smart Pen, Digital Notebook, Marine, Smart Pen & Notebook 188 Pages, Write on Real Paper with Digital Processing",electronics_devices_other,Smart Pen,No
+https://www.amazon.pl/dp/B0B4QQJGLG,"Vicloon Safety Bracelet, for Kids, 8 ID Bracelets+Marker, Anti-Lost Bracelet, Waterproof, Reusable, for Girls",,,Yes
+"https://www.amazon.co.jp/dp/B0F2ML6TCS
+https://www.amazon.co.jp/dp/B0DHS5MNDN
+https://www.amazon.co.jp/dp/B0DHS3MK9D","Mountainhiker Cooler Box, 1.2 gal (30 L) / 52 L Large Capacity, Cold Retention Box with Wheels, Aluminum Alloy Handle, Portable Refrigerator, Cold for 5 Days, Perfect for Camping, BBQ, Fishing",,,Yes
+https://www.amazon.com.tr/dp/B0DJFF399Z,wooden floor mat,,,No
+https://www.amazon.com.tr/dp/B0CZM6RFJ5,Honeycomb Cleaning Machine (Radiator Cleaning Machine or Boiler Cleaning Machine),,,No
+https://www.amazon.com.tr/dp/B0DC6VKT5L,Radio and Portable Bluetooth Speaker,,,No
+"https://www.amazon.com/dp/B0DPMPGCDX
+https://www.amazon.pl/dp/B0DPVNV85H", silicone ear and nose model set for piercing practice,,,No
+https://www.amazon.com.tr/dp/B09X6T17BD,Referee and Earthquake Whistle,,,No
+https://www.amazon.com.tr/dp/B0CP18S8LL,Aromatherapy Diffuser Necklaces or Scented Pendant Necklaces,,,No
+https://www.amazon.com.tr/dp/B0CM3KJ4K2,retractable copper dowsing rod,,,No
+https://www.amazon.com.tr/dp/B08RX3DTWH,mini electret condenser microphone capsules,,,No
+"https://www.amazon.eg/dp/B0CXTJ4PJW
+https://www.amazon.eg/dp/B0FFBGXL25",Ozone Generator PSU or Ozone Generator Power Suppl,,,No
+https://www.amazon.eg/dp/B0D57Y383G,Compression Swing for Sensory Processing,,,Re-check
+https://www.amazon.eg/dp/B0BTD96TZG,tassel rosary accessory,,,No
+https://www.amazon.eg/dp/B0C4HXLJ2L,Ultrasonic Probe Covers for Endocavitary Examinations,,,No
+https://www.amazon.eg/dp/B096XVYRLM,"Imitation Pearls Hanging Rope used for jewelry making, DIY crafts, mobile phone lanyards, necklaces, and headphone decoration",,,No
+https://www.amazon.eg/dp/B0F625VSM8,Pearl Bag Chain Extender or Purse Chain Extension or Pockets Extension Chains,,,No
+https://www.amazon.eg/dp/B09WDJPNFK?th=1,Self Adhesive Caster Wheels,hardware_tools_supplies_other,,No
+https://www.amazon.eg/dp/B0B156T15M?th=1,Desk Lamp Quran Speaker,,,Re-check
+https://www.amazon.eg/dp/B0DFD3QNDW,Yoga Ball Massage Ball,personal_care_massagers,,No
+https://www.amazon.ae/dp/B07YPSY1PG,Promo Table Sales Counter Top for Store and Exhibition,furniture_desks_tables_nightstands,,No
+https://www.amazon.co.jp/gp/product/B0G1418S6Z,food toy,groceries_food_beverages,,No
+https://www.amazon.com.au/gp/product/B0FXMY1WZ4?th=1,Galaxy Projector with Bluetooth Speaker,fixtures_lighting_incl_parts_accessories,,No
+https://www.amazon.fr/gp/product/B0DSLKXVM1,"10-piece DIY headband kit for girls aged 3-8 that includes headbands, decorative bands, accessories, and stickers to create personalized hair accessories",,,No
+https://www.amazon.com/gp/product/B0G51SJQ2V,"portable FM/AM radio with 3-in-1 features (radio, air conditioner, and fan)",,,No
+https://www.amazon.it/dp/B0FB3J8CJB?th=1,"Bicycles, motorcycles, scooters, outdoor gates, fences,",,,No
+https://www.amazon.com/dp/B0CWPNXHQ4,"Cosplay die-cast Replica. Memory Foam Cuff, LCD Screen, FM Radio, Alarm Clock and Stand",,,No
+https://www.amazon.com/dp/B08ZJ9RDLY?th=1,"Megadream 6 Port USB Hub for PS5 Accessories, High-Speed Expansion Hub Charger Splitter Adapter with 4 USB-A 2.0 + 1 Charging + 1 Type C Port, Compatible with PlayStation 5 Console Front Jacks, White ",,,No
+https://www.amazon.co.jp/dp/B0FXV9478B?th=1,"heavy vacuum cleaner, making it easy to compress clothes.",,,No
+https://www.amazon.sa/dp/B0DMN5JWN5,Classroom Behavior Incentives Coin Reward Tokens,,,No
+https://www.amazon.sa/dp/B07Q619ZKS?th=1,Bluetooth-connected car device that provides real-time warnings of speed cameras and road hazards across Europe using community-sourced data from Blitzer.de.,,,No
+https://www.amazon.sa/dp/B0DKP4KL17,Beach Towel and Tote bag,,,No
+https://www.amazon.com.tr/dp/B0BYS4MVXZ,LOUJIN 1-inch digital turbine flow meter with LCD display,,,No
+https://www.amazon.com.tr/dp/B0BFV4YM2R,"Rope of climbing, boat, anchor",,,No
+https://www.amazon.com.tr/ROWCES-Konteynerli-400-500M-Menzilli-Otomatik/dp/B0CHJMFSFM,"GPS Fish Feed Boat, Wireless Bait Boat",,,No
+https://www.amazon.fr/dp/B07H34B1PG,"Diamond Needle Files used for detailed work on metal, glass, stone, ceramic, jewelry, and crafts.",,,No
+https://www.amazon.it/dp/B0CZDNYS3P,"Micromotor Polisher used in dental labs, jewelry making, ceramics, nail work, and stone setting for polishing and finishing tasks",,,No
+https://www.amazon.it/dp/B0D8W8ZP9W,Gabby's Beanie Cap & Sunglasses Set,,,No
+https://www.amazon.de/dp/B0D5HKGGS9,"Crochet Flower Charm - Multi-purpose accessory for bags, bookmarks, headphones, and cable holders",,,No
+https://www.amazon.co.jp/dp/B087ZFQP46,"Heat Alert Card or Temperature Card used for monitoring body temperature and preventing heatstroke, carried in wallets or pockets",,,No

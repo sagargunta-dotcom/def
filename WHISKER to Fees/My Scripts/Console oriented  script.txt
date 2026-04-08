@@ -1,0 +1,37 @@
+
+function changeWordsColor(words, color) {
+   
+    const textNodes = document.body.querySelectorAll("*:not(script):not(style)");
+
+    textNodes.forEach(node => {
+        node.childNodes.forEach(child => {
+            if (child.nodeType === Node.TEXT_NODE) {
+                let textContent = child.textContent;
+                words.forEach(word => {
+                    if (textContent.includes(word)) {
+                        const regex = new RegExp(`\\b${word}\\b`, 'g');
+                        const coloredWord = document.createElement('span');
+                        coloredWord.style.color = color;
+                        coloredWord.textContent = word;
+                        
+                      
+                        const parts = textContent.split(regex);
+                        const newContent = document.createDocumentFragment();
+                        
+                        parts.forEach((part, index) => {
+                            newContent.appendChild(document.createTextNode(part));
+                            if (index < parts.length - 1) {
+                                newContent.appendChild(coloredWord.cloneNode(true));
+                            }
+                        });
+
+                        child.replaceWith(newContent);
+                    }
+                });
+            }
+        });
+    });
+}
+
+
+changeWordsColor(['Amazon', 'flipkart', 'google'], 'Red');

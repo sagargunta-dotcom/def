@@ -1,0 +1,56 @@
+﻿Scenario,TRexID to follow,Exclusion
+3D printer part /CNC part ,3d_printers_parts_accessories,
+Bodychain & Suspenders/Belts,apparel_accessories,body chains or body chains and lingerie they go to jewelry_necklaces_pendants_rings_earrings
+Apparel used as Costume & Daily wear apparel,apparel_costumes_incl_props_accessories,Bridal accessories
+Hoodie used a blanket /Mermaid blanket ,apparel_wearable_blankets,
+Battery for automotive & home ,automotive_batteries_and_chargers,
+Grease used for both auto and regular use,automotive_oils_fluids,
+Automotive and Home Trash bin,automotive_parts_accessories,
+Part used in boat and automotive,automotive_parts_accessories,
+Accessories used in baby car seat and stroller ,baby_strollers,
+Only first aid bags without equipment,bags_cases_other,
+Only bags/case without medical or diagnostic equip,bags_cases_other,
+Cell phone lock boxes only commercial,commercial_fixtures,
+optimetric or dental equipment,commercial_medical_devices_incl_accessories,
+drone + rc part+quadcopter part,electronics_parts_accessories,
+Dock with KVM switches (considering KVM switches),external peripherals,
+Aurdino or any microcontroller + breadboard + modules ,hardware_electrical_electronics_components,
+Sanitizer station used for home and commercial purpose,home_and_kitchen_essentials_accessories,
+"Commercial and Home use dispenses (Soap, lotion)",home_and_kitchen_essentials_accessories,
+Decorative product used Indoors & Outdoors.,home_decor,
+Preserved rose without necklace ,home_decor ,with necklace or jewelery  goes to jewelry_necklaces_pendants_rings_earrings
+"Crusher, ice shaver electric home or home and commercial",home_ice_machines,
+Cell phone lock boxes commercial & home use,home_organizers,
+Smart switches which can be controlled with Alexa or mobile app,hardware_electrical_electronics_components,
+"Crusher, ice shaver non electric home or home and commercial",kitchen_utensils_servewear,
+Lubricant used in watch,hardware_tools_supplies_other,
+Part of Trimmer+lawnmower+chainsaw,outdoor_appliances_equipment,only lawn mower part still goes to automotive_lawn_mowers_parts_accessories
+Product used for horses and other pets as well,pets_toys_supplies_devices,
+Backpack with keyword Hydration,sports_equipment_hydration,
+Vanity keyword products ,vanities,vanity compact mirror
+Oils cosmetic/beauty & regular cooking ,groceries_food_beverages,
+Fluids or Oils used for both industrial and automotive,automotive_oils_fluids,
+Valves for both domestic and industrial,hardware_valves,automotive and plumbing valves
+Music player for both car and home,av_media_players_recorders,
+Test kit for both Home and Lab,personal_care_equipment_diagnostics,
+Products used for both hand powered boat and automotive boats,automotive_boats_parts_equipment,
+Products used for both pets and babies safety,baby_child_proofing_safety_equipment,
+handbag+ tote,bags_fashion,
+tote and other except travel,bags_cases_other,
+travel and sport /gym bag,bags_cases_other,
+only travel / luggage,luggage_briefcases_suitcases_totes_duffel,
+shower enclosure hinges and doors (even as a combination or individually),fixtures_bath_shower_enclosures,
+Bags for both travel AND sports use,bags_cases_other,Bags exclusively for travel
+Bags exclusively for travel/luggage,luggage_briefcases_suitcases_totes_duffel,
+Handbags + fashion totes,bags_fashion,Travel totes
+"Totes (non-travel, non-fashion)",bags_cases_other,Travel/fashion totes
+Backpacks including hiking and outdoor,bags_cases_other,Bags marketed exclusively for travel
+Sports duffle bags and duffel-bags,bags_cases_other,Travel-specific bags
+Window tiebacks,home_window_treatments,
+Work gloves (non-disposable),work_gloves,Disposable gloves
+Nitrile gloves (non-disposable),work_gloves,Disposable gloves
+Early development playmats,toys_other,
+Kinesiology tape (therapeutic),personal_care_rehabilitation_gear,
+Adhesive tapes (any type),adhesive_tapes_gums_sealants,Fabric appliques for crafts
+"Self-adhesive repair tape, Glue tape",adhesive_tapes_gums_sealants,
+Duvet covers,home_linens,

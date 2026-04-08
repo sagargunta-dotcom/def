@@ -1,0 +1,84 @@
+// ==UserScript==
+// @name ASINs format
+// @namespace T Corp script
+// @description formatting ASINs
+// @author (bsheshai) SHESHANK BABU
+// @match https://t.corp.amazon.com/*
+// @version 1.0
+// @grant none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Function to create the input boxes and replace button
+    function createInputBoxes() {
+        // Create a div element for the input boxes
+        var textBoxDiv = document.createElement("div");
+        textBoxDiv.style.position = "fixed";
+        textBoxDiv.style.bottom = "300px";
+        textBoxDiv.style.right = "100px";
+        textBoxDiv.style.zIndex = "9999";
+
+        // Create the first input box
+        var textBox1 = document.createElement("textarea");
+        textBox1.setAttribute("rows", "10");
+        textBox1.setAttribute("cols", "50");
+        textBox1.setAttribute("id", "textInput1");
+        textBox1.setAttribute("placeholder", "Paste ASINs here...");
+        textBoxDiv.appendChild(textBox1);
+
+        // Create the second input box
+        var textBox2 = document.createElement("textarea");
+        textBox2.setAttribute("rows", "4");
+        textBox2.setAttribute("cols", "15");
+        textBox2.setAttribute("id", "textInput2");
+        textBox2.setAttribute("placeholder", "Paste the charcters which need to be replaced with newline here...");
+        textBoxDiv.appendChild(textBox2);
+
+        // Create a button for replacing text
+        var replaceButton = document.createElement("button");
+        replaceButton.innerHTML = "Replace";
+        replaceButton.style.marginLeft = "30px";
+        replaceButton.style.backgroundColor = "orange";
+        replaceButton.style.fontSize = "25px";
+        replaceButton.style.color = "black";
+        replaceButton.style.fontWeight = "bold";
+        replaceButton.onclick = function() {
+            var mainText = document.getElementById("textInput1").value;
+            var separator = document.getElementById("textInput2").value;
+            // Do something with the text, for example, replace textInput1 with textInput2
+            var replacedText = mainText.replace(new RegExp(separator, 'g'), '\n');
+            // Output the replaced text
+            var result= alert(replacedText);
+            if (result === undefined) {
+                document.body.removeChild(textBoxDiv);
+                navigator.clipboard.writeText(replacedText)
+            }
+        };
+        textBoxDiv.appendChild(replaceButton);
+
+        // Append the input boxes and button to the body
+        document.body.appendChild(textBoxDiv);
+    }
+
+    // Create a button to trigger the input box
+    var Button = document.createElement('button');
+    Button.textContent = 'ASINs Format';
+    Button.style.position = 'absolute';
+    Button.style.top = '65px';
+    Button.style.left = '1200px';
+    Button.style.zIndex = '999999';
+    Button.style.width = '150px';
+    Button.style.height = '30px';
+    Button.style.backgroundColor = "blue";
+    Button.style.fontWeight = "bold";
+    Button.style.color = "white";
+    Button.style.fontSize = "20px";
+    Button.onclick = function() {
+        createInputBoxes();
+    };
+
+    // Append the button to the body
+    document.body.appendChild(Button);
+})();

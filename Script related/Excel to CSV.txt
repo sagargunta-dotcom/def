@@ -1,0 +1,271 @@
+// ==UserScript==
+// @name         Excel to CSV
+// @namespace    http://tampermonkey.net/
+// @version      1.4
+// @description  Excel to CSV converter with multiple sheet support
+// @author       You
+// @match        *://*/*
+// @grant        none
+// @require      https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js
+// ==/UserScript==
+
+(function () {
+    'use strict';
+
+    // Wait for XLSX to be available
+    function waitForXLSX(callback) {
+        if (window.XLSX) {
+            callback();
+        } else {
+            setTimeout(() => waitForXLSX(callback), 100);
+        }
+    }
+
+    waitForXLSX(() => {
+        // Add CSS styles
+        const styles = `
+            .converter-container {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 10000;
+                padding: 20px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                font-family: Arial, sans-serif;
+                width: 300px;
+            }
+            .converter-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: #333;
+            }
+            .close-button {
+                background: #f44336;
+                border: none;
+                color: white;
+                cursor: pointer;
+                padding: 5px 10px;
+                font-size: 14px;
+                line-height: 1;
+                border-radius: 4px;
+                transition: background 0.3s;
+            }
+            .close-button:hover {
+                background: #d32f2f;
+            }
+            .converter-input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .button-group {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+            .converter-button {
+                flex: 1;
+                padding: 10px;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+            .download-btn {
+                background: #4CAF50;
+            }
+            .download-btn:hover {
+                background: #45a049;
+            }
+            .clear-btn {
+                background: #2196F3;
+            }
+            .clear-btn:hover {
+                background: #1e88e5;
+            }
+            .converter-button:disabled {
+                background: #cccccc;
+                cursor: not-allowed;
+            }
+            .file-input-wrapper {
+                position: relative;
+                margin-bottom: 15px;
+            }
+            .file-input-label {
+                display: inline-block;
+                padding: 8px 12px;
+                background: #2196F3;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                width: calc(100% - 24px);
+                text-align: center;
+                transition: background 0.3s;
+            }
+            .file-input-label:hover {
+                background: #1976D2;
+            }
+            #excelFile {
+                display: none;
+            }
+            .status-message {
+                margin-top: 10px;
+                font-size: 12px;
+                color: #666;
+                text-align: center;
+            }
+            .selected-file {
+                font-size: 12px;
+                color: #666;
+                margin-top: 5px;
+                text-align: center;
+                word-break: break-all;
+            }
+        `;
+
+        // Add styles to document
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = styles;
+        document.head.appendChild(styleSheet);
+
+        // Create UI
+        const container = document.createElement('div');
+        container.className = 'converter-container';
+        container.innerHTML = `
+            <div class="converter-header">
+                <span>Excel to CSV Converter</span>
+                <button class="close-button" id="closeBtn">Close</button>
+            </div>
+            <div class="file-input-wrapper">
+                <label class="file-input-label" for="excelFile">Choose Excel File</label>
+                <input type="file" id="excelFile" accept=".xlsx,.xls" />
+                <div id="selectedFile" class="selected-file"></div>
+            </div>
+            <select id="marketSelect" class="converter-input" disabled>
+                <option value="">Select a worksheet</option>
+            </select>
+            <div class="button-group">
+                <button id="downloadBtn" class="converter-button download-btn" disabled>Download CSV</button>
+                <button id="clearBtn" class="converter-button clear-btn" disabled>Clear</button>
+            </div>
+            <div id="statusMessage" class="status-message"></div>
+        `;
+        document.body.appendChild(container);
+
+        let sheetsData = {};
+        const statusMessage = document.getElementById('statusMessage');
+        const marketSelect = document.getElementById('marketSelect');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const fileInput = document.getElementById('excelFile');
+        const selectedFile = document.getElementById('selectedFile');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Close functionality
+        closeBtn.addEventListener('click', () => {
+            container.remove();
+        });
+
+        function resetForm() {
+            fileInput.value = '';
+            selectedFile.textContent = '';
+            marketSelect.innerHTML = '<option value="">Select a worksheet</option>';
+            marketSelect.disabled = true;
+            downloadBtn.disabled = true;
+            clearBtn.disabled = true;
+            sheetsData = {};
+            statusMessage.textContent = '';
+        }
+
+        fileInput.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (!file) {
+                resetForm();
+                return;
+            }
+
+            selectedFile.textContent = file.name;
+            statusMessage.textContent = 'Reading file...';
+            marketSelect.disabled = true;
+            downloadBtn.disabled = true;
+            clearBtn.disabled = false;
+
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                try {
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = window.XLSX.read(data, { type: 'array' });
+
+                    sheetsData = workbook.Sheets;
+                    const sheetNames = workbook.SheetNames;
+
+                    marketSelect.innerHTML = '<option value="">Select a worksheet</option>';
+                    sheetNames.forEach(name => {
+                        const option = document.createElement('option');
+                        option.value = name;
+                        option.text = name;
+                        marketSelect.appendChild(option);
+                    });
+
+                    marketSelect.disabled = false;
+                    statusMessage.textContent = `${sheetNames.length} worksheets found`;
+                } catch (error) {
+                    statusMessage.textContent = 'Error reading file';
+                    console.error(error);
+                }
+            };
+
+            reader.onerror = function () {
+                statusMessage.textContent = 'Error reading file';
+            };
+
+            reader.readAsArrayBuffer(file);
+        });
+
+        marketSelect.addEventListener('change', function () {
+            downloadBtn.disabled = !this.value;
+        });
+
+        clearBtn.addEventListener('click', resetForm);
+
+        downloadBtn.addEventListener('click', function () {
+            const selectedMarket = marketSelect.value;
+            if (!selectedMarket) return;
+
+            try {
+                const worksheet = sheetsData[selectedMarket];
+                const csv = window.XLSX.utils.sheet_to_csv(worksheet);
+
+                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = `${selectedMarket}_${getFormattedDate()}.csv`;
+                link.click();
+
+                statusMessage.textContent = 'Download complete!';
+                setTimeout(() => {
+                    statusMessage.textContent = '';
+                }, 2000);
+            } catch (error) {
+                statusMessage.textContent = 'Error generating CSV';
+                console.error(error);
+            }
+        });
+
+        function getFormattedDate() {
+            const date = new Date();
+            return `${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getDate()).padStart(2, '0')}`;
+        }
+    });
+})();

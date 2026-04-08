@@ -1,0 +1,264 @@
+// ==UserScript==
+// @name Add Custom Buttons
+// @namespace Paragon VENDOR Buttons Script
+// @description Adds custom buttons to the annotation box
+// @author (bsheshai) SHESHANK BABU
+// @match https://paragon-eu.amazon.com/hz/view-case?caseId=*
+// @match https://paragon-na.amazon.com/hz/view-case?caseId=*
+// @match https://paragon-fe.amazon.com/hz/view-case?caseId=*
+// @match https://paragon-na.amazon.com/hz/view-case?workItemRegion=na&caseId=*
+// @match https://paragon-eu.amazon.com/hz/view-case?workItemRegion=na&caseId=*
+// @match https://paragon-fe.amazon.com/hz/view-case?workItemRegion=na&caseId=*
+// @version 1.0
+// @grant none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Function to create custom buttons
+    function createCustomButtons() {
+        // Parent container of existing button
+        var parentContainer = document.querySelector('.child_1S7a3 > kat-button[data-csm-name="annotation-discard"]');
+
+        if (parentContainer) {
+            // Create container for custom buttons
+            var buttonsContainer = document.createElement('div');
+            buttonsContainer.style.display = 'flex';
+            buttonsContainer.style.marginTop = '10px'; // Adjust the top margin as needed
+
+            // Create the first custom button
+            var customButton1 = document.createElement('div');
+            customButton1.innerHTML = '<button class="custom-button button1" type="button">VARIATION</button>';
+            customButton1.style.zIndex = '999999'; // Set higher z-index
+
+            // Create the second custom button
+            var customButton2 = document.createElement('div');
+            customButton2.innerHTML = '<button class="custom-button button2" type="button">IMAGES</button>';
+            customButton2.style.zIndex = '999999'; // Set higher z-index
+
+            var customButton3 = document.createElement('div');
+            customButton3.innerHTML = '<button class="custom-button button3" type="button">ATTRIBUTE/s UPDATE</button>';
+            customButton3.style.zIndex = '999999';
+
+            var customButton4 = document.createElement('div');
+            customButton4.innerHTML = '<button class="custom-button button4" type="button">COST/LIST PRICE</button>';
+            customButton4.style.zIndex = '999999';
+
+            var customButton5 = document.createElement('div');
+            customButton5.innerHTML = '<button class="custom-button button5" type="button">BUY BOX</button>';
+            customButton5.style.zIndex = '999999';
+
+
+            // Add styles for custom buttons
+            var customButtonStyle = document.createElement('style');
+            customButtonStyle.innerHTML = `
+                .custom-button {
+                    color: white;
+                    border: none;
+                    zindex: 999999;
+                    padding: 8px 16px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 14px; /* Change to desired font size */
+                    font-family: Arial, sans-serif; /* Change to desired font family */
+                    font-weight: Bold;
+                    cursor: pointer;
+                    margin-right: 10px; /* Adjust margin as needed */
+                    border-radius: 4px;
+                }
+                .button1 {
+                    background-color: green;
+                    color: white;
+                }
+                .button2 {
+                    background-color: blue;
+                    color: white;
+                }
+                .button3 {
+                    background-color: purple;
+                    color: white;
+                }
+                .button4 {
+                    background-color: brown;
+                    color: white;
+                }
+                .button5 {
+                    background-color: #337772;
+                    color: white;
+                }
+                .custom-button:hover {
+                    opacity: 0.8; /* Change to desired hover color */
+                }
+            `;
+
+            // Append styles to the document head
+            document.head.appendChild(customButtonStyle);
+
+            // Append custom buttons to the container
+            buttonsContainer.appendChild(customButton1);
+            buttonsContainer.appendChild(customButton2);
+            buttonsContainer.appendChild(customButton3);
+            buttonsContainer.appendChild(customButton4);
+            buttonsContainer.appendChild(customButton5);
+
+            // Insert container after the parent container
+            parentContainer.parentNode.insertBefore(buttonsContainer, parentContainer.nextSibling);
+
+            document.addEventListener('DOMContentLoaded',function() {
+          createCustomButtons();
+     });
+
+            // Function to paste text into a text field
+            function pasteText(text, textFieldId) {
+              var textField = document.getElementById(textFieldId);
+                if (textField) {
+                    textField.focus();
+                textField.value = text;
+             } else {
+            console.error("Text field not found.");
+            }
+            }
+            // Add click event listeners for custom buttons if needed
+            customButton1.addEventListener('click', function() {
+                    pasteText("\n CASE ANNOTATIONS WITH MANDATORY CHECKS \n\n" +
+                          " • Seller intent and follow up question: Vendor reached us to create/update/request: Variation \n\n" +
+                          " • SOPs used: \n\n\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          "** MANDATORY TOOLs list: **\n" +
+                          " - Smores\n" +
+                          " - Vendor Master\n" +
+                          " - Contribution level Selection Central\n" +
+                          " - Item Level Selection Central\n" +
+                          " - Export links\n" +
+                          " - Rtip relation viewer\n" +
+                          " - AVS Ops Config tool\n" +
+                          " - AVS ASINs Search Index to check for the values of the grouping attributes\n" +
+                          " - Denali to check inventory (we have bulk ASINs feature in denali to check inventory for bulk ASINs\n" +
+                          " - Vermont (if used)\n" +
+                          " - Other tools (if used)\n" +
+                          " - Submissions made in Selection Central\n" +
+                          " - Issue corrections made (if any)\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          " • Research Tool Links & Case troubleshooting: \n\n\n" +
+                          "--------------------------------------------------------********DO NOT IGNORE********-----------------------------------------------------\n" +
+                          " > Check if Brand is same for all the ASINs and product type is enabled for self service feature. \n" +
+                          " > Check if variation is valid or not, by checking images and item name of the ASINs in selection central. \n" +
+                          " > Check if ASINs are already there in existing variation, delete if any. \n" +
+                          " > For AVS enabled ASINs, make sure that the grouping attributes are same and varying attributes are different. If grouping are different, remove corrections and request attributes from the vendor. \n" +
+                          " > For any submission. check for submission errors. Fix all the issues before resolving.\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n\n" +
+                          "• Resolution: \n\n", "katal-id-15");
+                console.log('Custom Button 1 clicked');
+            });
+            customButton2.addEventListener('click', function() {
+                    pasteText("\n CASE ANNOTATIONS WITH MANDATORY CHECKS \n\n" +
+                          " • Seller intent and follow up question: Vendor reached us to create/update/request: IMAGES \n\n" +
+                          " • SOPs used: \n\n\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          "** MANDATORY TOOLs list: **\n" +
+                          " - Smores\n" +
+                          " - Vendor Master\n" +
+                          " - Contribution level Selection Central\n" +
+                          " - Wharf tool\n" +
+                          " - MediaRanker Debugger\n" +
+                          " - Image Bouncer tool\n" +
+                          " - Media central\n" +
+                          " - CSI (if used)\n" +
+                          " - Other tools (if used)\n" +
+                          " - Issue corrections made (if any)\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          " • Research Tool Links & Case troubleshooting: \n\n\n" +
+                          "--------------------------------------------------------********DO NOT IGNORE********-----------------------------------------------------\n" +
+                          " > Verify the image submission in Wharf UI if it is completed. Check for time frame (24 hrs > Image Submission > 6 Months) \n" +
+                          " > Check defect scoring in Media ranking debugger. Follow respective SOPs based on the error message in defect scoring. \n" +
+                          " > While using bouncer tool, compare MAIN images with Anchor image and MAIN image of contacting vendor group ID and follow the respective outcome. \n" +
+                          " > For image suppression issues, follow [Handle an ASIN with an Image Suppression Error- (https://paragon-na.amazon.com/hz/codex?id=GMEBGS8697JB29TY)] \n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n\n" +
+                          "• Resolution: \n\n", "katal-id-15");
+                         console.log('Custom Button 2 clicked');
+            });
+            customButton3.addEventListener('click', function() {
+                    pasteText("\n CASE ANNOTATIONS WITH MANDATORY CHECKS \n\n" +
+                          " • Seller intent and follow up question: Vendor reached us to create/update/request: Title/BP/PD/Other attributes update on the ASIN \n\n" +
+                          " • SOPs used: \n\n\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          "** MANDATORY TOOLs list: **\n" +
+                          " - Smores\n" +
+                          " - Vendor Master\n" +
+                          " - Contribution level Selection Central\n" +
+                          " - CSI link\n" +
+                          " - Attribute checker (To check guidelines)\n" +
+                          " - Recap\n" +
+                          " - Catalog issue troubleshooter\n" +
+                          " - Brand profile\n" +
+                          " - Other tools (if used)\n" +
+                          " - Issue corrections made (if any)\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          " • Research Tool Links & Case troubleshooting: \n\n\n" +
+                          "--------------------------------------------------------********DO NOT IGNORE********-----------------------------------------------------\n" +
+                          " > Check seller rating in CSI if the value is flowing from retail/52/Data Augmenter. \n" +
+                          " > Verify winning contributor in Recap if it is contacting vendor code/ MSA/ICAST/ other vendor code. \n" +
+                          " > If vendor is not winning, check brand mapping(if brand ID and company code are linked) in brand profile tool. \n" +
+                          " > Fix all contribution and item issues in selection central before resolving the case. \n" +
+                          " > Always include mandatory self service steps in catalog_item_updated blurb. (https://paragon-na.amazon.com/hz/codex?id=GJP8EQSDE9C86TNA) \n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n\n" +
+                          "• Resolution: \n\n", "katal-id-15");
+                         console.log('Custom Button 3 clicked');
+            });
+            customButton4.addEventListener('click', function() {
+                    pasteText("\n CASE ANNOTATIONS WITH MANDATORY CHECKS \n\n" +
+                          " • Seller intent and follow up question: Vendor reached us to create/update/request: COST / LIST price update \n\n" +
+                          " • SOPs used: \n\n\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          "** MANDATORY TOOLs list: **\n" +
+                          " - Smores\n" +
+                          " - Vendor Master\n" +
+                          " - Contribution level Selection Central\n" +
+                          " - Cost Management Lookup: Verify the active cost for ASINs\n" +
+                          " - Cost Portal Beta: check the status of cost submissions\n" +
+                          " - ARCHE - ARCHE Job Aid (If used)\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          " • Research Tool Links & Case troubleshooting: \n\n\n" +
+                          "--------------------------------------------------------********DO NOT IGNORE********-----------------------------------------------------\n" +
+                          " > Confirm if the vendor is trying to update the Cost price and not list price \n" +
+                          " > Check if the vendor has already submitted cost update before providing self service  \n" +
+                          " > If the Cost is missing in template/Vendor central update the cost on behalf of vendor as per checks in SOP. \n" +
+                          " > Check all the tool for the ASINs : Cost management, Cost portal and Unified cost portal. \n" +
+                          " > Escalate the issue to VM whenever required using arche, example :  Vendor is threatening to hold shipment , close his account etc as per SOP. \n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n\n" +
+                          "• Resolution: \n\n", "katal-id-15");
+                         console.log('Custom Button 4 clicked');
+            });
+            customButton5.addEventListener('click', function() {
+                    pasteText("\n CASE ANNOTATIONS WITH MANDATORY CHECKS \n\n" +
+                          " • Seller intent and follow up question: Vendor reached us to create/update/request: BUY BOX issue on the ASIN \n\n" +
+                          " • SOPs used: \n\n\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          "** MANDATORY TOOLs list: **\n" +
+                          " - Smores\n" +
+                          " - Vendor Master\n" +
+                          " - Contribution level Selection Central\n" +
+                          " - CSI Blame O\n" +
+                          " - Buyability Analyzer\n" +
+                          " - Denali Troubleshooter\n" +
+                          " - Sourceability\n" +
+                          " - Procureability\n" +
+                          " - Selection Economics\n" +
+                          " - Pandash (if Used, along with the error received)\n" +
+                          " - SLT Portal: (https://slt-eu.corp.amazon.com/)\n" +
+                          " - Other tools (if used)\n" +
+                          " - Issue corrections made (if any)\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n" +
+                          " • Research Tool Links & Case troubleshooting: \n\n\n" +
+                          "------------------------------------------------------------------------------------------------------------------------------------------\n\n" +
+                          "• Resolution: \n\n", "katal-id-15");
+                         console.log('Custom Button 5 clicked');
+            });
+        } else {
+            setTimeout(createCustomButtons, 1000);
+        }
+    }
+    // Wait for the page to load before adding custom buttons
+    window.addEventListener('load', createCustomButtons);
+})();

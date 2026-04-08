@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T2F + TRexID Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #070712; --bg2: #0d0d20;
+      --bg3:     rgba(255,255,255,.03); --bg3h: rgba(255,255,255,.055);
+      --bdr:     rgba(255,255,255,.07); --bdr2: rgba(255,255,255,.15);
+      --pri:     #6366f1; --pri-l: #818cf8; --pri-g: rgba(99,102,241,.2); --sec: #8b5cf6;
+      --ok:      #10b981; --ok-bg:  rgba(16,185,129,.09); --ok-bd:  rgba(16,185,129,.28);
+      --err:     #f87171; --err-bg: rgba(248,113,113,.09); --err-bd: rgba(248,113,113,.28);
+      --warn:    #fbbf24; --warn-bg:rgba(251,191,36,.09);  --warn-bd:rgba(251,191,36,.28);
+      --info:    #60a5fa; --info-bg:rgba(96,165,250,.09);  --info-bd:rgba(96,165,250,.28);
+      --t1: #f0f4ff; --t2: #94a3b8; --t3: #475569;
+      --r-sm: 6px; --r-md: 10px; --r-lg: 14px;
+    }
+
+    html { font-size: 14px; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg); color: var(--t1);
+      height: 100vh; overflow: hidden;
+    }
+    body::before {
+      content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background:
+        radial-gradient(ellipse at 10% 10%, rgba(99,102,241,.07) 0%, transparent 50%),
+        radial-gradient(ellipse at 90% 85%, rgba(139,92,246,.05) 0%, transparent 50%);
+    }
+
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 99px; }
+
+    .app { position: relative; z-index: 1; display: flex; flex-direction: column; height: 100vh; }
+
+    /* ── Header ── */
+    .hdr {
+      flex-shrink: 0; height: 54px;
+      display: flex; align-items: center; gap: 12px; padding: 0 18px;
+      background: rgba(7,7,18,.92); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--bdr);
+    }
+    .logo { display: flex; align-items: center; gap: 8px; }
+    .logo-mark {
+      width: 30px; height: 30px;
+      background: linear-gradient(135deg, var(--pri), var(--sec));
+      border-radius: var(--r-sm); display: flex; align-items: center;
+      justify-content: center; font-size: 15px;
+      box-shadow: 0 0 14px var(--pri-g);
+    }
+    .logo-name {
+      font-size: .9rem; font-weight: 700; letter-spacing: -.02em;
+      background: linear-gradient(135deg, var(--pri-l), var(--sec));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .main-tabs {
+      display: flex; gap: 2px;
+      background: rgba(255,255,255,.04); border: 1px solid var(--bdr);
+      border-radius: var(--r-md); padding: 3px;
+    }
+    .main-tab {
+      padding: 5px 16px; border-radius: calc(var(--r-md) - 2px);
+      font-size: .8rem; font-weight: 600; color: var(--t2);
+      cursor: pointer; border: none; background: transparent;
+      font-family: inherit; transition: all .2s;
+    }
+    .main-tab:hover { color: var(--t1); }
+    .main-tab.active { background: linear-gradient(135deg, var(--pri), var(--sec)); color: white; }
+
+    /* header right */
+    .hdr-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+    /* folder status pill */
+    .folder-pill {
+      display: flex; align-items: center; gap: 6px;
+      padding: 4px 10px; border-radius: 99px;
+      font-size: .72rem; font-weight: 600;
+      border: 1px solid; cursor: pointer; transition: opacity .2s;
+    }
+    .folder-pill:hover { opacity: .8; }
+    .folder-pill.ok  { background: var(--ok-bg);  border-color: var(--ok-bd);  color: var(--ok); }
+    .folder-pill.err { background: var(--err-bg); border-color: var(--err-bd); color: var(--err); }
+    .folder-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+    /* ── Buttons ── */
+    .btn {
+      padding: 5px 11px; border: none; border-radius: var(--r-sm);
+      font-family: inherit; font-size: .75rem; font-weight: 600;
+      cursor: pointer; white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 5px;
+      transition: opacity .2s, transform .1s;
+    }
+    .btn:hover { opacity: .82; }
+    .btn:active { transform: scale(.96); }
+    .btn:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+    .btn-pri   { background: linear-gradient(135deg,var(--pri),var(--sec)); color:#fff; }
+    .btn-ghost { background: transparent; color: var(--t2); border: 1px solid var(--bdr); }
+    .btn-ghost:hover { color: var(--t1); border-color: var(--bdr2); }
+    .btn-warn  { background: #d97706; color:#fff; }
+
+    /* ── Content ── */
+    .content {
+      flex: 1; overflow: hidden; display: flex;
+      flex-direction: column; padding: 14px 18px; gap: 10px;
+    }
+    .panel { display: none; flex-direction: column; height: 100%; gap: 10px; overflow: hidden; }
+    .panel.active { display: flex; }
+
+    /* ── T2F controls ── */
+    .row { display: flex; gap: 7px; align-items: center; flex-wrap: wrap; flex-shrink: 0; }
+    .sel {
+      padding: 5px 10px; background: var(--bg2); color: var(--t1);
+      border: 1px solid var(--bdr); border-radius: var(--r-sm);
+      font-family: inherit; font-size: .8rem; cursor: pointer; min-width: 200px;
+    }
+    .sel:focus { outline: none; border-color: var(--pri); }
+    .sel option { background: var(--bg2); }
+
+    /* row info */
+    .row-info {
+      font-size: .72rem; color: var(--t3); display: flex; align-items: center; gap: 5px;
+    }
+    .row-info b { color: var(--t2); }
+
+    /* ── Search grid ── */
+    .t2f-grid {
+      display: flex; flex-wrap: wrap; gap: 8px; padding: 10px;
+      background: var(--bg3); border: 1px solid var(--bdr); border-radius: var(--r-lg);
+      flex-shrink: 0;
+    }
+    .sf { display: flex; flex-direction: column; gap: 3px; min-width: 110px; flex: 1; }
+    .sf-lbl {
+      font-size: .66rem; font-weight: 700; color: var(--t3);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      text-transform: uppercase; letter-spacing: .04em;
+    }
+    .sf-inp {
+      padding: 5px 7px; background: var(--bg); color: var(--t1);
+      border: 1px solid var(--bdr); border-radius: var(--r-sm);
+      font-family: inherit; font-size: .78rem; transition: border-color .2s;
+    }
+    .sf-inp:focus { outline: none; border-color: var(--pri); }
+    .sf-clr {
+      padding: 3px 6px; background: rgba(99,102,241,.2); color: var(--pri-l);
+      border: 1px solid rgba(99,102,241,.3); border-radius: var(--r-sm);
+      font-size: .68rem; font-family: inherit; cursor: pointer; font-weight: 600;
+    }
+    .sf-clr:hover { opacity: .75; }
+
+    /* ── Table ── */
+    .tbl-wrap {
+      flex: 1; overflow: auto;
+      border: 1px solid var(--bdr); border-radius: var(--r-lg); min-height: 0;
+    }
+    table { width: 100%; border-collapse: collapse; white-space: nowrap; }
+    thead th {
+      position: sticky; top: 0; z-index: 10;
+      padding: 8px 12px; font-size: .74rem; font-weight: 600;
+      background: var(--bg2); color: var(--t2);
+      border-bottom: 1px solid var(--bdr); text-align: left;
+    }
+    tbody tr { transition: background .12s; }
+    tbody tr:hover { background: var(--bg3h); }
+    tbody td {
+      padding: 6px 12px; font-size: .78rem; color: var(--t1);
+      border-bottom: 1px solid var(--bdr);
+      max-width: 320px; overflow: hidden; text-overflow: ellipsis;
+    }
+    .td-fees { color: var(--warn); font-weight: 700; }
+    .td-na   { color: var(--t3); }
+    .td-wrap { white-space: normal; word-break: break-word; }
+
+    /* ── TRexID search ── */
+    .trex-search-row { display: flex; gap: 12px; flex-shrink: 0; }
+    .trex-col { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+    .trex-col label {
+      font-size: .72rem; font-weight: 700; color: var(--t2);
+      text-transform: uppercase; letter-spacing: .04em;
+    }
+    .trex-inp {
+      padding: 8px 10px; background: var(--bg2); color: var(--t1);
+      border: 1px solid var(--bdr); border-radius: var(--r-sm);
+      font-family: inherit; font-size: .88rem; width: 100%;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .trex-inp:focus {
+      outline: none; border-color: var(--pri);
+      box-shadow: 0 0 0 3px var(--pri-g);
+    }
+
+    /* ── TRexID results ── */
+    .trex-results {
+      flex: 1; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 8px; min-height: 0;
+    }
+    .res-section { border: 1px solid var(--bdr); border-radius: var(--r-lg); overflow: hidden; }
+    .res-hdr {
+      padding: 8px 14px; background: var(--bg3); border-bottom: 1px solid var(--bdr);
+      display: flex; align-items: center; gap: 8px;
+      font-size: .8rem; font-weight: 700; cursor: pointer; user-select: none;
+      transition: background .15s;
+    }
+    .res-hdr:hover { background: var(--bg3h); }
+    .res-hdr.cheat { background: var(--warn-bg); border-bottom-color: var(--warn-bd); color: var(--warn); }
+    .res-hdr.pk    { background: var(--ok-bg);   border-bottom-color: var(--ok-bd);   color: var(--ok); }
+    .res-hdr.def   { background: var(--info-bg); border-bottom-color: var(--info-bd); color: var(--info); }
+    .res-cnt {
+      font-size: .68rem; font-weight: 700; padding: 2px 7px; border-radius: 99px;
+      background: rgba(255,255,255,.08); color: var(--t2); border: 1px solid var(--bdr2);
+    }
+    .chevron { margin-left: auto; transition: transform .2s; display: inline-block; }
+    .chevron.open { transform: rotate(180deg); }
+    .res-body { overflow: auto; max-height: 240px; }
+    .res-body.collapsed { display: none; }
+
+    .def-link-i { color: var(--info); text-decoration: none; font-weight: 600; cursor: pointer; }
+    .def-link-e { color: var(--err);  text-decoration: none; font-weight: 600; cursor: pointer; }
+    .def-link-i:hover, .def-link-e:hover { text-decoration: underline; }
+
+    /* ── Empty ── */
+    .empty {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; padding: 40px 20px;
+      color: var(--t3); text-align: center; flex: 1; min-height: 120px;
+    }
+    .empty-ico { font-size: 2.2rem; margin-bottom: 10px; opacity: .5; }
+    .empty-h   { font-size: .88rem; font-weight: 600; color: var(--t2); margin-bottom: 4px; }
+    .empty-p   { font-size: .78rem; }
+
+    /* ── Overlays ── */
+    .overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,.75);
+      display: none; z-index: 9999; justify-content: center; align-items: center;
+    }
+    .overlay.show { display: flex; }
+    .popup {
+      background: var(--bg2); border: 1px solid var(--bdr2);
+      border-radius: var(--r-lg); display: flex; flex-direction: column;
+      box-shadow: 0 24px 64px rgba(0,0,0,.7); position: relative;
+    }
+    .popup-close {
+      position: absolute; top: 10px; right: 10px;
+      background: var(--err); color: white; border: none;
+      border-radius: var(--r-sm); padding: 4px 10px;
+      font-family: inherit; font-size: .75rem; font-weight: 700; cursor: pointer; z-index: 10;
+    }
+
+    /* Status modal */
+    #statusOverlay .popup { width: min(820px, 92vw); max-height: 82vh; }
+    .status-head {
+      padding: 18px 20px 14px; border-bottom: 1px solid var(--bdr); flex-shrink: 0;
+    }
+    .status-head h2 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
+    .status-head p  { font-size: .78rem; color: var(--t2); }
+    .status-body    { overflow-y: auto; flex: 1; padding: 16px 20px; display: flex; flex-direction: column; gap: 16px; }
+    .status-section-title {
+      font-size: .68rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .07em; color: var(--t3); margin-bottom: 8px;
+    }
+    .status-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 6px; }
+    .status-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 10px; border-radius: var(--r-sm);
+      border: 1px solid; font-size: .76rem;
+    }
+    .status-item.ok  { background: var(--ok-bg);  border-color: var(--ok-bd); }
+    .status-item.err { background: var(--err-bg); border-color: var(--err-bd); }
+    .status-item .si-name  { font-weight: 600; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .status-item .si-count { font-size: .7rem; color: var(--t2); white-space: nowrap; }
+    .status-item.ok  .si-name { color: var(--ok); }
+    .status-item.err .si-name { color: var(--err); }
+
+    /* Def popup */
+    #defOverlay .popup { width: min(780px, 92vw); max-height: 72vh; }
+    .def-body {
+      padding: 22px; overflow-y: auto; flex: 1;
+      font-size: .86rem; line-height: 1.7; color: var(--t2);
+    }
+    .def-body h3 {
+      color: var(--t1); font-size: .95rem; margin-bottom: 14px;
+      padding-bottom: 10px; border-bottom: 1px solid var(--bdr);
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+    .def-body ul { padding-left: 18px; }
+    .def-body li { margin-bottom: 9px; }
+
+    /* Ambi popup */
+    #ambiOverlay .popup { width: 94vw; height: 88vh; }
+    .ambi-fixed { padding: 14px 18px; border-bottom: 1px solid var(--bdr); flex-shrink: 0; }
+    .ambi-title { font-size: .9rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+    .ambi-scroll { flex: 1; overflow-y: auto; padding: 0 18px 14px; }
+    .ambi-search-row { display: flex; gap: 7px; flex-wrap: wrap; }
+    .ambi-col { flex: 1; min-width: 90px; }
+    .ambi-col label { display: block; font-size: .66rem; font-weight: 700; color: var(--t3); margin-bottom: 3px; text-transform: uppercase; letter-spacing: .04em; }
+    .ambi-col input {
+      width: 100%; padding: 5px 7px; background: var(--bg); color: var(--t1);
+      border: 1px solid var(--bdr); border-radius: var(--r-sm);
+      font-family: inherit; font-size: .78rem;
+    }
+    .ambi-col input:focus { outline: none; border-color: var(--pri); }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 16px; right: 16px; z-index: 99999;
+      background: var(--bg2); border: 1px solid var(--ok-bd);
+      color: var(--ok); padding: 8px 14px; border-radius: var(--r-md);
+      font-size: .78rem; font-weight: 600;
+      display: flex; align-items: center; gap: 6px;
+      transform: translateY(60px); opacity: 0;
+      transition: all .25s cubic-bezier(.34,1.56,.64,1);
+      pointer-events: none;
+    }
+    .toast.show { transform: none; opacity: 1; }
+    .toast.err  { border-color: var(--err-bd); color: var(--err); }
+
+    mark {
+      background: rgba(99,102,241,.25); color: var(--pri-l);
+      border-radius: 2px; padding: 0 2px; font-style: normal;
+    }
+
+    /* spin animation */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinning { display: inline-block; animation: spin .8s linear infinite; }
+  </style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ── Header ── -->
+  <header class="hdr">
+    <div class="logo">
+      <div class="logo-mark">⚡</div>
+      <span class="logo-name">T2F + TRexID</span>
+    </div>
+
+    <div class="main-tabs">
+      <button class="main-tab active" onclick="switchPanel('t2f')">📊 T2F Tool</button>
+      <button class="main-tab"        onclick="switchPanel('trex')">🔍 TRexID Tool</button>
+    </div>
+
+    <div class="hdr-right">
+      <!-- Folder status pill -->
+      <div class="folder-pill ok" id="folderPill" onclick="openStatus()" title="Click to view file status">
+        <span class="dot"></span>
+        <span id="folderPillText">Loading…</span>
+      </div>
+      <!-- Reload button -->
+      <button class="btn btn-ghost" id="reloadBtn" onclick="reloadFiles()">🔄 Reload</button>
+    </div>
+  </header>
+
+  <!-- ── Content ── -->
+  <div class="content">
+
+    <!-- ════════ T2F PANEL ════════ -->
+    <div id="t2fPanel" class="panel active">
+
+      <div class="row">
+        <select class="sel" id="mpSelect" onchange="onMpChange()">
+          <option value="" disabled selected>Select Marketplace</option>
+        </select>
+        <span class="row-info" id="mpRowInfo"></span>
+      </div>
+
+      <div id="t2fGrid" class="t2f-grid" style="display:none"></div>
+
+      <div class="tbl-wrap" id="t2fTableWrap">
+        <div class="empty">
+          <div class="empty-ico">📊</div>
+          <div class="empty-h">Loading files…</div>
+          <div class="empty-p">Please wait while files are read from the folder</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ════════ TRexID PANEL ════════ -->
+    <div id="trexPanel" class="panel">
+
+      <div class="trex-search-row">
+        <div class="trex-col">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+            <label>Product Keywords</label>
+            <button class="btn btn-warn" style="padding:3px 10px;font-size:.72rem" onclick="showAmbi()">📋 Ambiguous</button>
+          </div>
+          <input type="text" class="trex-inp" id="trexPkQ" placeholder="Search by product keyword…" oninput="dTrex()">
+          <button class="btn btn-ghost" style="margin-top:5px;width:100%;justify-content:center" onclick="clearTrexQ('trexPkQ')">Clear</button>
+        </div>
+        <div class="trex-col">
+          <label>TRexID</label>
+          <input type="text" class="trex-inp" id="trexIdQ" placeholder="Search by TRexID…" oninput="dTrex()">
+          <button class="btn btn-ghost" style="margin-top:5px;width:100%;justify-content:center" onclick="clearTrexQ('trexIdQ')">Clear</button>
+        </div>
+      </div>
+
+      <div class="trex-results" id="trexResults">
+        <div class="empty">
+          <div class="empty-ico">🔍</div>
+          <div class="empty-h">Start searching</div>
+          <div class="empty-p">Type a keyword above to search across all TRexID data</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════ STATUS MODAL ════════ -->
+<div class="overlay" id="statusOverlay" onclick="closeOv('statusOverlay',event)">
+  <div class="popup">
+    <button class="popup-close" onclick="closeOv('statusOverlay')">✕ Close</button>
+    <div class="status-head">
+      <h2 id="statusTitle">📁 File Status</h2>
+      <p id="statusSubtitle"></p>
+    </div>
+    <div class="status-body" id="statusBody"></div>
+  </div>
+</div>
+
+<!-- ════════ DEFINITION POPUP ════════ -->
+<div class="overlay" id="defOverlay" onclick="closeOv('defOverlay',event)">
+  <div class="popup">
+    <button class="popup-close" onclick="closeOv('defOverlay')">✕ Close</button>
+    <div class="def-body" id="defBody"></div>
+  </div>
+</div>
+
+<!-- ════════ AMBI POPUP ════════ -->
+<div class="overlay" id="ambiOverlay" onclick="closeOv('ambiOverlay',event)">
+  <div class="popup">
+    <button class="popup-close" onclick="closeOv('ambiOverlay')">✕ Close</button>
+    <div class="ambi-fixed">
+      <div class="ambi-title">
+        📋 Ambiguous Cases
+        <button class="btn btn-ghost" style="font-size:.72rem;margin-left:auto" onclick="clearAmbiFilters()">Clear Filters</button>
+      </div>
+      <div class="ambi-search-row" id="ambiSearchRow"></div>
+    </div>
+    <div class="ambi-scroll">
+      <div class="tbl-wrap" style="border:none;border-radius:0">
+        <table>
+          <thead>
+            <tr>
+              <th>ASIN</th><th>Description</th><th>TRexID</th>
+              <th>Comments</th><th>Decision Pending?</th>
+            </tr>
+          </thead>
+          <tbody id="ambiTbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+
+// ── Utilities ────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function closeOv(id, e) {
+  if (!e || e.target.id === id)
+    document.getElementById(id).classList.remove('show');
+}
+function toast(msg, isErr = false) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = 'toast' + (isErr ? ' err' : '') + ' show';
+  setTimeout(() => el.classList.remove('show'), 2800);
+}
+function switchPanel(name) {
+  ['t2f','trex'].forEach(p =>
+    document.getElementById(p + 'Panel').classList.toggle('active', p === name));
+  document.querySelectorAll('.main-tab').forEach((b, i) =>
+    b.classList.toggle('active', ['t2f','trex'][i] === name));
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape')
+    document.querySelectorAll('.overlay.show').forEach(o => o.classList.remove('show'));
+});
+
+// ── Status panel ─────────────────────────────────────────────────────────
+let _lastStatus = null;
+
+function applyStatusToPill(data) {
+  const pill = document.getElementById('folderPill');
+  const txt  = document.getElementById('folderPillText');
+  if (!data.folder_ok) {
+    pill.className = 'folder-pill err';
+    txt.textContent = `❌ "${data.folder}" not found`;
+  } else if (data.err_count > 0) {
+    pill.className = 'folder-pill err';
+    txt.textContent = `📁 ${data.ok_count} ok, ${data.err_count} failed`;
+  } else {
+    pill.className = 'folder-pill ok';
+    txt.textContent = `📁 ${data.ok_count} files loaded`;
+  }
+}
+
+function openStatus() {
+  if (!_lastStatus) return;
+  renderStatusModal(_lastStatus);
+  document.getElementById('statusOverlay').classList.add('show');
+}
+
+function renderStatusModal(data) {
+  const TREX_KEYS = ['Keywords CSV','Definition - Inclusion CSV',
+    'Definition - Exclusion CSV','Cheat codes CSV','Ambiguous CSV'];
+  const FEES_KEY  = 'Fees Percentage csv';
+
+  document.getElementById('statusTitle').textContent =
+    `📁 "${data.folder}" — File Status`;
+  document.getElementById('statusSubtitle').textContent =
+    `${data.ok_count} loaded successfully · ${data.err_count} failed`;
+
+  const body = document.getElementById('statusBody');
+  body.innerHTML = '';
+
+  // TRexID section
+  const trexFiles = Object.entries(data.files)
+    .filter(([k]) => TREX_KEYS.includes(k) || k === FEES_KEY);
+  if (trexFiles.length) {
+    const sec = document.createElement('div');
+    sec.innerHTML = `<div class="status-section-title">TRexID & Fees Files</div>
+      <div class="status-grid" id="sg-trex"></div>`;
+    body.appendChild(sec);
+    const grid = sec.querySelector('#sg-trex');
+    trexFiles.forEach(([name, status]) => {
+      grid.appendChild(makeStatusItem(name, status));
+    });
+  }
+
+  // T2F section
+  const t2fFiles = Object.entries(data.files)
+    .filter(([k]) => !TREX_KEYS.includes(k) && k !== FEES_KEY && k !== '_folder');
+  if (t2fFiles.length) {
+    const sec = document.createElement('div');
+    sec.innerHTML = `<div class="status-section-title">T2F Marketplace Files (${t2fFiles.length})</div>
+      <div class="status-grid" id="sg-t2f"></div>`;
+    body.appendChild(sec);
+    const grid = sec.querySelector('#sg-t2f');
+    t2fFiles.forEach(([name, status]) => {
+      grid.appendChild(makeStatusItem(name, status));
+    });
+  }
+}
+
+function makeStatusItem(name, status) {
+  const isOk  = status.startsWith('✓');
+  const count = isOk ? status : status.replace('❌ ', '');
+  const el = document.createElement('div');
+  el.className = `status-item ${isOk ? 'ok' : 'err'}`;
+  el.innerHTML = `
+    <span>${isOk ? '✓' : '✗'}</span>
+    <span class="si-name" title="${esc(name)}">${esc(name)}</span>
+    <span class="si-count">${esc(count)}</span>`;
+  return el;
+}
+
+// ── Reload ───────────────────────────────────────────────────────────────
+async function reloadFiles() {
+  const btn = document.getElementById('reloadBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinning">⟳</span> Reloading…';
+
+  const res = await fetch('/api/reload', { method: 'POST' })
+    .then(r => r.json()).catch(() => null);
+
+  btn.disabled = false;
+  btn.textContent = '🔄 Reload';
+
+  if (!res) { toast('Reload failed', true); return; }
+
+  _lastStatus = { ...res, folder: _lastStatus?.folder || '', folder_ok: true };
+  applyStatusToPill(_lastStatus);
+
+  // Refresh marketplace dropdown
+  const sel  = document.getElementById('mpSelect');
+  const prev = sel.value;
+  while (sel.options.length > 1) sel.remove(1);
+  res.marketplaces.forEach(mp => {
+    const o = document.createElement('option');
+    o.value = mp; o.text = mp;
+    sel.appendChild(o);
+  });
+
+  if (prev && res.marketplaces.includes(prev)) {
+    sel.value = prev;
+    await loadMpInfo(prev);
+  } else if (res.marketplaces.length) {
+    sel.value = res.marketplaces[0];
+    await loadMpInfo(res.marketplaces[0]);
+  }
+
+  toast(`✓ Reloaded — ${res.ok_count} files loaded`);
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// T2F TOOL
+// ══════════════════════════════════════════════════════════════════════════
+let t2fState = { mp: '', headers: [], hasFees: false };
+let t2fTimer = null;
+
+async function initApp() {
+  const data = await fetch('/api/status').then(r => r.json()).catch(() => null);
+  if (!data) {
+    document.getElementById('folderPillText').textContent = '❌ Server error';
+    return;
+  }
+  _lastStatus = data;
+  applyStatusToPill(data);
+
+  const sel = document.getElementById('mpSelect');
+  data.marketplaces.forEach(mp => {
+    const o = document.createElement('option');
+    o.value = mp; o.text = mp;
+    sel.appendChild(o);
+  });
+
+  if (data.last_mp && data.marketplaces.includes(data.last_mp)) {
+    sel.value = data.last_mp;
+    await loadMpInfo(data.last_mp);
+  } else if (data.marketplaces.length) {
+    sel.value = data.marketplaces[0];
+    await loadMpInfo(data.marketplaces[0]);
+  }
+}
+
+async function onMpChange() {
+  const mp = document.getElementById('mpSelect').value;
+  if (mp) await loadMpInfo(mp);
+}
+
+async function loadMpInfo(mp) {
+  const info = await fetch(`/api/t2f/mp_info?mp=${encodeURIComponent(mp)}`)
+    .then(r => r.json()).catch(() => null);
+  if (!info) return;
+
+  t2fState = { mp, headers: info.headers, hasFees: info.has_fees };
+  buildT2FFields(info.headers, info.has_fees);
+
+  document.getElementById('mpRowInfo').innerHTML =
+    info.rows ? `<b>${info.rows.toLocaleString()}</b> rows${info.has_fees ? ' · Fees% available' : ''}` : '';
+
+  document.getElementById('t2fTableWrap').innerHTML = `<div class="empty">
+    <div class="empty-ico">🔎</div>
+    <div class="empty-h">${info.rows.toLocaleString()} rows ready</div>
+    <div class="empty-p">Fill in a search field above to filter results</div>
+  </div>`;
+}
+
+function buildT2FFields(headers, hasFees) {
+  const grid = document.getElementById('t2fGrid');
+  grid.innerHTML = '';
+  grid.style.display = headers.length ? 'flex' : 'none';
+
+  [...headers, ...(hasFees ? ['Fees%'] : [])].forEach(h => {
+    const wrap = document.createElement('div');
+    wrap.className = 'sf';
+    wrap.dataset.isFees = h === 'Fees%' ? '1' : '0';
+
+    const lbl = document.createElement('div');
+    lbl.className = 'sf-lbl'; lbl.title = h; lbl.textContent = h;
+
+    const inp = document.createElement('input');
+    inp.type = 'text'; inp.className = 'sf-inp';
+    inp.placeholder = h + '…';
+    inp.addEventListener('input', dT2F);
+
+    const clr = document.createElement('button');
+    clr.className = 'sf-clr'; clr.textContent = 'Clear';
+    clr.onclick = () => { inp.value = ''; dT2F(); };
+
+    wrap.appendChild(lbl); wrap.appendChild(inp); wrap.appendChild(clr);
+    grid.appendChild(wrap);
+  });
+}
+
+function dT2F() {
+  clearTimeout(t2fTimer);
+  t2fTimer = setTimeout(runT2FSearch, 280);
+}
+
+async function runT2FSearch() {
+  const { mp } = t2fState;
+  if (!mp) return;
+
+  const fields = Array.from(
+    document.getElementById('t2fGrid').querySelectorAll('.sf'));
+  const sv = [], fs_arr = [];
+  fields.forEach(f => {
+    const v = f.querySelector('input').value.trim();
+    (f.dataset.isFees === '1' ? fs_arr : sv).push(v);
+  });
+
+  if (sv.every(v => !v) && !fs_arr[0]) {
+    document.getElementById('t2fTableWrap').innerHTML = `<div class="empty">
+      <div class="empty-ico">🔎</div>
+      <div class="empty-h">Enter a search term</div>
+      <div class="empty-p">Fill in one or more fields above to filter</div>
+    </div>`;
+    return;
+  }
+
+  const data = await fetch('/api/t2f/search', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ mp, search_values: sv, fees_search: fs_arr[0] || '' })
+  }).then(r => r.json()).catch(() => null);
+
+  if (!data) { toast('Search failed', true); return; }
+  renderT2FTable(data.headers, data.rows);
+}
+
+function renderT2FTable(headers, rows) {
+  const wrap = document.getElementById('t2fTableWrap');
+  if (!rows.length) {
+    wrap.innerHTML = `<div class="empty">
+      <div class="empty-ico">🔎</div>
+      <div class="empty-h">No results</div>
+      <div class="empty-p">Try different search terms</div>
+    </div>`;
+    return;
+  }
+
+  let h = '<table><thead><tr>';
+  headers.forEach(c => { h += `<th>${esc(c)}</th>`; });
+  h += '</tr></thead><tbody>';
+  rows.forEach(row => {
+    h += '<tr>';
+    headers.forEach(c => {
+      const v = row[c] || '';
+      if (c === 'Fees%')
+        h += `<td class="${v === 'N/A' ? 'td-na' : 'td-fees'}">${esc(v)}</td>`;
+      else
+        h += `<td title="${esc(v)}">${esc(v)}</td>`;
+    });
+    h += '</tr>';
+  });
+  h += '</tbody></table>';
+  wrap.innerHTML = h;
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// TRexID TOOL
+// ══════════════════════════════════════════════════════════════════════════
+let trexTimer = null;
+let defStore  = [];
+let ambiAll   = [];
+
+function dTrex() {
+  clearTimeout(trexTimer);
+  trexTimer = setTimeout(runTrexSearch, 280);
+}
+function clearTrexQ(id) {
+  document.getElementById(id).value = '';
+  dTrex();
+}
+
+async function runTrexSearch() {
+  const product = document.getElementById('trexPkQ').value.trim();
+  const trexid  = document.getElementById('trexIdQ').value.trim();
+
+  if (!product && !trexid) {
+    document.getElementById('trexResults').innerHTML = `<div class="empty">
+      <div class="empty-ico">🔍</div><div class="empty-h">Start searching</div>
+      <div class="empty-p">Type a keyword above</div>
+    </div>`;
+    return;
+  }
+
+  const data = await fetch('/api/trex/search', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ product, trexid })
+  }).then(r => r.json()).catch(() => null);
+
+  if (!data) { toast('Search failed', true); return; }
+  renderTrexResults(data, product);
+}
+
+function renderTrexResults(data, term) {
+  const box = document.getElementById('trexResults');
+  box.innerHTML = '';
+
+  if (!data.cheat.length && !data.pk.length && !data.defs.length) {
+    box.innerHTML = `<div class="empty">
+      <div class="empty-ico">🔎</div><div class="empty-h">No results found</div>
+      <div class="empty-p">Try a different search term</div>
+    </div>`;
+    return;
+  }
+
+  defStore = data.defs;
+
+  if (data.cheat.length)
+    box.appendChild(makeSection('⚡ Cheat Codes',        data.cheat.length, 'cheat', buildCheatTable(data.cheat, term)));
+  if (data.pk.length)
+    box.appendChild(makeSection('✅ Product Keywords',   data.pk.length,    'pk',    buildPkTable(data.pk)));
+  if (data.defs.length)
+    box.appendChild(makeSection('📝 Definition Keywords', data.defs.length,  'def',   buildDefTable(data.defs)));
+}
+
+function makeSection(title, count, cls, contentEl) {
+  const sec  = document.createElement('div');
+  sec.className = 'res-section';
+  const hdr  = document.createElement('div');
+  hdr.className = `res-hdr ${cls}`;
+  hdr.innerHTML = `${title}<span class="res-cnt">${count}</span><span class="chevron open">▾</span>`;
+  const body = document.createElement('div');
+  body.className = 'res-body';
+  body.appendChild(contentEl);
+  hdr.onclick = () => {
+    body.classList.toggle('collapsed');
+    hdr.querySelector('.chevron').classList.toggle('open', !body.classList.contains('collapsed'));
+  };
+  sec.appendChild(hdr); sec.appendChild(body);
+  return sec;
+}
+
+function buildCheatTable(rows, term) {
+  const w = document.createElement('div');
+  let h = `<table><thead><tr>
+    <th>Scenario</th><th>TRexID to Follow</th><th>Exclusion</th>
+  </tr></thead><tbody>`;
+  rows.forEach(r => {
+    h += `<tr>
+      <td class="td-wrap" style="max-width:360px">${hlTerm(esc(r.scenario), term)}</td>
+      <td style="color:var(--warn);font-weight:700">${esc(r.trexid)}</td>
+      <td class="td-wrap" style="max-width:300px;color:var(--err)">${esc(r.exclusion)}</td>
+    </tr>`;
+  });
+  h += '</tbody></table>';
+  w.innerHTML = h; return w;
+}
+
+function buildPkTable(rows) {
+  const w = document.createElement('div');
+  let h = `<table><thead><tr><th>Product Keyword</th><th>TRexID</th></tr></thead><tbody>`;
+  rows.forEach(r => {
+    h += `<tr>
+      <td>${esc(r.keyword)}</td>
+      <td style="color:var(--info);font-weight:700">${esc(r.trexid)}</td>
+    </tr>`;
+  });
+  h += '</tbody></table>';
+  w.innerHTML = h; return w;
+}
+
+function buildDefTable(rows) {
+  const w = document.createElement('div');
+  let h = `<table><thead><tr>
+    <th>Definition Incl (TRexID)</th><th>Definition Excl (TRexID)</th>
+  </tr></thead><tbody>`;
+  rows.forEach((r, i) => {
+    const iL = r.incl ? `<a class="def-link-i" href="#" onclick="openDef(${i},'incl',event)">${esc(r.trexid)}</a>` : '';
+    const eL = r.excl ? `<a class="def-link-e" href="#" onclick="openDef(${i},'excl',event)">${esc(r.trexid)}</a>` : '';
+    h += `<tr><td>${iL}</td><td>${eL}</td></tr>`;
+  });
+  h += '</tbody></table>';
+  w.innerHTML = h; return w;
+}
+
+function openDef(idx, type, e) {
+  if (e) e.preventDefault();
+  const row = defStore[idx]; if (!row) return;
+  const def  = type === 'incl' ? row.incl : row.excl;
+  const term = document.getElementById('trexPkQ').value.trim().toLowerCase();
+
+  let sents = def.split(/[.!?](?=\s|$)/).filter(s => s.trim());
+  if (term) sents = sents.filter(s => s.toLowerCase().includes(term));
+
+  const bullets = sents.map(s => {
+    let t = esc(s.trim()) + '.';
+    if (term) {
+      const re = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+      t = t.replace(re, '<mark>$1</mark>');
+    }
+    return `<li>${t}</li>`;
+  }).join('');
+
+  const badge = type === 'incl'
+    ? `<span style="font-size:.7rem;color:var(--ok);font-weight:600;background:var(--ok-bg);border:1px solid var(--ok-bd);padding:2px 8px;border-radius:99px">Inclusion</span>`
+    : `<span style="font-size:.7rem;color:var(--err);font-weight:600;background:var(--err-bg);border:1px solid var(--err-bd);padding:2px 8px;border-radius:99px">Exclusion</span>`;
+
+  document.getElementById('defBody').innerHTML = `
+    <h3>${esc(row.trexid)} ${badge}</h3>
+    <ul>${bullets || '<li style="color:var(--t3)">No matching sentences found.</li>'}</ul>`;
+  document.getElementById('defOverlay').classList.add('show');
+}
+
+// ── Ambi ─────────────────────────────────────────────────────────────────
+const AMBI_KEYS = ['asin','description','trexid','comments','decision'];
+const AMBI_LBLS = ['ASIN','Description','TRexID','Comments','Decision Pending?'];
+
+async function showAmbi() {
+  ambiAll = await fetch('/api/trex/ambi').then(r => r.json()).catch(() => []);
+
+  const row = document.getElementById('ambiSearchRow');
+  row.innerHTML = '';
+  AMBI_LBLS.forEach((lbl, i) => {
+    const d = document.createElement('div');
+    d.className = 'ambi-col';
+    d.innerHTML = `<label>${lbl}</label>
+      <input type="text" id="ambiF_${i}" placeholder="Search…" oninput="filterAmbi()">`;
+    row.appendChild(d);
+  });
+
+  const pk = document.getElementById('trexPkQ').value;
+  const tx = document.getElementById('trexIdQ').value;
+  if (pk) document.getElementById('ambiF_1').value = pk;
+  if (tx) document.getElementById('ambiF_2').value = tx;
+
+  filterAmbi();
+  document.getElementById('ambiOverlay').classList.add('show');
+}
+
+function filterAmbi() {
+  const qs = AMBI_KEYS.map((_, i) =>
+    (document.getElementById(`ambiF_${i}`)?.value || '').toLowerCase());
+  renderAmbi(ambiAll.filter(r =>
+    AMBI_KEYS.every((k, i) => !qs[i] || r[k].toLowerCase().includes(qs[i]))));
+}
+
+function clearAmbiFilters() {
+  AMBI_KEYS.forEach((_, i) => {
+    const el = document.getElementById(`ambiF_${i}`);
+    if (el) el.value = '';
+  });
+  renderAmbi(ambiAll);
+}
+
+function renderAmbi(rows) {
+  const tbody = document.getElementById('ambiTbody');
+  tbody.innerHTML = '';
+  const urlRe = /(https?:\/\/[^\s)]+)/g;
+
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+
+    // ASIN
+    const asinTd = document.createElement('td');
+    asinTd.className = 'td-wrap'; asinTd.style.maxWidth = '200px'; asinTd.style.fontSize = '.74rem';
+    const urls = row.asin.split(/[\n,]+/).map(u => u.trim()).filter(u => /^https?:\/\//i.test(u));
+    if (urls.length) {
+      urls.forEach((url, i) => {
+        if (i > 0) asinTd.appendChild(document.createElement('br'));
+        asinTd.appendChild(document.createTextNode(url + ' '));
+        const a = document.createElement('a');
+        a.href = url; a.textContent = 'Open'; a.target = '_blank'; a.style.color = 'var(--info)';
+        asinTd.appendChild(a);
+      });
+    } else { asinTd.textContent = row.asin; }
+    tr.appendChild(asinTd);
+
+    // Description
+    const dTd = document.createElement('td');
+    dTd.className = 'td-wrap'; dTd.style.maxWidth = '280px'; dTd.style.fontSize = '.78rem';
+    dTd.textContent = row.description; tr.appendChild(dTd);
+
+    // TRexID
+    const tTd = document.createElement('td');
+    tTd.style.cssText = 'color:var(--info);font-weight:700;font-size:.78rem';
+    tTd.textContent = row.trexid; tr.appendChild(tTd);
+
+    // Comments (URL-linkified)
+    const cTd = document.createElement('td');
+    cTd.className = 'td-wrap'; cTd.style.maxWidth = '260px'; cTd.style.fontSize = '.74rem';
+    let last = 0, match, text = row.comments;
+    urlRe.lastIndex = 0;
+    while ((match = urlRe.exec(text)) !== null) {
+      cTd.appendChild(document.createTextNode(text.substring(last, match.index)));
+      const a = document.createElement('a');
+      a.href = match[1]; a.textContent = match[1]; a.target = '_blank'; a.style.color = 'var(--info)';
+      cTd.appendChild(a);
+      last = match.index + match[1].length;
+    }
+    cTd.appendChild(document.createTextNode(text.substring(last)));
+    tr.appendChild(cTd);
+
+    // Decision
+    const decTd = document.createElement('td');
+    decTd.className = 'td-wrap'; decTd.style.maxWidth = '140px'; decTd.style.fontSize = '.78rem';
+    decTd.textContent = row.decision; tr.appendChild(decTd);
+
+    tbody.appendChild(tr);
+  });
+}
+
+function hlTerm(text, term) {
+  if (!term) return text;
+  const safe = term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return text.replace(new RegExp(`(${safe})`, 'gi'), '<mark>$1</mark>');
+}
+
+// ── Boot ─────────────────────────────────────────────────────────────────
+initApp();
+</script>
+</body>
+</html>
